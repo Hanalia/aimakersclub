@@ -2,7 +2,7 @@ import IconMail from "@/assets/icons/IconMail.svg";
 import IconGitHub from "@/assets/icons/IconGitHub.svg";
 import IconBrandX from "@/assets/icons/IconBrandX.svg";
 import IconTelegram from "@/assets/icons/IconTelegram.svg";
-import IconKakaoTalk from "@/assets/icons/IconKakaotalk.svg";
+import IconKakaoTalk from "@/assets/icons/IconKakaoTalk.svg"; // 대문자 T
 import IconClipboard from "@/assets/icons/IconClipboard.svg";
 import { SITE } from "@/config";
 
