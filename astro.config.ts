@@ -27,6 +27,9 @@ export default defineConfig({
     optimizeDeps: {
       exclude: ["@resvg/resvg-js"],
     },
+    build: {
+      assetsInlineLimit: 0,
+    },
   },
   image: {
     // Used for all Markdown images; not configurable per-image
@@ -38,4 +41,7 @@ export default defineConfig({
     responsiveImages: true,
     preserveScriptOrder: true,
   },
+  build: {
+    assets: 'assets'
+  }
 });
