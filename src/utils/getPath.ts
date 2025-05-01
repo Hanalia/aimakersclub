@@ -1,5 +1,6 @@
 import { BLOG_PATH } from "@/content.config";
 import { slugifyStr } from "./slugify";
+import { SITE } from "@/config";
 
 /**
  * Get full path of a blog post
@@ -29,8 +30,8 @@ export function getPath(
 
   // If not inside the sub-dir, simply return the file path
   if (!pathSegments || pathSegments.length < 1) {
-    return [basePath, slug].join("/");
+    return `${SITE.base}${basePath}/${slug}`;
   }
 
-  return [basePath, ...pathSegments, slug].join("/");
+  return `${SITE.base}${basePath}/${pathSegments.join("/")}/${slug}`;
 }
