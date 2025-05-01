@@ -2,7 +2,6 @@ import IconMail from "@/assets/icons/IconMail.svg";
 import IconGitHub from "@/assets/icons/IconGitHub.svg";
 import IconBrandX from "@/assets/icons/IconBrandX.svg";
 import IconTelegram from "@/assets/icons/IconTelegram.svg";
-import IconKakaoTalk from "@/assets/icons/IconKakaoTalk.svg"; // 대문자 T
 import IconClipboard from "@/assets/icons/IconClipboard.svg";
 import { SITE } from "@/config";
 
@@ -70,12 +69,12 @@ export const SHARE_LINKS = [
     linkTitle: `Share this post via email`,
     icon: IconMail,
   },
-  {
-    name: "KakaoTalk",
-    href: "https://sharer.kakao.com/talk/friends/picker/link?url=",
-    linkTitle: `Share this post via KakaoTalk`,
-    icon: IconKakaoTalk, // You'll need to create/import this icon
-  },
+  // {
+  //   name: "KakaoTalk",
+  //   href: "https://sharer.kakao.com/talk/friends/picker/link?url=",
+  //   linkTitle: `Share this post via KakaoTalk`,
+  //   icon: IconKakaoTalk, // You'll need to create/import this icon
+  // },
   {
     name: "Copy",
     href: "#",
