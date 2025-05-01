@@ -14,7 +14,7 @@ export const SITE = {
   showBackButton: true, // show back button in post detail
   editPost: {
     enabled: true,
-    text: "Suggest Changes", 
+    text: "수정 요청하기", 
     url: "https://github.com/hanalia/aimakersclub/edit/main/",
   },
   dynamicOgImage: true,
