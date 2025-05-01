@@ -6,7 +6,7 @@ export const SITE = {
   desc: "A blog curating various AI contents and insights in the rapidly evolving field of artificial intelligence.",
   title: "AI Insights",
   ogImage: "ai-insights-og.jpg",
-  lightAndDarkMode: true,
+  lightAndDarkMode: false,
   postPerIndex: 4,
   postPerPage: 4,
   scheduledPostMargin: 15 * 60 * 1000, // 15 minutes
