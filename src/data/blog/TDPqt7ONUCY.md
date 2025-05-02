@@ -1,6 +1,6 @@
 ---
 author: AI Makers Club
-pubDatetime: 2025-05-02T03:05:38.095Z
+pubDatetime: 2025-05-02T04:36:38.094Z
 title: AI 요약 테스트
 slug: TDPqt7ONUCY
 featured: true
