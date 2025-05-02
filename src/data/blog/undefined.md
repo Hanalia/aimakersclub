@@ -1,8 +1,7 @@
 ---
 author: AI Makers Club
-pubDatetime: 2025-05-02T02:48:13.550Z
+pubDatetime: 2025-05-02T02:48:51.035Z
 title: AI ????? ??? ??? ?? ?? ?? ??2
-slug: undefined
 featured: true
 draft: false
 tags:
