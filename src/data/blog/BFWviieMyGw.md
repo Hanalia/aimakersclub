@@ -9,7 +9,7 @@ tags:
   - AI
   - YouTube 요약
   - 자동 업로드
-description: **AG-UI(Agent Graphical User Interface)**의 개념과 필요성이 등장하며, 이는 기존 앱 사용 방식을 혁신하는 새로운 패러다임임을 강조함 AI 에이전트
+description: "**AG-UI(Agent Graphical User Interface)**의 개념과 필요성이 등장하며, 이는 기존 앱 사용 방식을 혁신하는 새로운 패러다임임을 강조함 AI 에이전트"
 ---
 
 <div style="text-align: center;">
