@@ -9,7 +9,7 @@ tags:
   - AI
   - YouTube 요약
   - 자동 업로드
-description: 영상 제목: *에이전트 연속성: 재개 가능한 AI 워크플로우를 위한 새로운 메커니즘* Greg Benson(샌프란시스코 대학교 교수, Snaplogic 수석 과학자)이 Snaplo
+description: "영상 제목: *에이전트 연속성: 재개 가능한 AI 워크플로우를 위한 새로운 메커니즘* Greg Benson(샌프란시스코 대학교 교수, Snaplogic 수석 과학자)이 Snaplo"
 ---
 
 <div style="text-align: center;">
