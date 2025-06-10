@@ -9,7 +9,7 @@ tags:
   - AI
   - YouTube 요약
   - 자동 업로드
-description: **AI 엔지니어 월드페어 2025 “Tiny Teams” 세션에서는 소규모 팀이 AI 시대에 엄청난 생산성과 성공을 달성하는 방법을 경험적·수치적으로 조명** **발표 기업(제품
+description: "AI 엔지니어 월드페어 2025 “Tiny Teams” 세션에서는 소규모 팀이 AI 시대에 엄청난 생산성과 성공을 달성하는 방법을 경험적·수치적으로 조명** **발표 기업(제품"
 ---
 
 <div style="text-align: center;">
