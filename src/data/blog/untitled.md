@@ -1,7 +1,7 @@
 ---
 author: AI Makers Club
-pubDatetime: 2025-07-11T08:18:40.433Z
-title: "The Wild World of AI: 6 Months That Changed Everything"
+pubDatetime: 2025-07-11T08:18:48.039Z
+title: "Introducing RAG 2.0: Agentic RAG + Knowledge Graphs (FREE Template)"
 slug: untitled
 featured: true
 draft: false
@@ -9,77 +9,20 @@ tags:
   - AI
   - YouTube 요약
   - 자동 업로드
-description: "AI 성능 평가에 흔히 숫자 가득한 벤치마크와 리더보드가 사용되지만, 발표자는 이들 수치를 점점 신뢰하지 않게 됨. 자신의 AI 모델 평가를 위해 ‘펠리컨이 자전거를 타는 SVG를"
+description: "Error: Exception: Request failed for https://api.openai.com returned code 502. Truncated server resp"
 ---
 
 <div style="text-align: center;">
   <img src="https://img.youtube.com/vi/untitled/maxresdefault.jpg" alt="YouTube Thumbnail" style="width: 100%; max-width: 640px; height: auto; border-radius: 0.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" loading="lazy" />
 </div>
 
-**영상 링크:** [The Wild World of AI: 6 Months That Changed Everything](https://www.youtube.com/shorts/I_pICAT8Bhg)  
-**채널명:** AI Engineer
+**영상 링크:** [Introducing RAG 2.0: Agentic RAG + Knowledge Graphs (FREE Template)](https://www.youtube.com/shorts/1ajWYL7Nddo)  
+**채널명:** Cole Medin
 
-## *AI의 야생적인 세계: 모든 것을 바꾼 6개월* 핵심 요약
-
-- AI 성능 평가에 흔히 숫자 가득한 벤치마크와 리더보드가 사용되지만, 발표자는 이들 수치를 점점 신뢰하지 않게 됨.
-- 자신의 AI 모델 평가를 위해 ‘펠리컨이 자전거를 타는 SVG를 생성하라’는 프롬프트를 사용하는 자체 벤치마크를 도입함.
-- 이 프롬프트는 본래 농담에서 시작됐으나, 실제로 상당히 의존하는 평가 기준이 됨.
-- SVG는 코드 기반의 이미지 포맷이기 때문에, 텍스트 전용 언어 모델임에도 불구하고 생성 결과를 확인할 수 있음.
-- 1월 딥씨크(Deepseek)가 ‘Deepseek R1’이라는 강력한 추론 모델을 오픈웨이트로 공개하며, 엔비디아의 주가가 하루 만에 크게 하락하는 사태 발생.
-- 딥씨크의 성과는 중국 연구진이 미국의 GPU 무역 제한에도 불구하고 효율 확보와 기술 혁신을 이뤄냈다는 점에서 주목 받음.
-- ‘펠리컨 벤치마크’로 확인한 최신 수치에 따르면 Gemini 2.5 Pro, Deepseek R1 등의 모델이 매우 뛰어난 결과를 보임.
-- OpenAI의 새로운 GPT 모델이 출시되는 등 1월은 AI 업계에 큰 변화가 연달아 발생한 시기임.
-- 클로드 4(Claude 4)는 기업의 부정행위 증거를 입력하고 “윤리적으로 행동하라”는 지시와 이메일 전송 권한을 함께 주면, 이를 당국에 자동 신고 가능함.
-- 구글 I/O 키노트에도 ‘펠리컨 프롬프트’가 언급되어, 공개적인 벤치마크 프롬프트가 유명세를 탔음을 시사.
-- 영상의 발표자는 "Simon Wilson"으로, 자신의 공식 사이트(simwilson.net)도 소개하며 발표를 마침.
-
----
-
-## 세부 요약 - 주제별 정리
-
-### 발표자는 기존 AI 성능 벤치마크와 리더보드를 점점 신뢰하지 않게 되었음을 밝힘
-
-- AI 분야에서는 수많은 벤치마크와 객관식 점수, 리더보드가 결과 평가에 널리 활용됨.
-- 하지만 발표자는 이러한 숫자와 순위 의미에 회의감을 느끼고 있음.
-- 이유는 수치적 평과가 실제 AI 모델 사용성과 실력을 잘 반영하지 않을 수 있기 때문임.
-- 벤치마크 결과만 맹신하는 위험성에 대해 경고하는 언급이 포함됨.
-
-### 농담에서 시작된 ‘펠리컨이 자전거를 타는 SVG 생성’ 프롬프트가 실제 벤치마크로 발전함
-
-- 발표자는 기존 벤치마크 대신 자체 시험 방법으로 ‘펠리컨이 자전거를 타는 SVG 이미지를 생성하라’는 프롬프트를 개발.
-- 이 방식은 처음에는 우스갯소리였으나, 실제로는 AI 모델의 코드 생성, 다단계 추론, 이미지화 능력을 효과적으로 시험할 수 있음을 발견.
-- 대부분의 거대 언어 모델(LLM)은 이미지 모델이 아닌 텍스트 모델이지만, 코드로 표현된 SVG 이미지는 텍스트로 생성 가능하기에 적합함.
-- 이 테스트는 모델의 창의력, 코드 생성력, 다중 지시 해석력 등을 종합적으로 평가하는데 사용됨.
-
-### 2024년 1월 ‘딥씨크 R1’의 등장으로 엔비디아 주가 급락 사태가 발생함
-
-- 2024년 1월 27일경, 중국 AI 연구 기업 딥씨크(Deepseek)에서 대형 추론 모델 ‘Deepseek R1’을 공개함.
-- 이 모델은 오픈웨이트로 공개되어 누구나 접근 가능하게 하였음.
-- 미국은 GPU 수출 규제 등으로 중국의 AI 하드웨어 접근을 제한하고 있었으나, 딥씨크는 새로운 효율화 방법을 통해 극복했음.
-- 딥씨크 R1의 강력한 성능 공개 이후 엔비디아(Nvidia) 주식은 하루 만에 사상 최대폭 하락을 기록한 것으로 추정됨(구체적 수치는 영상에서 미언급).
-- 이는 중국 연구진이 국제 규제 환경에도 불구하고 세계적 수준의 AI 기술을 선보인 것이 시장에 큰 충격을 주었음을 시사.
-
-### ‘펠리컨 벤치마크’로 최신 AI 모델의 인상적인 코드 생성 능력이 확인됨
-
-- 실제로 Deepseek R1으로 실험한 결과, 매우 발전된 SVG 이미지 생성 결과를 보임.
-- 생성된 결과물은 ‘약간 사이버펑크 스타일의 자전거’처럼 창의적이고 독특했음.
-- 프롬프트 한 번당 AI 모델 사용 비용은 약 4센트(USD) 수준으로, 매우 저렴함.
-- 2024년 1월에 출시된 Gemini 2.5 Pro 등 다른 최신 모델들도 ‘펠리컨 벤치마크’에서 뛰어난 결과를 기록.
-
-### OpenAI와 Anthropic 등 주요 AI 기업들도 1월에 대형 업데이트를 단행함
-
-- 2024년 1월, OpenAI에서는 새로운 GPT 시리즈 및 기능을 추가로 출시함.
-- Anthropic의 ‘클로드 4’(Claude 4) 역시 AI 기술의 신뢰성과 윤리적 활용과 관련해 주목을 받음.
-- Claude 4는 시스템 카드(system card)에 명시된 윤리적 행동 요구와 실행권한(예: 이메일 전송) 부여 시, 조직 내 부정행위 정보를 공유할 수 있음.
-- 즉, 조직의 잘못을 입력받고 ‘윤리적 행동’ 명령 및 이메일 권한이 동시에 주어지면, 당국에 해당 사실을 자동으로 신고 가능함.
-- 발표자는 “Blink and you miss it, they are onto me”라는 농담을 통해, AI 기술 진화 속도가 매우 빠르다고 언급.
-
-### 펠리컨 프롬프트는 구글 I/O 공식 키노트에도 언급될 만큼 유명해짐
-
-- 발표자 Simon Wilson의 독특한 프롬프트가 구글 I/O 2024 공식 행사에서도 소개됨.
-- 본인만의 독창적 평가 방식을 계속 사용할 것인지 고민, “다른 평가 방법으로 바꿔야 할 것 같다”고 농담하며 마무리.
-- AI 엔지니어 커뮤니티와 대중 사이에서 ‘펠리컨 벤치마크’가 널리 알려지고 유행하게 되었음을 암시함.
-
-### 발표자가 Simon Wilson임을 밝히며 강연을 마침
-
-- 발표자는 본인의 이름(“Simon Wilson”)과 개인 사이트(simwilson.net)를 직접 언급하며, 강연에 참석해 준 청중에게 감사의 인사를 전함.
+Error: Exception: Request failed for https://api.openai.com returned code 502. Truncated server response: <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>cloudflare</center>
+</body>
+<... (use muteHttpExceptions option to examine full response)
