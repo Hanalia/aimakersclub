@@ -1,7 +1,7 @@
 ---
 author: AI Makers Club
-pubDatetime: 2025-07-11T23:47:39.095Z
-title: "Introducing RAG 2.0: Agentic RAG + Knowledge Graphs (FREE Template)"
+pubDatetime: 2025-07-12T08:18:16.830Z
+title: "Boris explains Claude Code"
 slug: untitled
 featured: true
 draft: false
@@ -9,93 +9,70 @@ tags:
   - AI
   - YouTube 요약
   - 자동 업로드
-description: "영상은 최신 RAG(Retrieval-Augmented Generation) 전략들을 탐구한 경험을 바탕으로, 에이전틱 RAG(Agentic RAG)와 지식 그래프(Knowledg"
+description: "영상은 Antropic 소속 기술진 보리스가 직접 *Claude Code*에 대해 설명함 보리스는 Claude Code의 창시자이자 Entropic의 Technical Staff임"
 ---
 
 <div style="text-align: center;">
   <img src="https://img.youtube.com/vi/untitled/maxresdefault.jpg" alt="YouTube Thumbnail" style="width: 100%; max-width: 640px; height: auto; border-radius: 0.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" loading="lazy" />
 </div>
 
-**영상 링크:** [Introducing RAG 2.0: Agentic RAG + Knowledge Graphs (FREE Template)](https://www.youtube.com/shorts/1ajWYL7Nddo)  
-**채널명:** Cole Medin
+**영상 링크:** [Boris explains Claude Code](https://www.youtube.com/shorts/OKs6EO_klBg)  
+**채널명:** AI Engineer
 
-## *RAG 2.0: 에이전틱 RAG와 지식 그래프의 결합(무료 템플릿)* 핵심 요약
+## *보리스가 클로드 코드의 특징과 실사용 방법을 소개함* 핵심 요약
 
-- 영상은 최신 RAG(Retrieval-Augmented Generation) 전략들을 탐구한 경험을 바탕으로, 에이전틱 RAG(Agentic RAG)와 지식 그래프(Knowledge Graph)의 결합이 매우 강력함을 강조함
-- 직접 구축한 AI 에이전트가 두 방식을 통합하여, 질문의 유형에 따라 자동으로 정보 소스를 선별해 답을 제시함
-- 벡터 데이터베이스(Postgres + PG vector, 네온(Neon) 서버리스 플랫폼 활용)와 지식 그래프(Graffiti, Neo4j 사용) 모두에 동일 문서를 서로 다른 형태로 저장함
-- 문서는 빅테크 기업과 AI 이니셔티브, 협력 관계 등 방대한 정보를 포함함
-- 에이전트는 단일 기업에 대한 AI 이니셔티브처럼 벡터 기반으로 검색할 질문엔 벡터 DB만 활용
-- 기업 간 관계 등 관계성 정보를 묻는 질문에선 지식 그래프만 검색
-- 사용자가 원할 경우 벡터 DB와 그래프 DB를 모두 활용하도록 명령할 수도 있음(시스템 프롬프트 혹은 명시적 요청)
-- 각 검색 결과는 어느 도구(벡터 검색/그래프 검색)가 사용됐는지 명확히 표시함
-- 해당 AI 에이전트의 무료 템플릿 제공 및 상세 구축법은 전체 영상 링크에서 안내
-- 개발 과정과 실사용 데모, 클라우드 코드(Cloud Code) 기반 개발 지원 정보도 추가 제공
+- 영상은 Antropic 소속 기술진 보리스가 직접 *Claude Code*에 대해 설명함
+- 보리스는 Claude Code의 창시자이자 Entropic의 Technical Staff임을 밝힘
+- 주요 주장은 "더 일반적인 모델이 항상 승리한다"는 인공지능 모델의 특성과, 모델의 능력이 지수적으로 증가하고 있다는 점임
+- 최근 *몇 주 전* Claude를 GitHub에서 사용할 수 있다고 공식 발표함을 강조함
+- 실제 본인은 매주 월요일 스탠드업 미팅 때 Claude에 “이번 주에 내가 배포한 작업이 뭐지?”라고 직접 묻고, Claude가 git 커밋 기록을 분석해 자동으로 알려준다고 함
+- 이런 방식 덕분에 본인이 별도로 작업을 일일이 관리할 필요 없이, Claude가 기록을 대신 정리해준다고 설명함
+- 또 다른 활용 예로 TDD(Test-Driven Development·테스트 주도 개발)를 언급, 과거에는 TDD 실천이 어렵다고 느꼈으나, Claude Code와 같은 코딩 툴이 등장하며 실효성이 훨씬 높아졌다고 평가함
+- 그 이유로, 이제는 사용자가 아닌 AI 모델이 TDD 실행을 도와주기 때문이라고 설명함
+- 영상 마지막에 짧게 감사를 전하고 박수를 받으며 마침
 
 ---
 
 ## 세부 요약 - 주제별 정리
 
-### RAG 전략을 오랜 기간 실험한 끝에 에이전틱 RAG와 지식 그래프의 결합이 가장 인상적임이 확인됨
+### 보리스는 Entropic 기술진이자 Claude Code의 창시자임을 소개함
 
-- 몇 달간 거의 모든 RAG 전략과 방식을 깊게 실험함
-- 지속적으로 되돌아오는 두 가지 방식이 Agentic Rag와 Knowledge Graphs임을 강조
-- 이 두 방식을 결합해 강력한 AI 에이전트를 직접 구축함
-- 새롭게 등장한 결합형 RAG(이 영상을 통해 RAG 2.0으로 명명)
+- 보리스는 자신을 “Entropic의 Technical Staff(기술팀 일원)이자 Claude Code의 크리에이터”라고 명확히 밝힘
+- 엔트로픽(Entropic)은 Claude 시리즈 AI를 개발하는 기업임
+- 본인 경험과 개발 의도를 중심으로 내용이 전개됨
 
-### 에이전트는 질문의 특성을 스스로 판단해 가장 적합한 정보원을 선택함
+### 더 일반적인 AI 모델이 항상 승리하고, AI 모델의 능력은 지수적으로 성장한다고 강조함
 
-- 에이전트는 “질문에 가장 잘 답할 수 있는 곳이 어디인지” 스스로 판단함
-- 질문 유형에 따라, 벡터 데이터베이스 또는 지식 그래프 중 한쪽 또는 양쪽을 선택하여 검색 실행
-- 동적 Reasoning 기반으로 정보 탐색 경로를 결정하는 ‘에이전틱’ 접근법을 강조
+- “The more general model always wins”(더 범용적인 모델이 항상 이긴다)는 주장을 펼침
+- 인공지능 모델의 역량이 “exponentially”(지수적으로) 증가하고 있다고 분석함
+- AI 도구 선택과 활용에서 범용성의 중요성을 강조하는 맥락
 
-### 벡터 데이터베이스는 Postgres와 PG vector, 그리고 Neon 서버리스 플랫폼을 조합해 구축됨
+### 최근 Claude를 GitHub에서 사용할 수 있게 된 공식 발표를 언급함
 
-- 벡터 DB로 Postgres 사용, 벡터 확장(Plugin)인 PG vector를 적용
-- Postgres는 Neon이라는 서버리스 데이터베이스 플랫폼 상에서 운영됨
-- 문서는 일정 크기로 청크(Chunk) 단위로 분할되어 저장됨
-- 각 청크에는 임베딩(Embedding)이 생성되어 벡터 DB에 저장됨
-- 문서 내용은 빅테크 기업의 AI 전략, 이니셔티브, 상호 협력 등
+- 몇 주 전 “Claude를 GitHub에서 사용할 수 있음”을 공식 발표했다고 소개함
+- Claude 코드 어시스턴트 기능이 GitHub 워크플로에 통합 가능한 상황을 시사
+- 사용자들은 Claude를 통해 개발 협업이 한층 강화될 수 있음을 전달함
 
-### 동일 문서를 지식 그래프(Graffiti, Neo4j 이용)에 관계형 데이터로 저장하여, 다양한 질의가 가능해짐
+### 매주 스탠드업 미팅에서 Claude를 활용하여 자동으로 주간 작업 요약을 받는 방법을 실제로 사용함
 
-- 같은 문서 데이터셋을 Graffiti와 Neo4j를 이용해 Knowledge Graph로 구성
-- 지식 그래프는 정보의 구조적/관계적 저장 및 검색에 적합함
-- 예시: “Amazon은 어디에서 Anthropic의 모델을 호스팅하나?”와 같이 기업 간 관계 쿼리가 가능함
-- 벡터 DB 대비, 복잡한 관계 추론에 최적화된 방식임
+- 매주 월요일마다 작업 스탠드업 미팅을 진행한다는 일상적인 개발 프로세스를 예로 듬
+- 매주 “Claude, 이번 주에 내가 배포한 작업(what did I ship that week?)이 뭐지?”라고 직접 물어본다고 설명
+- Claude는 보리스의 git 커밋(git commits) 내역 전체를 스캔하며, 주간 작업과 성과 요약을 자동으로 리포트함
+- 결과적으로 자동화 덕분에 사용자는 별도로 작업 내역을 직접 기록, 정리하지 않아도 됨
 
-### 단일 기업에 관한 질문엔 에이전트가 벡터 데이터베이스만 검색하도록 스스로 판단함
+### TDD 실천이 Claude Code로 인해 현실적으로 쉬워졌다고 평가함
 
-- 예시 질문:“Google의 AI 이니셔티브는 무엇인가?”
-- 에이전트는 질문을 분석한 후 벡터 DB로만 이동해 검색 수행
-- 검색 결과 반환 시, 사용 도구(벡터 DB) 및 결과를 명확히 표기함
+- 테스트 주도 개발(Test-Driven Development·TDD)의 실천을 시도했으나 어려웠던 경험을 솔직하게 설명함
+- “TDD가 실제로는 꽤 어렵게 느껴졌으나, 코딩 도구(Claude Code)와 함께라면 정말 잘 작동한다”고 밝힘
+- 이 변화의 원인으로 “이제 내가 아닌 모델이 직접 해주기 때문”이라고 함(AI가 주요 부분을 담당)
+- AI 코딩 도구가 개발자의 반복적이고 어려운 테스트 실천을 효과적으로 보조함을 시사
 
-### 기업 관계 등 구조적 정보가 필요한 질문엔 지식 그래프만 활용함
+### Claude Code의 실질적 장점은 업무 관리와 개발 생산성에 직결된다고 시사함
 
-- 예시 질문: “Amazon과 Anthropic의 관계는?”
-- 에이전트는 관계 탐색 및 추론이 필요한 질문임을 파악, Knowledge Graph만 활용함
-- 해당 시점 검색 결과 역시 어떤 도구(그래프 DB)가 쓰였는지 명확히 안내함
+- git 커밋 분석과 작업 리포팅 자동화, 그리고 TDD 지원 등 생산성 증대 사례를 구체적으로 언급
+- 반복적 작업이나 유지관리의 부담을 줄여주는 AI 코딩 어시스턴트의 역할을 구체적 실사례 기반으로 전달함
 
-### 사용자는 필요에 따라 두 데이터를 모두 동시에 활용하도록 명령할 수 있음
+### 영상의 결론은 AI 코딩 도구의 실용성과 발전 방향에 대한 짧은 소감으로 마무리됨
 
-- 시스템 프롬프트 수정 또는 명시 요청을 통해 벡터/그래프 DB 동시 검색 실행 가능
-- “두 소스를 모두 활용해 달라”는 명확한 요구에 따라 에이전트가 양쪽 모두에서 검색
-- 더 종합적이고 신뢰할 만한 결과를 얻기 위함
-
-### 실사용 데모를 통해 각각의 활용 상황과 결과 화면을 구체적으로 보여줌
-
-- 각 질의별로 어떤 DB가 검색됐으며, 어떤 결과가 도출됐는지 실제 화면 기술
-- 도구 사용 내역 명시(“The tools used” 등 안내)
-- 사용자에게 검색 프로세스와 데이터 흐름을 이해시키기 위함
-
-### 구축된 에이전트는 무료 공개 템플릿이며, 전체 빌드 과정 및 설치법 영상을 안내함
-
-- 해당 AI 에이전트 템플릿은 누구나 무료로 사용할 수 있음
-- 전체 개발 과정을 설명하는 본 영상 링크(전체 영상)를 별도로 제공
-- 전체 영상에서 실제 상세 구현법, 설치 및 활용법, 코딩 관련 설명까지 진행됨
-
-### 개발 과정에는 Cloud Code 등 개발 효율을 높여주는 도구가 활용됨
-
-- 에이전트 구현 및 배포 과정에서 Google Cloud Code 등 클라우드 개발 도구 사용
-- Cloud Code 활용이 개발 및 배포 과정을 간편하게 지원함을 언급
-- 시청자도 본인을 따라 직접 구현해볼 수 있도록 구체적 안내
+- 보리스는 “Thanks(감사합니다)”로 시청자에게 인사를 전함
+- 그 뒤 박수 소리가 들리며, 영상은 긍정적인 분위기에서 종료됨
