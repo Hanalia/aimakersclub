@@ -1,7 +1,7 @@
 ---
 author: AI Makers Club
-pubDatetime: 2025-10-03T23:45:06.008Z
-title: "Turn ANY File into LLM Knowledge in SECONDS"
+pubDatetime: 2025-10-03T23:45:29.020Z
+title: "The AI Wars are Back! Sonnet 4.5, DeepSeek V3.2, GLM-4.6 are HERE"
 slug: untitled
 featured: true
 draft: false
@@ -9,69 +9,74 @@ tags:
   - AI
   - YouTube 요약
   - 자동 업로드
-description: "영상을 통해 \"Dockling\"이라는 툴을 활용해 다양한 파일에서 데이터를 추출하고, LLM(Large Language Model)에 최적화된 형태로 빠르게 변환하는 과정을 소개함"
+description: "영상은 최근 AI LLM(대형 언어 모델, Large Language Models) 시장의 치열한 경쟁이 다시 점화됨을 알림 이번 여름 동안 새로운 인상적인 LLM 출시가 거의 없"
 ---
 
 <div style="text-align: center;">
   <img src="https://img.youtube.com/vi/untitled/maxresdefault.jpg" alt="YouTube Thumbnail" style="width: 100%; max-width: 640px; height: auto; border-radius: 0.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" loading="lazy" />
 </div>
 
-**영상 링크:** [Turn ANY File into LLM Knowledge in SECONDS](https://www.youtube.com/shorts/7nMolRAdTgc)  
+**영상 링크:** [The AI Wars are Back! Sonnet 4.5, DeepSeek V3.2, GLM-4.6 are HERE](https://www.youtube.com/shorts/QnjpylFaQXQ)  
 **채널명:** Cole Medin
 
-## *어떤 파일이든 몇 초 만에 LLM 지식으로 바꾸는 방법* 핵심 요약
+## *AI 전쟁이 다시 시작됐다! Sonnet 4.5, DeepSeek V3.2, GLM-4.6 공개* 핵심 요약
 
-- 영상을 통해 "Dockling"이라는 툴을 활용해 다양한 파일에서 데이터를 추출하고, LLM(Large Language Model)에 최적화된 형태로 빠르게 변환하는 과정을 소개함
-- Dockling은 문서 내 데이터 추출 뿐 아니라, 데이터 준비 과정의 핵심인 '청킹(chunking)' 단계도 지원한다고 설명함
-- LLM 기반 RAG(Retrieval-Augmented Generation)을 사용할 때, 대용량 문서를 통째로 벡터 데이터베이스에 넣을 수 없으므로, 문서를 쪼개서 관리하는 것이 반드시 필요하다고 강조함
-- 문서를 효과적으로 분할하여 문단, 목록 등 적절한 단위로 LLM이 질의에 정확히 답할 수 있도록 돕는 것이 중요하다고 설명함
-- 청킹을 어떻게 할지 ‘경계(boundaries)’를 잡는 과정이 매우 기술적으로 어렵지만, Dockling에서는 이를 간단하게 해결할 수 있는 다양한 전략을 제공한다고 밝힘
-- Dockling의 간편한 전략 덕분에 사용자는 복잡한 엔지니어링 없이 LLM 친화적 데이터(Nuggets)로 변환 가능
-- LLM이 필요한 질문에 해당하는 정확한 단락이나 리스트만 불러와 정확도와 효율성을 높일 수 있다고 설명
-- 영상 전반에 걸쳐 “효과적인 문서 전처리와 분할은 성공적인 LLM 활용에 필수”라는 메시지를 전달
-- 기술적 배경지식이 없더라도, Dockling 툴을 통해 누구나 손쉽게 AI에 학습을 위한 데이터 준비가 가능함을 강조
+- 영상은 최근 AI LLM(대형 언어 모델, Large Language Models) 시장의 치열한 경쟁이 다시 점화됨을 알림
+- 이번 여름 동안 새로운 인상적인 LLM 출시가 거의 없었으나, 최근 짧은 기간 내 여러 모델이 동시 다발적으로 공개됨
+- Anthropic이 어제 Claude Sonnet 4.5를 출시, 현재 AI 코딩 부문에서 새로운 강자로 평가됨
+- Sonnet 4.5는 기존 Opus 4.1 및 GPT-5 Codecs보다 약간 뛰어나며, 특히 속도가 매우 빠름(직접 테스트 결과)
+- DeepSeek V3.2는 전작 대비 훨씬 빠르고 경량화되었으며, 강력한 성능을 보유함
+- DeepSeek V3.2는 Sonnet 4.5 대비 수십 배 저렴한 가격으로 제공됨
+- 중국에서도 GLM 4.6 모델이 신속하게 공개되어, 벤치마크에서 Sonnet 4.5와 직접 경쟁 중
+- GLM 4.6는 대부분의 벤치마크에서 우위를 차지하며, 시장에서 강력한 경쟁력을 보여줌
+- 벤치마크가 모든 것을 말하지는 않지만, LLM 시장이 다시 역동적이고 흥미진진한 시기로 접어들었음을 강조함
 
 ---
 
 ## 세부 요약 - 주제별 정리
 
-### 대형 언어 모델용 파일 데이터 전처리에서 데이터 추출과 청킹이 모두 필요하다고 강조함
+### AI 전쟁이 다시 시작되며 여름 동안의 잠잠함이 깨졌음을 알림
 
-- 영상의 첫 부분에서 Dockling이라는 툴이 단순히 문서 데이터 추출을 넘어, 문서를 쪼개는 '청킹(chunking)' 기능도 제공한다고 밝힘
-- RAG 방식을 위한 데이터 준비에서, 데이터 추출과 청킹이 모두 중요하다고 설명함
-- 원자료에서 정보를 분리·구조화하는 것이 LLM의 효율적 학습에 필수임을 시사
+- 이번 여름에는 강렬한 관심을 끌만한 새로운 LLM(대형언어모델) 출시가 거의 없었음
+- 그러나 최근 들어 여러 새로운 LLM이 동시에 대거 등장하면서 시장 경쟁이 급격히 가속화됨
+- 영상 초반에서 "AI Wars are back"이라는 선언을 통해 기대감을 강조
 
-### 문서 전체를 한 번에 벡터 데이터베이스에 집어넣는 것은 불가능하다고 지적함
+### Claude Sonnet 4.5가 Anthropic에 의해 공개되며 AI 코딩 분야의 새로운 강자로 부상함
 
-- LLM 기반 RAG(Retrieval-Augmented Generation) 시스템에서는 추출된 문서 텍스트 전체를 한 번에 넣는 것이 현실적으로 불가능하다고 언급
-- “That is way too much for the LLM to retrieve all at once with RAG.”라는 직접 인용을 통해 대용량 문서 전체를 던지는 접근의 한계를 명확히 짚음
-- 특히 문서가 크고 복잡해질수록 이런 한계는 더 커짐
+- Anthropic이 "Claude Sonnet 4.5" LLM을 어제(영상 기준) 공식 출시
+- 영상 제작자는 "probably the new AI coding king(아마도 새로운 AI 코딩 왕)"이라고 직접적으로 평가함
+- 기존의 Opus 4.1, GPT-5 Codecs 대비 약간 더 나은 성능을 보임
+- 특히 속도 측면에서 매우 뛰어남(영상 제작자가 직접 테스트한 결과 빠르다고 언급)
+- GPT-5 Codecs, Opus 4.1과의 기능 성능 차이를 언급하며 비교
 
-### 효과적으로 문서를 작은 정보 단위로 쪼개 LLM이 필요한 정보만 참조하게 하는 것이 중요하다고 설명함
+### DeepSeek V3.2는 경량화와 탁월한 성능, 그리고 저렴한 비용으로 주목받음
 
-- 문장을 청킹(chunking)한다고 할 때, LLM이 질의 시 ‘딱 필요한 정보’만 불러오도록 문서를 분할하는 것이 핵심임
-- 예시로, “그 단락” 또는 “그 불릿 포인트 목록”과 같은 작은 정보 단위만 뽑아 쓸 수 있음을 강조
-- 사용자의 질문에 답하는 데 필요한 최소한의 맥락만 제시해야 LLM의 성능과 효율이 극대화됨을 시사
+- DeepSeek의 새로운 버전, "DeepSeek V3.2"도 동시 공개
+- 속도가 훨씬 더 빨라졌고, 모델 자체가 경량화됨을 언급
+- 전작(DeepSeek 1.x/2.x) 대비 성능과 속도 모두 개선
+- Sonnet 4.5와 비교 시 "literally dozens of times(실제로 수십 배)" 저렴한 비용으로 사용할 수 있음
+- 가격과 성능 양면 모두에서 강점을 강조
 
-### 문서를 어떻게 쪼갤지 경계(boundary) 정의가 기술적으로 매우 까다로운 문제임을 언급함
+### 중국에서 GLM 4.6가 신속히 출시되어 글로벌 LLM 경쟁에 합류함
 
-- 효과적인 청킹의 가장 큰 기술적 난점은 ‘경계’를 어디서 어떻게 자를 것인지 정의하는 것임을 영상 중반부에서 강조
-- 이 문제는 비전문가에겐 매우 복잡한 엔지니어링 이슈임을 시사
-- 적절한 경계 설정 실패 시, 정보 손실 혹은 문맥 누락으로 LLM 응답 품질이 떨어질 수 있다고 암시
+- Anthropic의 Sonnet 4.5 공개 직후, 중국도 즉각 대응해 "GLM 4.6" 모델을 발표
+- 영상에서 "of course, China releases a model right after Anthropic does"라는 표현을 사용하여 속도전 강조
+- 새로운 GLM 4.6은 출시와 동시에 글로벌 벤치마크 경쟁에 뛰어듦
 
-### Dockling이 다양한 청킹 전략 제공으로 문서 전처리·청킹 작업을 쉽게 만들어준다고 설명함
+### GLM 4.6는 대부분의 벤치마크에서 Sonnet 4.5를 능가함
 
-- Dockling 툴은 위에서 언급한 경계 정의 과정을 자동화·단순화할 다양한 전략(strategies)을 제시
-- 다양한 청킹 전략 선택을 지원, 사용자가 용도별로 문서 분할 방식을 바꿔쓸 수 있음을 암시함
-- 덕분에 복잡한 기술 지식 없이도 파일을 ‘LLM 친화적’ 데이터로 손쉽게 만들 수 있음
+- GLM 4.6는 여러 벤치마크(구체적 명칭은 언급 없음)에서 Sonnet 4.5와의 직접 비교가 이루어짐
+- 영상 제작자에 따르면 현재 GLM 4.6가 "most of the benchmarks(대부분의 벤치마크)"에서 Sonnet 4.5를 이기고 있음
+- 벤치마크 결과가 절대적이지는 않다는 점도 언급하나, 단기간에 이루어진 성능 격차에 주목
 
-### Dockling 도입으로 누구나 몇 초 만에 대형 언어 모델에 최적화된 데이터 구축이 가능하다고 강조함
+### LLM 시장이 다시 활기를 띄며, 앞으로의 AI 진화에 기대감을 높임
 
-- 영상 전체가 Dockling의 접근성과 신속함, 간편함을 부각한 흐름으로 진행됨
-- “Turn ANY File into LLM Knowledge in SECONDS”라는 영상 타이틀 그대로 도입·실행 속도의 이점을 반복 강조함
-- 다양한 파일 포맷에 관계없이 손쉽게 문서를 LLM이 검색·활용 가능한 지식 형태로 전환 가능함을 시사
+- 연이은 신모델 등장, 각국의 신속한 경쟁, 빠른 혁신 등으로 LLM 시장이 역동적으로 변화함을 시사
+- 영상 말미에서는 "we're in an interesting and exciting time for LLMs(우리는 LLM 분야에서 흥미롭고 신나는 시기에 있다)"고 총평
+- 벤치마크와 기술력 경쟁만이 아니라, 출시 속도와 실제 사용자 경험도 중요한 시대임을 함의
 
-### Dockling이 기법적 복잡성을 추상화하고 사용자가 본질적인 LLM 활용에 집중할 수 있도록 돕는다고 마무리함
+### 최근 LLM 트렌드는 경쟁, 가격, 속도, 성능이 주요 평가 기준임을 시사
 
-- Dockling의 전략 덕분에 사용자는 청킹·데이터 추출의 반복적 엔지니어링 과정에서 벗어나, 실제 데이터 활용과 LLM 응답 개선에 집중 가능
-- 복잡한 내부 구조 대신, 쉬운 인터페이스와 자동화 전략으로 누구나 전문가 수준의 문서 청킹/전처리가 가능함을 암시하며 영상을 마무리함
+- 각 모델은 '가격 대비 성능'(DeepSeek V3.2), '최신 기술력'(Sonnet 4.5), '국가간 경쟁'(GLM 4.6), '벤치마크 우위' 등 다양한 측면에서 비교됨
+- 사용 목적에 따라 선택 가능한 옵션이 점점 넓어지고 있음
+- 빠른 시장 변화로 인해 LLM 개발 및 출시 주기가 더욱 짧아지고 있음을 단적으로 드러냄
