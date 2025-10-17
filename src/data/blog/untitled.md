@@ -1,7 +1,7 @@
 ---
 author: AI Makers Club
-pubDatetime: 2025-10-17T23:45:42.224Z
-title: "Glue.ai is what Slack Should Have Become (AI/MCP Native Chat Platform)"
+pubDatetime: 2025-10-17T23:46:15.996Z
+title: "Claude Code's Real Purpose (It's Bigger Than You Think)"
 slug: untitled
 featured: true
 draft: false
@@ -9,73 +9,93 @@ tags:
   - AI
   - YouTube 요약
   - 자동 업로드
-description: "영상에서는 제작자가 매일 사용하는 Slack의 업무 비효율성과 혼란스러움을 솔직하게 언급하며 문제점을 제시함 Slack에서 알림 누락으로 인해 중요한 버그 수정 스레드를 3일이나 "
+description: "영상은 스마트폰에서 Claude Code(클로드 코드)에게 \"스스로를 개선하라\"는 명령을 내리는 실제 시연 장면을 보여줌 사용자는 직접 만든 커스텀 에이전트(클로드 에이전트)의 코"
 ---
 
 <div style="text-align: center;">
   <img src="https://img.youtube.com/vi/untitled/maxresdefault.jpg" alt="YouTube Thumbnail" style="width: 100%; max-width: 640px; height: auto; border-radius: 0.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" loading="lazy" />
 </div>
 
-**영상 링크:** [Glue.ai is what Slack Should Have Become (AI/MCP Native Chat Platform)](https://www.youtube.com/shorts/zRrJ9kJDK00)  
+**영상 링크:** [Claude Code's Real Purpose (It's Bigger Than You Think)](https://www.youtube.com/shorts/9PY01cIz2z4)  
 **채널명:** Cole Medin
 
-## *Slack이 지향해야 했던 모습인 Glue.ai - AI/MCP 네이티브 채팅 플랫폼* 핵심 요약
+## *Claude 코드의 진짜 목적(당신이 생각하는 것보다 훨씬 크다)* 핵심 요약
 
-- 영상에서는 제작자가 매일 사용하는 Slack의 업무 비효율성과 혼란스러움을 솔직하게 언급하며 문제점을 제시함
-- Slack에서 알림 누락으로 인해 중요한 버그 수정 스레드를 3일이나 뒤늦게 확인한 실제 사례를 소개함
-- Slack 대화에서 실제 업무로 이어지기 위해 여러 앱을 오가야 했던 불편함을 지적함
-- 최근 시도해본 Glue.ai는 "Slack이 지향했어야 했던 플랫폼"이자, 최초의 멀티플레이어 MCP(Multiplayer Command Platform) 기반 업무 중심 채팅 플랫폼이라고 설명
-- Glue AI는 대화 스레드 내부에 AI가 팀 전체 맥락을 이해한 채로 직접 내장되어 있어, 팀원 모두가 함께 활용 가능
-- MCP 기반 Glue AI는 Asana에서 태스크 업데이트, Notion에서 문서 조회, GitHub 이슈 확인 등 다양한 툴 작업을 대화 내에서 직접 처리할 수 있음
-- Glue는 클릭 한 번으로 연결 가능한 35종의 주요 툴 인앱 MCP 디렉터리를 제공하며, 맞춤 MCP 서버를 통해 수천 개의 다른 도구와도 연동 가능함
-- Glue는 외부 AI 플러그인으로만 채팅에 AI를 얹는 기존 방식과 달리, AI 네이티브 환경에서 진짜 업무 생산성을 목표로 하는 플랫폼임을 강조
-- 채팅 경험이 과거에 머물러 있다고 느끼는 AI 스타트업 및 팀이라면 Glue AI 도입을 고려할 만하다고 권장함
+- 영상은 스마트폰에서 Claude Code(클로드 코드)에게 "스스로를 개선하라"는 명령을 내리는 실제 시연 장면을 보여줌
+- 사용자는 직접 만든 커스텀 에이전트(클로드 에이전트)의 코드 파일을 Claude에게 실시간으로 수정하도록 요청함
+- 구체적으로, Sequential Thinking MCP 서버를 클로드 에이전트에 추가하고자 함
+- 수정되는 파일은 텔레그램 봇에 Sentry가 통합된 코드로, 앞서 기존에 Obsidian 연동 예제에서 Sequential Thinking이 이미 적용된 것을 참조
+- 휴대폰에서 명령을 전송하자마자 Claude Code가 요청을 즉시 받아 작업을 시작
+- Claude가 코드의 옵션 부분을 직접 수정하며, 실시간으로 새로운 기능이 많이 반영됨
+- Sequential Thinking MCP 및 그에 따른 권한 관리(permissions) 기능까지 자동으로 추가 완료됨
+- 이 과정에서, 사용자의 별도 승인 없이 서버의 다양한 도구를 활용할 수 있는 권한까지 설정됨
+- 전체 시연을 통해 Claude Code가 스스로를 개선하는 자동화 능력과 실시간 프로그래밍 편의성을 강조함
+- 영상은 Claude Code의 진정한 목적이 단순한 코드 생성기가 아닌, 코드의 "자율적 자기개선"임을 암시함
 
 ---
 
 ## 세부 요약 - 주제별 정리
 
-### Slack의 혼란스러운 업무 환경은 심각한 비효율을 초래함
+### 스마트폰에서 Claude Code에 직접 명령을 내려 자기개선을 시도함
 
-- 제작자는 본인이 매일 Slack을 사용해 사업을 운영하지만, 점점 더 혼란스러운 환경에 불만을 품게 됐다고 고백함
-- "스레드 관리" 즉, 대화 내용 정리 습관(thread hygiene)에 과실이 있을 수도 있지만, 최근에는 알림 문제로 인해 중요한 스레드를 3일이나 늦게 확인한 경험을 언급함
-- "버그 수정 스레드"를 놓친 사례 등 구체적 예시를 통해 Slack의 알림 및 스레드 구조 한계를 드러냄
-- 채팅에서 실제 작업으로 이어지는 과정에서는 여러 개의 앱(Asana, Notion, GitHub 등)을 계속 번갈아 오가야 하는 번거로움이 있음
-- 이 모든 문제는 결과적으로 실질적인 업무 생산성 저하로 이어짐
+- 사용자는 자신의 스마트폰을 이용해 Claude Code에 직접 지시를 내림
+- 명령의 핵심: "클로드 코드가 자기 자신의 코드를 개선하라"는 것
+- 시연 도중 "이건 정말 미쳤다(so nuts)"라고 언급하며 자동화의 혁신성을 강조
+- 커스텀 클로드 에이전트(Cole Medin이 만든 것)에게 실시간으로 개선 요청
 
-### Glue AI는 Slack의 한계를 보완하는 AI 네이티브 협업 플랫폼임을 내세움
+### Sequential Thinking MCP 서버 추가 요청 과정을 상세히 설명함
 
-- 제작자는 최근 'Glue'라는 제품을 테스트해보았다고 직접 밝힘
-- Glue는 "Slack이 되어야 했던 것", 즉 실제 업무 수행에 최적화된 혁신적인 채팅 플랫폼이라고 평가함
-- Glue는 단순한 채팅 솔루션이 아닌, 최초의 멀티플레이어 MCP(Multiplayer Command Platform) 기반 플랫폼임을 강조함
-- 업무 효율성을 끌어올리는 것이 Glue의 핵심 가치 proposition임
+- Claude 에이전트 코드에 Sequential Thinking MCP 서버 기능을 넣으라고 명령
+- MCP란 'sequential thinking'(순차적 사고) 기능을 상징하는 모듈임
+- 코드를 편집하는 대상 파일은 '텔레그램 봇(Sentry 통합)' 코드
+- 이전에 Obsidian과 연동해 sequential thinking을 이미 구현했던 예제를 참조하라고 첨언
+- Obsidian은 노트나 데이터베이스 관리 툴로, 이전 예제에서 해당 기능 연동을 진행함
 
-### Glue AI는 대화 맥락을 팀 전체와 실시간으로 공유하며 활용 가능함
+### Claude Code가 실시간으로 명령을 처리하고 결과를 반영함
 
-- Glue AI는 개별 메시지 또는 스레드에 내장되어, 전체 팀의 커뮤니케이션 맥락(Full context)를 실시간으로 파악함
-- 팀원 모두가 동일한 AI 도구를 한 대화창 안에서 함께 활용할 수 있음
-- AI가 현재 논의 중인 주제를 파악해 실시간 솔루션 제공이 가능함
+- 명령이 입력되자마자 Claude Code가 "타이핑"을 시작, 바로 작업에 착수함
+- Claude가 Sequential Thinking MCP를 코드에 추가하는 과정을 실시간으로 보여줌
+- 사용자가 코드를 한 줄 한 줄 직접 수정하는 것 없이 AI가 알아서 처리
+- 코드의 옵션(option) 파트를 자동으로 편집함
 
-### MCP 덕분에 다양한 업무 도구들을 대화 내에서 직접 제어할 수 있음
+### 자동 코드 수정 결과와 최신 상태를 즉시 확인할 수 있음
 
-- Glue AI는 MCP(Multiplayer Command Platform) 아키텍처 덕분에 Asana, Notion, GitHub 등 다양한 Saas 툴과 직접적으로 연동됨
-- 예시로, Asana에서 작업(Task)을 업데이트하거나, Notion 문서를 조회하고, GitHub의 이슈 현황을 직접 확인할 수 있음
-- 모두 Glue 채팅창을 벗어나지 않고 처리 가능해, 여러 앱 전환(context switching) 필요성이 사라짐
+- 명령 후 코드가 바로 변경되는 장면을 직접 카메라로 촬영
+- Sequential Thinking MCP가 codebase(코드베이스)에 실시간으로 반영됨
+- 사용자가 화면에서, "이제 바로 바뀌었다!"라고 실시간 반응을 설명
 
-### Glue는 사전연결된 35개 툴 및 수천 가지 맞춤 MCP 서버를 통한 최고의 확장성을 제공함
+### 권한(permissions) 부여까지 자동으로 처리하여 도구 활용을 단순화함
 
-- Glue 내에는 인앱 MCP 디렉토리가 마련되어 있어, 35개 대표 툴을 버튼 클릭 한 번만으로 쉽게 연결할 수 있음
-- 자체적인 커스텀 MCP 서버를 구축하면 수천 가지 추가 도구들의 연동도 가능함
-- “Glue has built the largest in-app MCP directory.”라는 직접적 인용을 통해 플랫폼의 확장성을 강조함
+- Sequential Thinking MCP를 추가함과 동시에 권한(permissions) 세팅도 자동화함
+- 클로드 에이전트가 특정 서버 안의 다양한 도구를 사용할 때 더 이상 사용자 승인 불필요
+- 예시: "서버 내 도구 사용 시 항상 내게 물어보지 않아도 됨"이라는 점을 강조
 
-### Glue는 AI가 단순 부가 기능이 아닌, 근본적으로 통합된 업무 환경을 제공함
+### Claude Code의 목적이 코드 생성 도구를 넘어섬을 암시함
 
-- Glue는 Slack에 외부 AI 플러그인을 장착하는 방식(3rd party tool)과 달리, 아예 처음부터 AI와 MCP가 통합된 네이티브 플랫폼임
-- 즉, Glue에서는 AI가 업무 도구, 팀 커뮤니케이션, 업무 맥락 모두에 깊숙이 녹아들어 있다는 점이 차별화 요소임
-- Glue의 지향점은 ‘팀이 빠르고 효율적으로 일하게 한다’(get work done fast)는 점임
+- 영상의 실질적 메시지는 Claude Code가 단순 코딩 도우미에 그치지 않음을 시사
+- AI가 스스로를 수정·개선하는 자율적 프로그래밍 플랫폼의 가능성을 보여줌
+- 사용자는 직접 손을 대지 않고, 자연어로 추상적인 명령만 내리는 것이 특징
 
-### AI 기반의 협업 업무 혁신을 꿈꾸는 팀에 Glue AI는 매력적인 대안임을 시사함
+### 실시간 AI 기반 자동화가 개발·코딩 환경을 혁신함을 보여줌
 
-- “팀 채팅이 2015년에 머물러 있다고 느낀다면 꼭 Glue AI를 확인해보라.”라는 제작자 발언이 직접 소개됨
-- 반복되는 앱 전환과 맥락 손실, 스레드 혼란에서 벗어나고 싶다면 Glue AI가 대안이 될 수 있음을 전달함
-- 특히 AI 도구를 개발하거나, 최신 SaaS 트렌드에 민감한 스타트업/팀에 유용하다고 시사함
+- 영상 내내 "스마트폰 하나로 AI가 내 코드를 바꾼다"는 혁신적인 흐름을 강조
+- 개발자가 아닌 사람도 곧바로 복잡한 기능을 추가·제거할 수 있게 됨
+- 빠른 피드백, 즉시 적용, 높은 생산성이 장점으로 설명됨
+
+### Obsidian 연동 사례를 과거 경험·참조용 데이터로 적극 활용함
+
+- Sequential Thinking 기능을 구현한 Obsidian 연동 사례를 Claude에게 참고하라고 요청
+- 이처럼 과거 코드 예제를 "AI 자체가 참조"하여 더 나은 결과물을 산출하도록 설계
+- 반복적 작업에서 동일한 코드가 재사용되는 모습을 보여줌
+
+### 전체 시연을 통해 Claude Code의 미래적 가치와 잠재능력을 강조함
+
+- 별도의 추가 개발·인간 손질 없이 오토메이션이 가능한 시대가 옴을 시사
+- 자신만의 커스텀 에이전트에 새로운 기능이 "실시간으로" 추가·업데이트 되는 경험을 설명
+- 영상 후반부에서 변화된 코드와 기능을 즉시 확인하는 모습으로 종합적인 효용성을 부각
+
+### Claude Code의 실질적 사용성과 장점에 대한 풍부한 사례 제공
+
+- 컷마다 "Boom", "There we go" 등 빠른 피드백을 실시간으로 보여주는 장면 자주 등장
+- 복잡한 설정이나 승인이 필요 없는 자동화 프로그래밍의 편의성과 속도를 반복적으로 시연
+- 실사용 과정에서 보여지는 실제 반응과 과정을 통해 Claire Code의 현장감 있는 능력 전달
