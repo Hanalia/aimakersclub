@@ -1,7 +1,7 @@
 ---
 author: AI Makers Club
-pubDatetime: 2025-10-18T23:45:02.918Z
-title: "Claude Code's Real Purpose"
+pubDatetime: 2025-10-18T23:45:26.548Z
+title: "Glue.ai is what Slack Should Have Become (AI/MCP Native Chat Platform)"
 slug: untitled
 featured: true
 draft: false
@@ -9,77 +9,70 @@ tags:
   - AI
   - YouTube 요약
   - 자동 업로드
-description: "**Claude Code는 단순한 코딩 도구를 넘어 자동화 및 워크플로우 통합 등 다양한 활용이 가능함** **Anthropic의 Claude Agent SDK를 활용해 Claud"
+description: "영상에서 제작자는 일상 업무에서 사용하는 Slack의 조직력 부족과 알림 문제로 인해 중요한 스레드를 놓쳤던 불편함을 솔직하게 고백함 Slack에서 업무 관련 대화 후 실제 작업을"
 ---
 
 <div style="text-align: center;">
   <img src="https://img.youtube.com/vi/untitled/maxresdefault.jpg" alt="YouTube Thumbnail" style="width: 100%; max-width: 640px; height: auto; border-radius: 0.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" loading="lazy" />
 </div>
 
-**영상 링크:** [Claude Code's Real Purpose](https://www.youtube.com/shorts/Dhbu6xPLkdQ)  
+**영상 링크:** [Glue.ai is what Slack Should Have Become (AI/MCP Native Chat Platform)](https://www.youtube.com/shorts/zRrJ9kJDK00)  
 **채널명:** Cole Medin
 
-## *Claude 코드의 진짜 목적* 핵심 요약
+## *Glue.ai는 Slack이 지향했어야 할 AI/MCP 네이티브 협업 플랫폼* 핵심 요약
 
-- **Claude Code는 단순한 코딩 도구를 넘어 자동화 및 워크플로우 통합 등 다양한 활용이 가능함**
-- **Anthropic의 Claude Agent SDK를 활용해 Claude Code를 자체 자동화 시스템과 워크플로우에 직접 구축할 수 있음**
-- **이렇게 통합할 경우 상상 이상의 다양한 사용 사례와 가능성이 열림**
-- **텔레그램(Telegram) 메신저에 Claude Code를 직접 연동하여 휴대폰과 컴퓨터에서 손쉽게 사용할 수 있음**
-- **Obsidian 볼트(Obsidian Vault)에 Claude Code를 연결해 본인의 지식 관리, 노트, 유튜브 스크립트 작업에 활용 중**
-- **사용자가 텔레그램에서 메시지를 보내면 곧바로 Obsidian 문서 내용이 자동 수정됨을 실시간으로 확인 가능**
-- **Claude Code는 사용 결과를 텔레그램으로 응답하며, 파일 찾기, 읽기, 편집에 사용한 툴 목록까지 투명하게 안내**
-- **Obsidian에서는 co-pilot community 플러그인 기반의 채팅 인터페이스로 Claude Code와 직접 소통 및 추가 명령 실행 가능**
-- **동일한 스크립트를 Telegram과 Obsidian 양쪽에서 관리하면서, Claude Code가 아이디어 추가 등 실시간 편집을 지원**
-- **이런 통합으로 휴대폰, 컴퓨터, 여러 애플리케이션에서 노트/지식 관리가 Claude Code 덕분에 혁신적으로 간편해짐**
+- 영상에서 제작자는 일상 업무에서 사용하는 Slack의 조직력 부족과 알림 문제로 인해 중요한 스레드를 놓쳤던 불편함을 솔직하게 고백함
+- Slack에서 업무 관련 대화 후 실제 작업을 하려면 여러 앱을 오가야 해서 번거롭고 비효율적임을 지적함
+- 최근 테스트 중인 Glue라는 플랫폼이 Slack의 진화형으로, 최초의 멀티플레이어 MCP(Multiplayer Control Plane) 기반 채팅 플랫폼이라 소개
+- Glue AI는 대화 스레드 내에 완벽히 통합되어 있어 항상 문맥을 파악하며 팀 전체가 효율적으로 활용 가능함
+- MCP 기반이기 때문에 자동화 및 통합력이 탁월하여, Glue 내에서 ASA(아사)에서 업무 업데이트, Notion에서 문서 읽기, Github에서 이슈 확인 등 다양한 도구 접근이 가능함
+- 35개의 협력 도구를 클릭 한 번으로 접속할 수 있는 인앱 MCP 디렉터리 보유, 별도의 MCP 서버를 통한 수천 개의 추가 통합도 지원
+- Glue는 단순 채팅에 AI를 얹은 형태가 아니라, 처음부터 AI와 MCP 통합을 중심으로 설계된 진정한 AI 네이티브 생산성 플랫폼임을 강조
+- 팀 채팅이 여전히 과거 도구에 머물러 생산성에 한계를 느끼는 AI 도구 개발자나 기업에게 Glue AI 사용을 적극 권장함
 
 ---
 
 ## 세부 요약 - 주제별 정리
 
-### Claude Code는 코딩 이상의 자동화 및 통합을 실현할 수 있음
+### Slack의 비효율성과 알림 혼란이 업무 생산성을 저해함
 
-- 영상은 Claude Code가 단순한 코딩 보조 도구 그 이상임을 강조하며 시작함
-- Anthropic의 Claude Agent SDK를 활용해 사용자가 직접 자동화와 워크플로우에 Claude Code를 구현 가능하다고 밝힘
-- 이를 통해 상상 이상의 다양한 활용 사례가 열리며 영상에서는 이를 실제 예제로 보여줌
-- "Cloud Code"라는 명칭 대신 현 영상에서 "Claude Code"가 사용됨을 명확히 함
+- 제작자는 매일 Slack을 사용해 사업을 운영하지만 점점 더 시스템이 체계성을 잃고 있다고 토로함
+- 최근 중요한 버그픽스 관련 스레드의 알림을 3일이나 지나서 뒤늦게 확인, Thread hygiene(스레드 관리)에 문제가 있음을 느낌
+- 이처럼 사소한 알림 문제 하나만으로도 중요한 업무가 지연될 수 있다는 점을 실례로 제시
+- Slack에서 대화 이후 실제 업무를 하기 위해 다양한 앱으로 전환해야 하므로, 맥락 전환(context switching)이 빈번
+- 앱 간 이동의 번거로움이 실질적인 업무 집중을 방해하고, 전체 생산성을 저하한다고 지적
 
-### 사용자는 텔레그램에서 Claude Code를 실시간으로 활용 가능함
+### Glue는 Slack이 진화했어야 할 방향을 제시함
 
-- Claude Code가 텔레그램 메신저에 직접 통합되어 있음
-- 사용자는 스마트폰이나 컴퓨터를 통해 언제 어디서든 Claude Code 기능에 접근 가능
-- 데모 장면에서 실제로 텔레그램 모바일 앱을 통해 메시지를 전송함
-- Claude Code가 해당 요청을 받아 처리하고 결과를 바로 피드백함
+- Glue를 "Slack이 진화했어야 할 모습"이라고 표현, 기존 협업 플랫폼의 한계를 직접적으로 언급
+- Glue는 MCP(Multiplayer Control Plane) 기반의 최초 채팅 플랫폼임을 내세움
+- 단순히 의사소통만 제공하는 것이 아니라, 실제로 일을 "끝낼 수 있는" 생산성 중심의 도구임을 강조
 
-### Obsidian Vault와의 연동으로 개인 지식 관리에 Claude Code가 활용됨
+### Glue AI는 각 스레드 문맥에 완벽하게 통합되어 팀의 생산성을 극대화함
 
-- 사용자의 Obsidian Vault가 "두 번째 두뇌(Second Brain)"로 쓰임을 언급함
-- 해당 Vault에는 노트 작성, 유튜브 스크립트 작성 등 다양한 작업물이 저장됨
-- Claude Code와 Obsidian Vault의 연동을 통해 자동화된 지식 관리가 실현됨
-- 예시로 "AI 자동화 필요 목록 스크립트에 개인용 AI 자동화 아이디어를 불릿 포인트로 추가" 요청이 시연됨
+- Glue AI는 대화 스레드 내부에 자연스럽게 상주하며, 스레드의 모든 맥락을 실시간으로 파악함
+- 팀 전체가 AI를 동시에 활용하여, 정보의 흐름과 맥락 단절 없이 일을 진행할 수 있음
+- AI가 개별 사용자를 보조하는 데 그치지 않고, 팀 전체를 위한 집단적 지능(Collective Intelligence) 역할도 수행
 
-### 텔레그램-Obsidian 간 데이터 연결로 자동화 결과를 실시간 확인 가능함
+### MCP 기반 아키텍처 덕분에 외부 도구 접근성이 탁월하게 개선됨
 
-- 사용자가 텔레그램에서 명령을 입력하면 Claude Code가 이를 즉시 실행함
-- Obsidian Vault 내 해당 문서에 불릿 포인트 아이디어 목록이 자동으로 추가됨
-- 이 과정을 컴퓨터 화면에서 실시간으로 확인할 수 있도록 영상에서 보여줌
-- Claude Code가 변화 사항을 텔레그램 대화창으로 요약해서 전달
+- MCP 기반이라 Glue AI는 사용자 조직의 모든 업무 도구·서비스에 직접 접근 가능함
+- 예시로 ASA에서 업무(Task) 업데이트, Notion에서 문서 열람, Github에서 이슈 확인 등 다양한 워크플로우가 채팅 내에서 바로 처리됨
+- 사용자는 Glue 대화창을 떠날 필요 없이 모든 업무를 수행 가능
 
-### Claude Code는 처리 과정과 사용 도구를 투명하게 알림
+### 사용자 경험을 완전히 바꾸는 통합 디렉터리 제공
 
-- Claude Code는 단순히 결과만 보여주는 것이 아니라, 어떤 파일을 찾고 어떻게 읽고 편집했는지를 구체적으로 안내
-- 사용된 툴 및 프로세스를 마치 터미널(Command-line) 환경에서 로그를 보듯 투명하게 보여줌
-- 이러한 투명성으로 사용자는 Claude Code의 동작과정을 신뢰할 수 있음
+- Glue는 이미 35개 주요 SaaS 및 협업 도구를 인앱 MCP 디렉터리를 통해 단 1번의 클릭으로 연결할 수 있도록 지원
+- 자체 인프라를 넘어서, 수천 개의 추가 통합이 가능한 커스텀 MCP 서버 기능도 제공
+- 업무 자동화와 외부 데이터 연동 등 실질적인 생산성 혁신을 쉽게 구현할 수 있음
 
-### Obsidian에 Claude Code를 직접 통합해 플러그인 기반 채팅이 가능함
+### Glue는 타사 AI-채팅 도구와 달리 ‘AI 네이티브’ 플랫폼으로 설계됨
 
-- Claude Code를 Obsidian 소프트웨어 내부에도 직접 통합함
-- co-pilot community 플러그인을 활용하면 Obsidian에서 채팅 창을 통해 Claude Code와 바로 대화 및 명령이 가능
-- 예시로 Obsidian에서 "같은 스크립트에 개인용 AI 자동화 아이디어를 좀 더 추가해달라"고 요청
-- Claude Code가 새로운 아이디어(예: 여행 계획 어시스턴트 등)를 불릿 포인트로 실시간 추가함
+- Slack 등 기존 플랫폼에 ‘외부 AI’가 어설프게 접목된 것과 달리, Glue는 AI와 MCP가 플랫폼 근간에 녹아든 구조임
+- Glue는 단순한 채팅 플랫폼이 아니라, 진정한 AI 네이티브 협업 툴로 포지셔닝함
+- 이를 통해 빠른 업무 처리와 최소한의 맥락 전환이라는 명확한 목표 달성이 가능해짐
 
-### 여러 애플리케이션 간 Claude Code 연동으로 지식 관리가 혁신적으로 향상됨
+### 최신 AI 도구를 활용 중이지만, 팀 채팅이 뒤처졌다고 느낀다면 Glue가 대안임을 피력함
 
-- 동일한 스크립트와 메모를 텔레그램과 Obsidian 등 여러 도구에서 동시에 접근, 관리 가능
-- Claude Code 덕분에 스마트폰과 PC 등 다양한 디바이스에서 끊김 없이 협력적인 작업 환경 구축
-- 개인용 AI 자동화, 지식 관리, 아이디어 발전 등 다양한 워크플로우에 Claude Code가 실질적 도움을 줌
-- 영상을 통해 Claude Code가 크로스 플랫폼 노트 관리 및 자동화의 새로운 표준임을 실감케 함
+- 제작자는 "팀 채팅이 2015년에 머물러 있다면 Glue AI를 확인해 보라"는 메시지로 영상 마무리
+- AI 및 현대적 워크플로우에 익숙한 개발자는 물론, 모든 팀이 생산성 극대화를 위해 Glue AI 도입을 고려할 가치가 있음을 시사함
