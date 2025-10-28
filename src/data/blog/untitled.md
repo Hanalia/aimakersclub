@@ -1,7 +1,7 @@
 ---
 author: AI Makers Club
-pubDatetime: 2025-10-28T08:19:43.463Z
-title: "Claude Code's Real Purpose"
+pubDatetime: 2025-10-28T23:44:58.141Z
+title: "First LIVE Agent Build - Fullstack RAG Agent for YouTube Content"
 slug: untitled
 featured: true
 draft: false
@@ -9,85 +9,90 @@ tags:
   - AI
   - YouTube 요약
   - 자동 업로드
-description: "**Claude Code는 단순한 코딩 도구가 아니며, 개인의 지식 관리 및 워크플로우 자동화에도 다양한 방식으로 활용 가능함** **Anthropic의 Claude Agent S"
+description: "영상의 목표는 크리에이터 본인의 YouTube 콘텐츠 전체를 활용하는 **개인 AI 코치 에이전트**를 라이브로 직접 만드는 데 있음 최종적으로 **ChatGPT와 유사한 채팅 인"
 ---
 
 <div style="text-align: center;">
   <img src="https://img.youtube.com/vi/untitled/maxresdefault.jpg" alt="YouTube Thumbnail" style="width: 100%; max-width: 640px; height: auto; border-radius: 0.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" loading="lazy" />
 </div>
 
-**영상 링크:** [Claude Code's Real Purpose](https://www.youtube.com/shorts/Dhbu6xPLkdQ)  
+**영상 링크:** [First LIVE Agent Build - Fullstack RAG Agent for YouTube Content](https://www.youtube.com/shorts/fIhrCphrfL0)  
 **채널명:** Cole Medin
 
-## *Claude Code의 진짜 목적* 핵심 요약
+## *첫 라이브 에이전트 구축 - YouTube 콘텐츠용 풀스택 RAG 에이전트* 핵심 요약
 
-- **Claude Code는 단순한 코딩 도구가 아니며, 개인의 지식 관리 및 워크플로우 자동화에도 다양한 방식으로 활용 가능함**
-- **Anthropic의 Claude Agent SDK를 통해 Claude Code를 사용자 맞춤형 자동화와 워크플로우에 통합할 수 있음**
-- **Telegram에 Claude Code를 직접 연동하여 어디서든 스마트폰으로도 Claude의 기능을 활용할 수 있도록 함**
-- **Obsidian 노트 저장소(‘second brain’)와 Claude Code를 연동, 노트 필기 및 유튜브 스크립트 작업에 Claude Code의 지원을 접목**
-- **Telegram 메시지로 AI 자동화 아이디어 불릿 리스트 추가 요청을 보내면 Claude Code가 자동으로 Obsidian 내 해당 파일에 내용을 삽입함**
-- **AI가 작업에 사용한 도구(파일 찾기, 읽기, 수정 등)를 Telegram 메시지로 상세하게 알려주어, 투명하고 신뢰감 있는 작업이 이루어짐**
-- **Obsidian 내에서도 Copilot Community Plugin을 사용해 Claude Code와 직접 대화, 추가 요청(예: 자동화 아이디어 추가)을 빠르게 반영할 수 있음**
-- **Claude Code와의 연동을 통해 스마트폰과 데스크탑을 넘나드는 자유로운 지식 관리, 콘텐츠 작성, AI 기반 워크플로우 자동화가 실현됨**
-- **주요 사용 예: 여행 일정 도우미 등 다양한 AI 기반 자동화 아이디어를 누구나 손쉽게 노트와 연동하여 추가 및 활용하도록 구현**
-- **결론적으로 Claude Code는 사용자의 일상적 생산성과 지식관리, 창의 작업까지 확장된 활용성을 자랑함**
+- 영상의 목표는 크리에이터 본인의 YouTube 콘텐츠 전체를 활용하는 **개인 AI 코치 에이전트**를 라이브로 직접 만드는 데 있음
+- 최종적으로 **ChatGPT와 유사한 채팅 인터페이스**를 제공하되, 내부적으로는 고급 RAG(Retrieval-Augmented Generation) 에이전트가 작동함
+- 해당 에이전트는 크리에이터의 **YouTube 영상 데이터 전체**를 훈련 자료로 삼아 작동
+- 문서 데이터를 처리하는 과정에서 **하이브리드 청킹(hybrid chunking)** 전략을 적용하며, 이 전략이 최근 RAG 성능을 크게 끌어올렸음
+- 다양한 청킹 기법을 실험해본 결과, 하이브리드 청킹이 가장 탁월한 효과를 보여줌
+- 청킹 파이프라인 구성에는 **Dockling** 라이브러리를 사용, 결과는 **Supabase**에 저장
+- 에이전트 구현에는 **pideantic AI**가 사용됨
+- 영상의 주 내용은 YouTube 데이터용 RAG 파이프라인을 단계별로 구축하는 라이브 실습에 집중
+- 영상 도입부에서 바로 **RAG 파이프라인 구축**을 시작하며, 이를 기반으로 전체 라이브 실습이 진행됨
+- 크리에이터가 오랫동안 제작을 희망해온 프로젝트임을 밝히며, 새로운 AI 도구와 전략에 대한 기대감을 드러냄
 
 ---
 
 ## 세부 요약 - 주제별 정리
 
-### Claude Code는 단순 코딩 도구가 아닌 다양한 워크플로우 자동화 플랫폼임을 시연함
+### 크리에이터가 오랜 기간 준비해온 개인 AI 코치 에이전트 구축 의지를 밝힘
 
-- Claude Code는 기존의 ‘코딩만을 위한 툴’이라는 인식을 넘어, 다양한 종류의 업무 자동화와 지식 관리에 활용할 수 있음을 강조함
-- Anthropic의 Claude Agent SDK를 네이티브로 활용하면 맞춤형 자동화나 개인화된 워크플로우를 손쉽게 구축할 수 있음
-- 영상의 목적은 Claude Code의 응용 가능성을 “풀어 설명”하는 것에 있음
+- Cole Medin은 자신의 채널에 맞는 **AI 에이전트**를 오래전부터 만들고 싶었다고 언급
+- 해당 에이전트는 **AI 에이전트 및 AI 코딩 관련 주제**를 다루는 개인 코치 역할을 하도록 설계
+- 영상에 대한 높은 기대감과 의욕을 드러내며 실시간 구축 과정을 안내할 것임을 밝힘
 
-### Telegram 연동을 통해 Claude Code를 언제 어디서나 활용 가능함을 보여줌
+### 목표는 대화형 인터페이스와 YouTube 콘텐츠 전체를 활용한 진보된 RAG 시스템 구축임
 
-- Telegram 메시저에 Claude Code를 직접 통합, 스마트폰과 PC 어디서든 같은 Claude Code의 기능을 사용할 수 있게 구현함
-- 실제로 Telegram 채팅에서 Claude Code와 연동하여 요청을 보냄
-- 이로 인해 이동 중이거나 PC가 없는 상황에서도 지식관리나 워크플로우 자동화를 Claude와 함께 실현할 수 있음
+- 최종 목표는 **ChatGPT**처럼 자유롭게 질문할 수 있는 **채팅 인터페이스**를 구현하는 것임
+- 다만 표면상 채팅 구조일 뿐, 내부에서는 **YouTube 영상 전체 정보를 학습한 RAG 에이전트**가 동작
+- 자연스러운 질문-응답 구현과 더불어, 유튜브 채널의 모든 지식을 최대한 활용하는 정보를 제공하는 것이 목적
 
-### Obsidian 노트 저장소와의 연동으로 Claude Code가 '두 번째 뇌'의 역할을 수행함을 입증함
+### RAG 파이프라인 구축이 라이브의 핵심이며, 이를 위해 하이브리드 청킹 전략이 선택됨
 
-- 개인 지식관리 도구(Obsidian)의 ‘Vault’에 Claude Code를 연동해, 노트 필기, 유튜브 스크립트 작성 등 창의적 업무에 Claude의 도움을 받음
-- Claude Code가 Obsidian Vault 내 문서를 자유롭게 탐색, 수정 및 생성할 수 있도록 자동화함
-- Obsidian Vault를 “second brain(두 번째 뇌)”로 부르며, 전반적인 정보와 지식작업에서 AI의 활용성을 높임
+- 라이브 스트림 초반부에서 가장 먼저 **RAG 파이프라인 구축** 작업을 시작할 예정임을 언급
+- RAG(Retrieval-Augmented Generation) 기법을 도입하여 대화형 시스템의 답변 신뢰도를 높일 예정
+- **하이브리드 청킹(hybrid chunking)** 이라는 데이터 분할 전략을 핵심적으로 사용
+- 해당 청킹 전략 도입이 RAG 성능을 대폭 개선시킨 요인임을 강조함
 
-### 실제 예시를 통해 Claude Code의 실시간 자동화 및 응답 확장성을 시연함
+### Dockling 라이브러리와 Supabase를 활용해 데이터 전처리와 저장을 효율적으로 처리함
 
-- 스마트폰의 Telegram 앱에서 “AI 자동화 아이디어 불릿 리스트를 내 스크립트에 추가”라고 명령
-- Claude Code가 명령을 수신, Obsidian Vault 내 관련 파일(YouTube 스크립트)을 찾아 내용을 수정함
-- 결과는 PC에서 Obsidian을 열었을 때 곧바로 나타나며, AI가 어떠한 경로로 파일을 찾고 수정했는지까지 Telegram 메시지로 상세히 회신
-- 이는 마치 AI 코딩 어시스턴트 터미널에서 작업 로그를 보는 것과 유사함
+- 데이터 청킹 및 전처리 단계에서 **Dockling** 라이브러리를 적극 활용한다고 밝힘
+- 파이프라인에서 처리된 데이터는 **Supabase**에 저장하여 향후 질의응답에 사용할 수 있도록 함
+- 기존 다양한 청킹 기법 대비 Dockling과 하이브리드 전략이 월등한 성능을 보였다는 경험 공유
 
-### Obsidian 내 Copilot Community Plugin을 이용하여 Claude Code와 직접 대화하며 추가 요청을 반영할 수 있음을 강조함
+### 하이브리드 청킹 전략이 기존 청킹 방식들에 비해 현저히 높은 효과를 보여줌
 
-- Telegram 외에도 Obsidian 내에 Claude Code 전용 채팅 인터페이스가 존재함
-- Copilot Community Plugin을 통해 Claude와 직접 소통, 추후 요청(예: “AI 자동화 아이디어 몇 개 더 추가”) 즉시 실행 가능
-- AI가 Obsidian 내 동일한 파일을 찾아 새로운 자동화 아이디어(예: 여행 일정 관리 등의 역할)를 추가함
-- 채팅 인터페이스는 실시간 협업 느낌을 제공, 생산성과 창의 업무의 경계를 흐림
+- 기존에는 다양한 커스텀 청킹 기법도 시도했으나, 기대한 수준의 결과를 얻지 못함
+- 하이브리드 청킹 방식이 실제로 **RAG 프로젝트의 효율을 "미친 수준"으로 끌어올렸다**고 평가
+- 설계의 핵심 동기가 높은 데이터 일관성과 응답의 정확성 확보에 있음을 암시
 
-### Claude Code가 투명한 작업 내역 공유로 사용자 신뢰를 높임
+### pideantic AI를 활용하여 실제 에이전트 구현에 돌입함
 
-- 각 작업 과정에서 Claude Code가 실제로 어떤 툴(파일 찾기, 읽기, 편집 등)을 사용했는지 상세히 설명함
-- 사용자는 AI의 파일 접근 및 수정 내역을 채팅 메시지에서 확인 가능
-- 이는 기존 AI 코드 어시스턴트의 터미널 로그와 유사한 투명한 피드백 구조임
+- Dockling 및 Supabase로 데이터 파이프라인이 완성되면, **pideantic AI**를 이용해 RAG 에이전트 구현
+- pideantic AI는 문맥적 질의응답, 대화 상태 관리 등 에이전트의 본질적 기능을 지원
+- 전체 구현 흐름: 데이터 청킹 및 저장 → pideantic AI로 에이전트 설계 및 배포
 
-### Claude Code를 이용한 지식관리, 콘텐츠 작성, 워크플로우 자동화가 각 플랫폼에서 원활하게 연결됨
+### 라이브 실습의 전체 진행 구조와 요약
 
-- Telegram, Obsidian 등 여러 앱을 넘나들며 Claude Code 기반 자동화가 원활하게 연동됨을 확인
-- 스마트폰과 데스크탑 어디서든 동일한 AI 기능을 사용할 수 있음
-- 즉, 개인의 정보 환경, 노트, 작업물을 하나의 AI 인터페이스로 통합 가능함
+- 라이브 스트림의 전체 흐름: RAG 파이프라인 구축 → Dockling 및 Supabase 적용 → pideantic AI 기반 에이전트 구축
+- 각 단계별로 실시간 구현 과정을 시연하며, 구체적인 코드나 설계를 직접 보여주는 방식임
+- 실습은 영상 초반부터 RAG 기반 데이터 파이프라인 설계에 집중
 
-### Claude Code의 실용 예시로 다양한 AI 기반 개인 자동화 리스트 생성을 강조함
+### 채팅형 AI 코치의 활용 예시는 크리에이터의 콘텐츠 특화 지식 전달에 초점을 둠
 
-- “Potential personal AI automations(잠정적 개인 AI 자동화)” 리스트에 다양한 아이디어가 추가됨
-- 예시: 여행 일정 도우미(travel planning assistant) 등 구체적 개인화 AI 서비스가 곧바로 노트에 추가됨
-- 이런 식의 자동화된 아이디어 생성과 편집은 반복적인 업무 효율화에 큰 도움이 됨
+- AI 코치는 **Cole Medin의 YouTube 콘텐츠 전체**의 맥락, 팁, 노하우, 역사, 상세 내용 등에 기반해 답변
+- 질문자는 일반적인 AI 질문뿐만 아니라, 채널 고유의 세부 콘텐츠 맥락까지 자유롭게 질의 가능
+- "챗GPT처럼" 물어볼 수 있지만, 답변 품질과 출처 신뢰성이 크게 향상됨
 
-### Claude Code의 통합은 사용자의 생산성, 지식관리, 창의적 작업 모두를 한 단계 끌어올림을 보여줌
+### 프로젝트 추진의 동기와 기대감을 구체적으로 언급
 
-- 다양한 환경(모바일, 데스크톱, 노트 앱)에 Claude Code를 심층 통합함으로써 생산성과 지식관리, 창작 작업이 AI와 함께 자동화됨
-- 사용자는 별도의 복잡한 코딩 또는 수작업 없이 손쉽게 정보 생성, 관리, 아이디어 확장 등 고차원의 업무를 할 수 있음
-- 영상은 Claude Code의 본질적인 목적과 확장된 활용범위를 실질적 예시와 함께 구체적으로 전달함
+- 크리에이터 자신이 본 프로젝트를 오랫동안 열망해 왔음을 강조
+- Dockling, 하이브리드 청킹 등 **최신 AI·RAG 도구와 전략**을 결합함으로써 기존에 경험하지 못한 수준의 결과를 기대
+- 본 라이브 빌드가 해당 기술 조합의 실효성을 검증하는 장이 될 것임을 시사
+
+### 실습의 주요 도구와 기술 스택을 모두 안내하며 개방성을 강조함
+
+- 실무 구현에 사용된 주요 도구: **Dockling**(데이터 청킹), **Supabase**(데이터베이스), **pideantic AI**(에이전트)
+- 라이브 진행 과정에서 각각의 도구들 적용 배경과 장점을 상세히 설명
+- 전체 구현 과정을 투명하게 시연하며, 시청자는 실시간으로 모든 단계를 확인할 수 있음
