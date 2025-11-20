@@ -1,7 +1,7 @@
 ---
 author: AI Makers Club
-pubDatetime: 2025-11-20T08:20:02.893Z
-title: "MCP is INSECURE - Here's Why and How to Fix it"
+pubDatetime: 2025-11-20T23:45:05.705Z
+title: "The ONLY AI Tech Stack You Need in 2026"
 slug: untitled
 featured: true
 draft: false
@@ -9,96 +9,20 @@ tags:
   - AI
   - YouTube 요약
   - 자동 업로드
-description: "이 영상은 MCP(Machine Control Protocol) 서버의 심각한 보안 문제점과 그 해결책을 상세히 분석함 주요 보안 위험 3가지는 민감한 데이터 노출, 필요 이상의 "
+description: "Error: Exception: Request failed for https://api.openai.com returned code 502. Truncated server resp"
 ---
 
 <div style="text-align: center;">
   <img src="https://img.youtube.com/vi/untitled/maxresdefault.jpg" alt="YouTube Thumbnail" style="width: 100%; max-width: 640px; height: auto; border-radius: 0.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" loading="lazy" />
 </div>
 
-**영상 링크:** [MCP is INSECURE - Here's Why and How to Fix it](https://www.youtube.com/shorts/b1zI8pyCE38)  
+**영상 링크:** [The ONLY AI Tech Stack You Need in 2026](https://www.youtube.com/shorts/wDTIQYxB71U)  
 **채널명:** Cole Medin
 
-## *MCP는 안전하지 않다 - 그 이유와 해결 방법* 핵심 요약
-
-- 이 영상은 MCP(Machine Control Protocol) 서버의 심각한 보안 문제점과 그 해결책을 상세히 분석함
-- 주요 보안 위험 3가지는 민감한 데이터 노출, 필요 이상의 접근 권한 부여, 서버 사용에 대한 감사 및 추적 불가임
-- GitHub MCP 사례로 설명하며, 민감한 키와 토큰이 평문으로 저장되어 쉽게 노출될 수 있음을 지적함
-- OAuth 등 인증 방식도 해결책이 되지 못하며, 여전히 장기 토큰이 머신에 저장되고 과도하게 많은 권한을 가짐
-- MCP 서버는 사용자별 권한을 세밀하게 통제할 수 없으며, 예를 들어 팀원에게 읽기 전용 접근만 주는 것이 불가함
-- 이러한 문제를 해결하려면 엔터프라이즈급 플랫폼이 필요하며, Teleport가 그 역할을 수행할 수 있음
-- Teleport를 사용하면 각 MCP 서버가 보호되고 모니터링되며, 접속 시 계정에 맞는 JWT(Just In Time Token) 발급으로 보안성이 향상됨
-- Teleport 플랫폼 내에서 감사 로그로 모든 MCP 호출 내역과 파라미터를 세밀하게 추적·분석할 수 있음
-- 사용자는 역할 기반으로 MCP 서버의 접근 권한을 세밀하게 설정 가능
-- 영상 속 예시와 함께 Teleport 활용법, 장점, 실제 데모가 함께 소개됨
-
----
-
-## 세부 요약 - 주제별 정리
-
-### MCP 서버는 보안에 심각한 문제를 내포하고 있음
-
-- 많은 이들이 MCP 서버가 유용하지만 동시에 심각한 보안 위험이 있다고 평가함
-- 위험 요소가 다양하며, 그중 세 가지가 가장 크다고 언급
-    - 민감한 데이터(예: API 키, 토큰 등) 노출
-    - 필요 이상의 광범위한 접근 권한 제공
-    - 서버 사용 내역에 대한 감사(audit)·추적(trace)이 불가능함
-- 이런 보호 미비는 내부·외부 공격자에게 심각한 정보를 노출할 위험을 높임
-
-### 민감 정보가 평문 상태로 저장되어 키 유출 위험이 상존함
-
-- GitHub MCP를 예시로, 개인 사용자의 액세스 토큰을 config 파일에서 평문으로 저장해야 했음
-- 중요한 정보(키, 토큰 등)를 쉽게 외부에 노출할 수 있는 구조임을 실제 화면으로 확인
-- 단순히 토큰을 "블라인드 처리"하거나 OAuth 인증으로 대체해도 본질적인 위험은 해소되지 않음
-- OAuth조차 토큰이 머신에 평문으로 저장되고, 여전히 그 범위가 지나치게 광범위함을 강조
-
-### MCP 서버의 권한 설정이 지나치게 느슨하며, 미세 조정이 불가함
-
-- MCP 클라이언트에서 GitHub MCP를 사용할 경우, 거의 모든 기능에 대한 접근 권한이 기본적으로 부여됨
-- 특정 사용자(예: 팀원)에게 제한된, 예컨대 읽기 전용 권한만 부여하는 것이 불가함
-- 저장소별, 사용 사례별, 팀 내별 권한 분리가 불가능해 실제 기업 환경에서는 위험 관리가 어려움
-
-### MCP 서버의 사용 내역에 대한 감사(Audit), 추적(Trace)이 불가능함
-
-- MCP 서버 접근 및 사용 관련 행위를 기록하거나 추적할 수 있는 수단이 구조상 없음
-- 누가 언제 어떤 데이터를 접근·변경했는지 알 수 없어, 내부 통제 및 침해 사고 대응이 불가
-- 이로 인해 기업 내부 보안 정책 및 컴플라이언스 준수에 심각한 문제가 발생할 수 있음
-
-### 기존 환경은 엔터프라이즈급 보안·통제가 근본적으로 어려움
-
-- 문제를 해결하려 여러 방법을 찾아봤으나, 대부분의 솔루션이 엔터프라이즈(기업)급 요구사항을 충족하지 못함
-- 별도의 보안 래핑 또는 플랫폼이 MCP 위에 덧씌워져야 함
-- 단순 MCP 서버 자체만으로는 안전한 환경을 만들 수 없음
-
-### Teleport 플랫폼이 MCP 보안 문제를 근본적으로 해결함
-
-- Teleport라는 엔터프라이즈급 보안·접근 관리 플랫폼을 제안
-- Teleport 위에서 MCP 서버가 “보호된 감시 리소스(protected and observable resource)”로 동작함
-- 사용자는 Teleport에 로그인할 때마다 계정별 권한이 반영된 JIT(Just-In-Time) 토큰만을 받아 사용
-- 기존 MCP config에는 더 이상 비밀키·토큰이 저장되지 않아 노출 위험이 사라짐
-- 서버 연결·연동 과정이 기존과 큰 차이 없이 쉽게 구현됨
-
-### Teleport의 프록시 구조가 모든 MCP 트래픽을 안전하게 통제함
-
-- Teleport가 MCP 서버와 애플리케이션 사이에 프록시 역할을 수행함
-- 모든 요청·응답이 Teleport를 거쳐 실시간으로 감사 및 접근 통제를 받음
-- 예시로 GitHub MCP 서버를 Teleport 하에서 작동시키는 데모를 영상에서 보여줌
-
-### Teleport를 통한 감사(Audit)와 사용 행위의 완벽한 기록·분석
-
-- Teleport 플랫폼 내 Audit Log 기능을 통해 모든 MCP 호출 내역을 상세히 추적 가능
-- 어떤 서버에서, 어떤 툴로, 어떠한 파라미터로 접근·호출이 발생했는지 확인 가능
-- 실제 Claw Desktop 애플리케이션에서 이뤄진 최근 호출까지 추적하는 시연을 진행
-- 내장된 에이전트가 이상 징후(Outlier) 탐지 등 고급 분석 기능을 제공함
-
-### Teleport 역할 기반 권한 관리(Zero Trust Access)로 접근 권한을 세밀하게 통제함
-
-- Teleport 플랫폼의 Zero Trust Access 구조를 통해 MCP 서버별, 역할별 세부 권한 설계·배분 가능
-- MCP 서버 구성에서 각 역할별로 어떤 툴, 어떤 권한을 부여할지 UI상에서 간편하게 조정 가능
-- 팀, 사용자 그룹, 환경별로 필요한 최소한의 접근만 허용 가능함을 실제 화면으로 보여줌
-
-### Teleport가 MCP 활용 시 보안성과 확장성을 모두 향상시킴
-
-- MCP의 보안 문제 및 한계를 Teleport로 근본적으로 해결할 수 있음이 데모와 함께 구체적으로 소개됨
-- 추가로, Teleport 연결 및 설정 방법에 관한 더 자세한 안내를 영상 설명란에서 제공한다고 언급함
-- 영상 제작자로서 Teleport 팀에 협업 감사를 표하며, 이와 같은 보안 문제에 대해 꾸준히 조사·고민해 왔음을 밝힘
+Error: Exception: Request failed for https://api.openai.com returned code 502. Truncated server response: <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>cloudflare</center>
+</body>
+<... (use muteHttpExceptions option to examine full response)
