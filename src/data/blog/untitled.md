@@ -1,7 +1,7 @@
 ---
 author: AI Makers Club
-pubDatetime: 2025-11-20T23:45:05.705Z
-title: "The ONLY AI Tech Stack You Need in 2026"
+pubDatetime: 2025-11-20T23:45:37.490Z
+title: "MCP is INSECURE - Here's Why and How to Fix it"
 slug: untitled
 featured: true
 draft: false
@@ -9,20 +9,90 @@ tags:
   - AI
   - YouTube 요약
   - 자동 업로드
-description: "Error: Exception: Request failed for https://api.openai.com returned code 502. Truncated server resp"
+description: "영상은 MCP(Machine Control Protocol) 서버가 널리 사용되지만, 보안상 심각한 위험이 존재함을 지적하며, 구체적 문제와 해결책을 제시함 가장 큰 보안 위험 3"
 ---
 
 <div style="text-align: center;">
   <img src="https://img.youtube.com/vi/untitled/maxresdefault.jpg" alt="YouTube Thumbnail" style="width: 100%; max-width: 640px; height: auto; border-radius: 0.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" loading="lazy" />
 </div>
 
-**영상 링크:** [The ONLY AI Tech Stack You Need in 2026](https://www.youtube.com/shorts/wDTIQYxB71U)  
+**영상 링크:** [MCP is INSECURE - Here's Why and How to Fix it](https://www.youtube.com/shorts/b1zI8pyCE38)  
 **채널명:** Cole Medin
 
-Error: Exception: Request failed for https://api.openai.com returned code 502. Truncated server response: <html>
-<head><title>502 Bad Gateway</title></head>
-<body>
-<center><h1>502 Bad Gateway</h1></center>
-<hr><center>cloudflare</center>
-</body>
-<... (use muteHttpExceptions option to examine full response)
+## *MCP는 안전하지 않다 - 그 이유와 해결 방법* 핵심 요약
+
+- 영상은 MCP(Machine Control Protocol) 서버가 널리 사용되지만, 보안상 심각한 위험이 존재함을 지적하며, 구체적 문제와 해결책을 제시함
+- 가장 큰 보안 위험 3가지는 민감한 데이터 노출, 과도한 접근 권한, 감사 및 추적 불가능성임
+- 예시로 GitHub MCP 서버를 들어, 평문으로 비밀 키를 저장해야 하고, '퍼미션 범위가 과도하게 넓은 토큰'을 사용해야 함을 설명
+- OAuth가 도입되어도, 실제로는 장기간 유효하고 과도한 권한이 부여된 토큰을 사용자 PC에 저장하기 때문에 해결책이 되지 못함
+- MCP 서버 사용 시 개별 사용자의 접근 권한(예: 단순 Read 권한 제한 등) 설정이 불가능하여, 팀원별 세부 권한 제어가 안 됨
+- 실질적으로 안전한 MCP 사용을 위해서는 엔터프라이즈급 플랫폼의 '래핑'(Wrapping)이 필요함
+- 해결책으로 제시된 Teleport 플랫폼은 안전한 설정, 세분화된 권한 부여, 실시간 접근 추적 및 감사 기능을 제공
+- Teleport를 활용하면 MCP 서버 접속 시 'Just-in-time Token'이 자동 발행되어, 각 사용자 계정에 맞춘 엄격한 권한이 적용됨
+- MCP 클라이언트 설정에서 더 이상 비밀 키가 보이지 않으며, 모든 요청은 Teleport를 프록시로 중계해 보안을 보장
+- Teleport 플랫폼 내에서 실시간 감사 로그를 통해 서버, 툴, 사용 파라미터까지 모두 확인 가능하며, 이상 탐지 기능도 반영됨
+
+---
+
+## 세부 요약 - 주제별 정리
+
+### MCP 서버는 데이터 노출, 권한 과다, 추적 불가 등 심각한 3대 보안 취약점이 존재함
+
+- MCP 서버는 사용자의 기대와 달리 상당히 큰 보안 위험을 내포하고 있음
+- 첫째, 민감한 데이터(예: API 토큰 등)의 노출 위험이 큼
+- 둘째, MCP 사용자는 실제 필요 이상으로 넓은 접근 권한을 갖게 됨
+- 셋째, MCP 서버 이용 기록에 대한 감사(audit)나 추적(trace)이 사실상 불가능함
+- 이러한 보안상의 근본적 결함이 현재 MCP 서버 활용의 큰 장애 요인임
+
+### GitHub MCP 서버 예시에서 드러나는 평문 키 저장과 과도한 권한 문제
+
+- 영상에서는 GitHub MCP 서버를 예시로 들어, 사용자가 개인 액세스 토큰을 평문으로 config 파일에 저장해야 함을 보여줌
+- 이런 평문 저장은 누구나 쉽게 해당 토큰을 획득해 악용할 수 있기 때문에 치명적인 보안 취약점임
+- OAuth 인증을 사용하더라도, 여전히 '장기간 유효한' 토큰이 PC에 저장되어 본질적으로 안전하지 않음
+- 실제로 GitHub MCP 서버의 클라이언트 설정을 보면, 모든 관리 권한(capabilities)이 기본적으로 허용됨 (세부 설정 불가)
+- 팀원과 권한을 나눠 쓰고 싶어도, 예를 들어 실제로 필요한 read only 권한만 줄 수 없음
+
+### MCP 클라이언트는 세부 퍼미션 제어가 불가하여 협업 시 심각한 리스크를 동반함
+
+- MCP 서버는 여러 사용자가 공동 작업할 때 세부적인 접근 권한 설정 기능이 없음
+- 관리자 입장에서, 어떤 팀원에게는 데이터 조회만, 다른 팀원은 관리 권한까지 달리 부여하고 싶지만, 시스템적으로 불가능
+- 사용 권한 통제가 되지 않아, 실수나 악의적 행위로 인한 피해가 모두에게 확산될 가능성이 높음
+- 영상 제작자는 MCP 서버의 세분화된 권한 부여 기능을 찾기 위해 다양한 시도를 했으나, 적합한 솔루션이 없음을 확인함
+
+### 보안 강화 및 감사 기능 등 안전한 MCP 운용에는 엔터프라이즈급 래핑 플랫폼이 필수임을 강조함
+
+- 실제 보안 문제를 해결하려면 MCP를 엔터프라이즈급(기업용) 보안 플랫폼으로 감싸주는 접근이 필요하다고 제언함
+- 이러한 플랫폼에서는 안전한 환경설정, 감사 로그 기능, 세분화된 권한 제어 기능이 제공되어야 함
+- 영상에서 추천하는 Teleport 플랫폼이 이 조건을 모두 충족한다고 소개됨
+
+### Teleport는 각 MCP 서버를 안전하게 보호, 관찰, 추적할 수 있도록 지원함
+
+- Teleport에선 MCP 서버를 고립되고 보호된 리소스로 관리함
+- 사용자는 Teleport에 로그인하여 접근하며, 본인 계정에 맞는 'Just-in-time Token'이 실시간으로 생성되어 할당됨
+- 토큰은 반드시 필요한 권한만을 가진 상태로 발급되어, 과도한 접근 문제 해결
+- 로컬 MCP 클라이언트에는 더 이상 비밀 키 정보가 존재하지 않고, 서버 연결 역시 Teleport를 거쳐 안전하게 진행
+
+### Teleport를 통한 MCP 사용은 클라이언트 설정 단순화와 편의성까지 개선함
+
+- Teleport 환경에서는 MCP 클라이언트의 설정이 "비밀 키 없는" 형태로 간소화됨
+- 서버 연결 과정 및 애플리케이션 연동도 Teleport 플랫폼 내에서 일관되게 처리 가능
+- MCP 서버(실제 연결은 Teleport 프록시를 경유) 내부적으로는 동일하게 동작하며, 사용자 경험에는 불편이 없음
+
+### 모든 MCP 요청/호출은 실시간으로 감사 로그에 기록되며, 세부 내역까지 투명하게 추적됨
+
+- Teleport 플랫폼에서는 관리자 혹은 팀 리더가 감사 로그(audit log) 메뉴에서 모든 MCP 호출 내역을 실시간으로 확인 가능
+- 호출된 서버, 사용된 툴, 요청 파라미터 등 구체적 세부 내역까지 모두 기록
+- 클로 데스크탑(Claw Desktop)과 결합 이용 시에도 내역이 남으며, 즉시 확인 가능
+- 이상 행동 탐지 등 추가적인 보안 분석 기능이 내장됨 (Agent를 통해 이상점 감시 가능)
+
+### 역할 기반 접근 제어(RBAC)로 팀원별 도구/기능별 권한 설정이 실시간으로 가능함
+
+- Teleport의 '제로 트러스트 접근' 메뉴에서는 각 MCP 서버별로 역할(Roles) 부여 가능
+- 역할마다 해당 팀원이 접근할 수 있는 MCP 도구, 서버 등을 세밀하게 통제함
+- GUI 기반 설정으로 즉각적으로 팀원의 접근 권한을 변경 및 관리할 수 있음
+
+### 영상 내 Teleport 홍보와 사용법 안내, 제작자와 Teleport 팀의 협업 사실 언급
+
+- 영상 마지막에 설명란 링크를 통해 Teleport 플랫폼 안내 예정임을 언급
+- 영상의 보안 문제 안내 과정에서 Teleport 팀과 협업하여 실질적인 사례·정보를 구축했다고 밝힘
+- MCP 보안 문제에 대한 제작자의 실제적 고민과 솔루션 탐색 결과를 정리하는 데 초점을 둠
