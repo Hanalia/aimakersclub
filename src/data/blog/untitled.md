@@ -1,7 +1,7 @@
 ---
 author: AI Makers Club
-pubDatetime: 2025-11-29T08:18:48.625Z
-title: "AI Fixes My Code Better than Me Now?! (Here's How)"
+pubDatetime: 2025-11-29T08:18:52.190Z
+title: "The ONLY AI Tech Stack You Need in 2026"
 slug: untitled
 featured: true
 draft: false
@@ -9,90 +9,19 @@ tags:
   - AI
   - YouTube 요약
   - 자동 업로드
-description: "AI 기반 코드 검증(Validation)의 한계까지 도전하여 눈에 띄는 성과를 얻었다고 소개함 AI 코딩 에이전트를 활용한 프로세스를 만들어, 전체 애플리케이션의 엔드 투 엔드("
+description: "Error: Exception: Request failed for https://api.openai.com returned code 500. Truncated server resp"
 ---
 
 <div style="text-align: center;">
   <img src="https://img.youtube.com/vi/untitled/maxresdefault.jpg" alt="YouTube Thumbnail" style="width: 100%; max-width: 640px; height: auto; border-radius: 0.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" loading="lazy" />
 </div>
 
-**영상 링크:** [AI Fixes My Code Better than Me Now?! (Here's How)](https://www.youtube.com/shorts/wWfEb_qHh6o)  
+**영상 링크:** [The ONLY AI Tech Stack You Need in 2026](https://www.youtube.com/shorts/wDTIQYxB71U)  
 **채널명:** Cole Medin
 
-## *AI가 내 코드 수정도 더 잘한다?! (이렇게 하는 방법)* 핵심 요약
-
-- AI 기반 코드 검증(Validation)의 한계까지 도전하여 눈에 띄는 성과를 얻었다고 소개함
-- AI 코딩 에이전트를 활용한 프로세스를 만들어, 전체 애플리케이션의 엔드 투 엔드(End-to-End) 검증을 자동화할 수 있음을 강조
-- 이 시스템은 복잡한 프로젝트들도 성공적으로 검사해내며, 반복적인 수동 테스트 과정을 거의 대체 가능하다고 밝힘
-- 영상의 중심은 '단 하나의 프롬프트(prompt)'에 있으며, 이 프롬프트로 메타 커맨드(meta command) 생성 가능함을 시연
-- 이 메타 커맨드는 모든 코드베이스에, 어떤 AI 코딩 어시스턴트에서도 실행 가능함
-- 동작 방식은 프로젝트 전체를 심층적으로 조사하고, 완전하게 검증(End-to-End Validation)하는 방법을 파악하도록 AI에게 지시함
-- 메타 커맨드의 결과로 `validate.md`라는 커맨드가 새로 생성되고, 이 커맨드는 엔드 투 엔드 검증 사이클을 시작하는 데 사용 가능함
-- 설명란에 관련 프롬프트 링크가 제공되며, 누구든 즉시 자신의 프로젝트에 적용해 볼 수 있음을 안내함
-- 기존 검증 시스템을 가진 사용자들도, AI의 검증 프로세스 능력에 놀라게 될 것이라 언급
-- 수동적이고 번거로운 테스트 절차가 AI의 자동화로 인해 훨씬 효율적으로 개선될 수 있음을 보여줌
-
----
-
-## 세부 요약 - 주제별 정리
-
-### AI 코딩 에이전트 활용으로 수동적인 코드 검증 업무를 대체할 수 있음을 입증함
-
-- 제작자는 최근 AI 검증(Validation)이 어느 정도까지 가능할지 실험 삼아 도전했다고 밝힘
-- 스스로 AI 기술을 활용해 코딩 검증 프로세스를 최대한 자동화하는 데 집중함
-- 결과적으로 거의 모든 수동 테스트 과정을 AI가 대체하게 됨을 확인
-- 특히 다양한 사용자 동선(User Flow)을 직접 점검하는 번거로운 과정을 AI로 전환함
-
-### 복잡한 프로젝트에까지 적용이 가능하며, 높은 성공률을 기록함
-
-- 제작자는 경험적으로 이 시스템을 복잡한 프로젝트들에 직접 적용했다고 설명
-- 많은 요소가 얽힌 복잡한 소프트웨어 프로젝트에서도 AI 검증 프로세스가 효과적으로 동작했다고 강조
-- 다양한 규칙, 사용자 인터페이스 변동, 비즈니스 로직이 혼합된 상황에서도 문제없이 검증이 진행됨
-
-### 핵심은 강력한 프롬프트를 통한 AI Meta-Command 생성에 있음을 설명함
-
-- 영상의 핵심은 ‘단일 프롬프트’에 집중되어 있다고 밝힘
-- 이 프롬프트를 통해 AI에게 메타 커맨드(meta command)를 생성하게 할 수 있음
-- 메타 커맨드는 추가 명령을 만드는 명령어 개념으로, 아주 강력한 자동화의 시작점이라 소개
-
-### 메타 커맨드는 코드베이스와 AI 도구의 종류에 무관하게 사용이 가능함
-
-- 이 메타 커맨드는 어떤 코드베이스든, 그리고 어떤 AI 코딩 어시스턴트든 사용할 수 있다고 강조
-- 프로젝트 특성이나 언어에 상관없이 확장성이 뛰어난 방법임을 설명
-- 특히 별도의 커스텀 설정 없이 어디서든 즉시 활용할 수 있음
-
-### 메타 커맨드는 심층 조사 및 완전한 검증 플랜을 AI가 수립하게 만듦
-
-- 명령 실행 시 AI가 프로젝트 전반을 '딥 리서치(deep research)' 방식으로 분석
-- 엔드 투 엔드, 즉 전체적인 관점에서 검증을 어떻게 해야 할지 AI 주도로 설계함
-- 제작자는 이 메타 커맨드가 다른 커맨드, 즉 `validate.md`와 같은 실제 사용 명령까지 만들어낸다고 소개
-
-### `validate.md`를 통해 반복적으로 자동화 검증을 실행할 수 있음
-
-- 메타 커맨드를 실행하면, AI는 프로젝트별로 `validate.md`라는 새로운 명령을 생성함
-- 이 파일/명령은 추후 언제든 반복적으로 전체 검증 사이클을 시작하는 데 활용 가능
-- 개발자는 손쉽게 이 명령을 실행해 소프트웨어 전체의 품질 확인 자동화 가능
-
-### 제작자는 영상 하단 설명란에 즉시 활용 가능한 커맨드 링크를 기재함
-
-- 영상 설명란에 실제 프롬프트가 담긴 링크를 제공한다고 안내
-- 누구나 해당 링크를 통해 자신이 가진 프로젝트에 이 AI 검증 프로세스를 즉시 도입할 수 있게 함
-
-### 기존 검증 시스템이 있어도 AI 기반 검증 도입의 효율성에 주목할 만함
-
-- 시청자 중 기존에 수동 혹은 자동화 테스트 시스템을 운용 중인 이들에게도 권장하고 있음
-- AI 기반 검증 도구의 성능에 “깜짝 놀랄 것”이라고 제작자가 직접 언급
-- 현재의 테스트 수단보다 빠르고, 덜 번거로우며, 더 완전한 테스트 체계를 AI가 실현할 수 있음을 함축
-
-### 영상의 전체 구조는 문제 제시→AI 활용법 공개→적용 예시→실행 안내로 구성됨
-
-- 첫 부분에서 수동 검증의 어려움과 한계를 문제로 제시함
-- 이후 AI 코딩 에이전트를 활용하는 새로운 방식을 제안
-- 실제 복잡한 프로젝트에도 성공적으로 적용된 사례를 충분히 전달
-- 마지막에는 시청자들이 적용해볼 수 있는 구체적인 링크와 방법을 안내하며 마무리
-
-### AI 검증 자동화 프롬프트의 활용은 소프트웨어 개발 생산성을 크게 증대시킬 수 있음을 보여줌
-
-- 반복적이고 시간이 많이 소요되는 테스트 작업이 AI로 자동화됨을 명확히 전달
-- 수동 테스트 대비 시간과 리소스 절약이 가능함을 간접적으로 증명
-- 엔드 투 엔드 테스트 품질향상 및 실질적 오류 감소가 기대됨
+Error: Exception: Request failed for https://api.openai.com returned code 500. Truncated server response: {
+    "error": {
+        "message": "Internal server error",
+        "type": "internal_error",
+        "param": null,
+        "code": "internal_err... (use muteHttpExceptions option to examine full response)
