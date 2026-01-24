@@ -1,7 +1,7 @@
 ---
 author: AI Makers Club
-pubDatetime: 2026-01-23T23:45:52.065Z
-title: "Stacked Diffs Changed How I Reviewed Code with AI"
+pubDatetime: 2026-01-24T08:18:21.752Z
+title: "Your AI Coding Workflow NEEDS This New Agent Browser CLI"
 slug: untitled
 featured: true
 draft: false
@@ -9,89 +9,64 @@ tags:
   - AI
   - YouTube 요약
   - 자동 업로드
-description: "영상 제목은 \"Stacked Diffs Changed How I Reviewed Code with AI\"로, Stacked Diffs 기법이 AI 코드 리뷰의 효율성을 어떻게 극대"
+description: "영상 제목은 “당신의 AI 코딩 워크플로에 꼭 필요한 새로운 에이전트 브라우저 CLI”임 제작자는 오랜 기간 Playwright MCP 서버를 브라우저 자동화의 대표 도구로 사용해"
 ---
 
 <div style="text-align: center;">
   <img src="https://img.youtube.com/vi/untitled/maxresdefault.jpg" alt="YouTube Thumbnail" style="width: 100%; max-width: 640px; height: auto; border-radius: 0.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" loading="lazy" />
 </div>
 
-**영상 링크:** [Stacked Diffs Changed How I Reviewed Code with AI](https://www.youtube.com/shorts/IRWjtlpNUCU)  
+**영상 링크:** [Your AI Coding Workflow NEEDS This New Agent Browser CLI](https://www.youtube.com/shorts/gbQZV2FeNK8)  
 **채널명:** Cole Medin
 
-## *Stacked Diffs가 어떻게 AI 코드 리뷰 방식을 바꿨는가* 핵심 요약
+## *당신의 AI 코딩 워크플로에 꼭 필요한 새로운 에이전트 브라우저 CLI* 핵심 요약
 
-- 영상 제목은 "Stacked Diffs Changed How I Reviewed Code with AI"로, Stacked Diffs 기법이 AI 코드 리뷰의 효율성을 어떻게 극대화하는지 설명함
-- 전통적인 풀 리퀘스트(Pull Requests) 방식은 기능 단위별로 변경하고, 각 단계마다 승인을 기다려야 함
-- Stacked Diffs는 크고 복잡한 기능도 작은 변화(인크리멘털 체인지)들로 나누어 서로 쌓아올리는 프로세스를 제안
-- 각 변화가 작아서 AI가 각 단계별로 더욱 집중적이고 정밀하게 코드 리뷰를 할 수 있음
-- Stack Diffs에 최적화된 플랫폼 ‘Graphite’ 사용을 통해 이러한 워크플로우 실현 가능
-- Graphite는 GitHub CLI와 유사한 명령행 도구와, 스택 형식의 풀 리퀘스트를 한눈에 관리할 수 있는 대시보드를 제공
-- 대시보드 내에 내장된 AI 코딩 어시스턴트가 각 풀 리퀘스트 리뷰를 지원함
-- 실제 예시로 3단계 Stacked Diff를 만들고 Graphite에서 관리·리뷰·머지하는 과정을 체험함
-- 각 단계별 PR(풀 리퀘스트)을 AI(Claude 등)로 개별 리뷰 시, 하나의 대형 PR을 리뷰할 때보다 훨씬 효과적임을 강조함
-- Graphite와의 협업을 통해 이 효율적인 코드 리뷰 및 워크플로우가 가능함을 보여줌
+- 영상 제목은 “당신의 AI 코딩 워크플로에 꼭 필요한 새로운 에이전트 브라우저 CLI”임
+- 제작자는 오랜 기간 Playwright MCP 서버를 브라우저 자동화의 대표 도구로 사용해왔음을 밝힘
+- Playwright MCP 서버는 그간 주요 단점이던 컨텍스트 사용 개선이 이루어졌으나, 여전히 완전히 신뢰할 만하지는 않다고 평가
+- 코딩 에이전트가 Playwright MCP 사용할 때 종종 오류에 직면하고, 결과 검증 과정이 복잡해지는 문제를 경험했다고 언급
+- Playwright Skill for Cloud Code, Chrome DevTools, MCP 등 다양한 대안 도구도 시도했으나 완전히 만족하지는 못함
+- 최근 Verscell Agent Browser를 사용해본 후 처음으로 진정 훌륭하다고 느끼는 브라우저 자동화 에이전트 도구를 만났다고 평가
+- Verscell Agent Browser는 겉으로는 혁신적이지 않으나, 내부적으로 Playwright를 기반으로 하면서도 웹사이트와 상호작용하는 방식에서 뛰어난 전략을 보임
+- 제작자는 Verscell Agent Browser가 “에이전트 구동 브라우저 자동화 도구”로서 새로운 표준을 보여준다고 강조
 
 ---
 
 ## 세부 요약 - 주제별 정리
 
-### 전통적인 풀 리퀘스트 방식은 승인을 반복적으로 기다려 프로세스가 느려짐
+### Playwright MCP 서버는 여전히 훌륭하지만 완벽하게 신뢰할 수는 없음
 
-- 기존의 코드 개발 워크플로우에서는, Pull Request(PR)를 생성 후 승인받을 때까지 기다려야만 다음 단계를 진행할 수 있음
-- 하나의 큰 기능이나 변경을 적용하기 위해 여러 번의 대기 및 반복 작업이 발생
-- 이러한 방식은 코드 리뷰의 병목 현상 및 협업 효율성 저하의 원인이 됨
+- 제작자는 오랫동안 브라우저 자동화를 위해 주로 Playwright MCP 서버를 사용해왔다고 밝힘
+- Playwright MCP팀이 지난 1년간 사용자 컨텍스트 관리 부분을 크게 개선했음을 인정
+- “그간 사용자들이 가장 불만을 제기했던 부분이 컨텍스트 사용이었다”고 언급
+- 그럼에도 불구하고 전체적으로 매우 좋은 도구이긴 하지만, “완전히 신뢰할 만한 수준”은 아니라고 지적
+- 코딩 에이전트가 사용할 때 실수가 잦아 “결과 검증 과정이 항상 깔끔하지 않다”는 경험을 공유
 
-### Stacked Diffs는 작은 인크리멘털 변경들을 순차적으로 쌓아 신속한 개발이 가능함
+### 기존 브라우저 자동화 도구의 한계로 인해 다양한 대안을 시도함
 
-- Stacked Diffs 방법론은 전체 변경 사항을 세부적이고 작은 덩어리들로 분할하여 각 덩어리를 차례로 쌓아올리는 방식임
-- 새로운 변경 사항을 기존 변경 위에 바로 추가할 수 있어, 각 단계마다 기다릴 필요 없음
-- 각 변경(‘diff’)이 독립적이고, 다른 변경 위에 쉽게 쌓을 수 있도록 구조화되어 있음
+- Playwright MCP 외에도 Playwright Skill for Cloud Code, Chrome DevTools, MCP 등 대체 도구들을 직접 사용해 봄
+- 이러한 도구들 모두 “꽤 괜찮지만 모두 완벽하진 않다”는 평가
+- 각 도구마다 사용 과정이나 결과 안정성에서 만족스럽지 않은 부분이 있었다고 밝힘
 
-### 각 작은 Diff마다 AI 코드 리뷰를 적용하면 피드백의 질과 초점이 극대화됨
+### Verscell Agent Browser와의 만남이 새로운 기준을 제시함
 
-- 각 Diff가 충분히 작고 단순해서 AI가 더 정확하게 맥락을 이해하고 개선점을 제안할 수 있음
-- 큰 풀 리퀘스트 하나를 통째로 리뷰하는 것보다, 작은 단위로 쪼개 리뷰할 때 피드백이 더욱 구체적이고 실질적임
-- AI 코드 리뷰가 “필수(validation 일환으로 반드시 필요)”하다고 영상 제작자는 언급
+- Verscell Agent Browser를 써본 후 “처음으로 정말 뛰어난 에이전트 브라우저 자동화 도구”라고 확신하게 되었음을 강조
+- 기존에 느꼈던 도구들의 한계를 넘는 사용 경험을 제공했다고 평가
 
-### Graphite 플랫폼은 Stacked Diff 워크플로우를 특별히 지원하도록 설계됨
+### Verscell Agent Browser의 차별점은 혁신적인 ‘에이전트 중심’ 전략에 있음
 
-- Graphite는 스택드 디프 작업을 쉽게 지원하도록 만든 플랫폼임
-- GitHub CLI와 유사한 커맨드라인 툴을 제공함 (ex. pull request 생성, 브랜치 관리 등)
-- 스택드 형식의 풀 리퀘스트들을 한 눈에 볼 수 있는 대시보드가 있음
-- 대시보드 상에서 각 Diff과 PR에 대한 상태, 진척, 연결 구조를 직관적으로 확인하고 관리 가능함
+- 겉보기에는 기존 도구들과 크게 다르지 않아 보이지만, 실제로는 Playwright를 내장 엔진으로 사용함
+- 특히 웹사이트와 ‘에이전트’가 상호작용하는 방식에서 독특하고 효과적인 전략이 적용되어 있다고 설명
+- 이러한 전략 덕분에 브라우저 자동화 분야에서 새로운 표준을 확립하였다고 언급
 
-### 사용자는 Graphite에서 실제로 첫 스택드 Diff를 만들고 자동 주도로 실습할 수 있음
+### Playwright와의 근본적 차별성 보다는 구동 방식에서 혁신이 있음
 
-- Graphite 가입 후 제공되는 데모를 따라가며, 첫 번째 스택드 Diff를 직접 만들어 보는 과정을 경험함
-- 첫 변화(커밋)를 만들고 PR 생성 - Git 또는 GitHub CLI와 비슷한 방식
-- 그 위에 연속해서 추가적인 변경(PR) 작성, 커맨드라인에서 이 스택 구조를 직접 확인
-- 결과적으로, 총 3단계의 PR을 차례로 쌓아올림
+- Verscell Agent Browser 자체는 다른 기반 기술(Playwright 등)과 크게 다르지 않으나
+- 실제 에이전트가 웹사이트를 제어하고 조작하는 동작 방식에서 창의적 차별성이 있음
+- 이를 통해 코딩 에이전트 기반의 자동화 워크플로에서 높은 신뢰성과 효율을 제공함
 
-### Graphite 대시보드를 통해 PR 생성부터 리뷰, 머지까지 전체 과정을 손쉽게 관리함
+### 영상 제작자는 Verscell Agent Browser를 통해 ‘에이전트 구동 자동화’의 진정한 시작을 본다고 평가함
 
-- 대시보드 내에서 각 PR별 현황(생성, 리뷰, 병합 등)을 모두 관리 가능
-- Graphite Agent(내장 AI 코드리뷰 도우미)를 사용하여 각 PR별 AI 기반 리뷰 수행
-- 대시보드에서 한 번에 전체 스택을 병합(Merge) 가능, GitHub 저장소 직접 접속 없이도 처리가능
-- 저장소 내에서는 각 PR이 별도 브랜치로 관리되고, 타겟 브랜치(메인 등)로 병합됨
-
-### “작은 변화+AI 코드 리뷰” 조합이 대형 PR 리뷰보다 월등히 효과적임을 실제로 비교 설명함
-
-- Claude와 같은 AI 툴을 활용해, 3단계로 나뉜 각각의 PR을 모두 개별적으로 리뷰함
-- 대형 PR 하나를 AI로 리뷰하는 것보다, 작은 단위로 나누면 AI가 더욱 세밀하게 피드백 제공
-- 이 방식으로 얻는 결과(리뷰 품질, 효율성 등)가 “상상 이상”이라고 직접 언급
-
-### 기존 Git 워크플로우 활용에 Graphite와 Stack Diff가 ‘지능형 확장’을 더해줌
-
-- 실제 PR 생성 및 브랜치 전략은 친숙한 Git 워크플로우(피처 브랜치 → 인터 브랜치 머지 → 메인 브랜치 병합)와 유사
-- “단순히 기존 Git을 좀 더 지능적으로 사용하는 방식”임을 강조
-- 모든 변경사항을 체계적이고 안전하게 관리함
-
-### 영상 하단 링크를 통해 Stacked Diffs를 실제로 어떻게 적용하는지 보다 자세히 확인 가능함
-
-- 영상 설명란에 별도의 ‘How to’ 상세 영상 링크를 제공하여, Step-by-step 실습을 지원함
-
-### Graphite와의 공식 협업을 통해 준비된 데모를 기반으로 증명 사례를 보여줌
-
-- 영상 제작자는 Graphite와 직접 협업해 이 데모와 사례를 만든 점을 밝힘
-- 실제 경험 기반의 시연과 함께, Stacked Diff와 Graphite 플랫폼의 실질적 장점(워크플로우 개선, AI 리뷰 고도화 등)을 전달함
+- “진정한 의미의 agentic-driven browser automation tool은 이번이 처음”이라고 직접 언급
+- 기존 자동화 도구들이 해결하지 못했던 신뢰성, 검증의 문제를 Verscell Agent Browser가 상당 부분 해소한다고 느낌
+- 영상에서 소개된 Verscell Agent Browser의 등장으로 자동화 도구 선택 시 새로운 기준이 생겼음을 시사함
