@@ -1,7 +1,7 @@
 ---
 author: AI Makers Club
-pubDatetime: 2026-01-28T08:19:25.482Z
-title: "Your AI Coding Workflow NEEDS This New Agent Browser CLI"
+pubDatetime: 2026-01-28T08:19:57.391Z
+title: "Stacked Diffs Changed How I Reviewed Code with AI"
 slug: untitled
 featured: true
 draft: false
@@ -9,93 +9,91 @@ tags:
   - AI
   - YouTube 요약
   - 자동 업로드
-description: "영상에서는 브라우저 자동화 도구 중 에이전트 기반 솔루션을 찾던 중, 기존 도구의 한계와 최근 발견한 'Verscell agent browser CLI'의 장점을 비교하며 소개함 "
+description: "AI 기반 코드 리뷰는 개발 과정에서 매우 강력하며, 필수적인 검증 단계로 간주됨 전통적 PR(Pull Request) 방식은 변경 후 승인 대기 및 반복의 불편함이 있음 스택드 "
 ---
 
 <div style="text-align: center;">
   <img src="https://img.youtube.com/vi/untitled/maxresdefault.jpg" alt="YouTube Thumbnail" style="width: 100%; max-width: 640px; height: auto; border-radius: 0.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" loading="lazy" />
 </div>
 
-**영상 링크:** [Your AI Coding Workflow NEEDS This New Agent Browser CLI](https://www.youtube.com/shorts/gbQZV2FeNK8)  
+**영상 링크:** [Stacked Diffs Changed How I Reviewed Code with AI](https://www.youtube.com/shorts/IRWjtlpNUCU)  
 **채널명:** Cole Medin
 
-## *AI 코딩 워크플로우, 이 새로운 에이전트 브라우저 CLI가 꼭 필요하다* 핵심 요약
+## *스택드 디프(차곡차곡 변경) 방식은 AI 기반 코드 리뷰 효율성을 극대화함* 핵심 요약
 
-- 영상에서는 브라우저 자동화 도구 중 에이전트 기반 솔루션을 찾던 중, 기존 도구의 한계와 최근 발견한 'Verscell agent browser CLI'의 장점을 비교하며 소개함
-- 주로 Playright MCP 서버를 이용해왔으나, 최근까지도 신뢰성과 검증 과정에서 일부 문제를 경험했다고 언급함
-- Playright MCP 서버의 맥락(context) 사용성이 지난 1년 동안 개선되었으나, 여전히 "항상 가장 신뢰할 수는 없는" 수준이라고 평가
-- 코딩 에이전트가 Playright 기반 도구 사용 시 종종 오류가 발생하며, 검증 과정이 복잡해지는 문제를 지적함
-- Playright skill for cloud code, Chrome DevTools, MCP 등 다양한 대체 브라우저 자동화 도구를 시도했으나, 이들 역시 완벽하게 만족스럽진 않았다고 설명
-- Verscell agent browser에 대해서는 "에이전트 브라우저 자동화 도구로서 처음으로 정말 뛰어나다고 느낀 솔루션"이라며 강한 인상을 받았다고 평가함
-- Verscell agent browser도 사실상 내부적으로 Playright를 사용하지만, 어떻게 에이전트가 웹사이트와 상호작용하게 하는지에 대해 '매우 스마트한 전략'이 있다고 소개함
-- 영상은 Verscell이 "실제로 최초의 에이전트 기반 브라우저 자동화 도구"라고 강조하며, 클라이맥스를 이룸
-
----
+- AI 기반 코드 리뷰는 개발 과정에서 매우 강력하며, 필수적인 검증 단계로 간주됨
+- 전통적 PR(Pull Request) 방식은 변경 후 승인 대기 및 반복의 불편함이 있음
+- 스택드 디프(차곡차곡 변경) 방식은 작은 단위의 변경을 층층이 쌓아 나가며 전체 기능을 완성함
+- 각 변경 사항이 쌓이므로 중간승인 없이 연속적으로 작업 진행이 가능
+- 이 방식은 AI 코드 리뷰에 최적화되어 각 변경마다 집중적이고 세밀한 피드백을 받을 수 있음
+- 'Graphite' 플랫폼이 스택드 디프 작업에 최적화되어 있으며, 전용 CLI와 대시보드, AI 코드 어시스턴트 기능을 제공함
+- Graphite의 등록 및 튜토리얼 과정을 통해 초보자도 직관적으로 첫 스택드 디프를 생성하고 관리하는 방법을 습득할 수 있음
+- 각 피처 브랜치 및 PR을 계층적으로 쌓은 후, 모든 작업 PR을 메인 브랜치에 한 번에 머지하는 구조임
+- Claude(AI 툴)로 각 PR을 개별적으로 리뷰했을 때, 대형 PR 한 번 리뷰보다 훨씬 우수한 결과를 얻음
+- 영상에는 관련 예시, 툴 명칭, 도구 사용 과정 등이 구체적으로 담겨 있음
+- 끝으로 모든 과정은 Graphite와의 협업을 통해 시연되었으며, 추가 설명 영상 링크가 제공됨
 
 ## 세부 요약 - 주제별 정리
 
-### Playright MCP 서버는 개선이 있었으나 여전히 완벽하지 않다고 평가됨
+### AI 기반 코드 리뷰는 개발 과정의 필수 프로세스임을 강조함
 
-- Playright MCP 서버는 그동안 브라우저 자동화 작업에서 필수적인 도구로 사용되어왔음
-- 최근 1년간 Playright에서 맥락(context) 사용성과 관련한 많은 개선이 이루어짐
-- 특히 맥락(context) 관리가 주된 사용자 불만사항이었음
-- 개선에도 불구하고, 여전히 가장 신뢰할만한 브라우저 자동화 솔루션은 아니라고 언급됨
-- "상당히 괜찮지만, 매우 훌륭하다고 할 수는 없다"고 평가
+- AI를 활용한 코드 리뷰는 단순 자동화가 아닌, 신뢰할 만한 검증 단계로 활용되고 있음
+- 영상에서 "AI code reviews are incredibly powerful and I do consider them a must as a part of my validation."이라는 멘트가 등장함
+- AI 기반 코드 리뷰가 실제 현업에서 점점 표준화되고 있음을 시사함
 
-### 코딩 에이전트가 기존 자동화 도구에서 오류를 겪는 상황이 발생함
+### 전통적 PR 방식은 단일 변경 승인 대기 등으로 비효율이 있음
 
-- Playright MCP 서버 사용 시, 코드 에이전트가 종종 문제에 봉착한다고 설명
-- 자동화 절차에서 검증(validation) 단계가 복잡하고 혼란스러울 때가 있음
-- 반복 작업이나 연동을 시도할 때 불안정성이 존재
-- 이런 문제로 인해 최고의 도구라고 부를 수 없다고 직접 언급
+- 기존 PR 방식에서는 한 번에 큰 변경을 만들고, 승인받을 때까지 대기해야 함
+- 이 과정은 개발 속도를 저해하고, 변경사항이 크면 리뷰 품질도 저하될 수 있음
+- 승인 후에 추가 작업이 반복되어, 전체 기능 개발이 루프식으로 이루어짐
 
-### 다양한 대체 브라우저 자동화 도구들도 만족스럽지 못함
+### 스택드 디프는 여러 개의 작은 변경을 계층적 구조로 쌓으며 대기 없이 진행 가능함
 
-- Playright skill for cloud code, Chrome DevTools, MCP 등 여러 대안을 시도함
-- 각각의 도구가 "상당히 괜찮은 편"이었으나, "뛰어나다"는 인상을 주지 못함
-- 실제 개발 워크플로우에서 기대하는 수준에는 미치지 못했다고 평가
+- 'Stacked Diffs' 방식은 작은 단위의 변경(diff/pull request)을 여러 개 만든 뒤, 서로 위에 쌓으며 전체 기능을 완성함
+- 각 단계별 PR마다 승인을 기다릴 필요 없이, 연속적으로 작업과 PR을 진행할 수 있음
+- 개발자가 작업 단계를 세분화함으로써 각 단계에서 필요한 피드백을 신속하게 받을 수 있음
 
-### Verscell agent browser CLI가 에이전트 기반 브라우저 자동화 시장에서 차별화됨
+### 작은 단위 변경마다 AI 리뷰를 적용해 수정 효과와 집중도를 높임
 
-- Verscell agent browser 활용 후, 처음으로 "진정 훌륭하다"고 부를 수 있는 에이전트 브라우저 자동화 도구를 찾았다고 밝힘
-- 직접 사용 경험을 토대로 크게 감명을 받았다는 점을 강조
-- Playright와 달리 근본적인 구조는 크게 다르지 않지만 결과물이 현저히 다름
+- 스택드 디프 방식은 각 변경(diff)별로 AI가 집중적으로 리뷰할 수 있는 환경을 제공함
+- "We're able to get super focused feedback on each layer, each one of our diffs."라는 설명이 있음
+- 대형 PR 한 번 리뷰보다는, 작은 단위별 리뷰가 품질 향상 및 코드 안전성에 유리함
+- Claude와 같은 AI 코딩 어시스턴트가 활용됨
 
-### Verscell도 내부적으로 Playright를 활용하지만 독자적 전략이 돋보임
+### Graphite 플랫폼은 스택드 디프 작업을 위한 맞춤형 도구와 환경을 제공함
 
-- Verscell agent browser CLI도 내부적으로 Playright 엔진을 사용함
-- 핵심 차이는 "에이전트가 웹사이트에 어떻게 상호작용할 수 있도록 허용하느냐"에 있음
-- Verscell만의 매우 스마트한 전략이 단순히 엔진 차원 이상임을 시사
+- Graphite는 스택드 디프에 특화된 CLI(Command Line Interface) 툴을 제공
+- 이 툴은 GitHub CLI와 유사하지만, 스택드 디프 전용 기능이 포함됨
+- 별도의 웹 대시보드가 있어 전체 stack, 브랜치, PR, 병합 상태를 한눈에 관리할 수 있음
+- 대시보드 내에는 AI 코드 어시스턴트가 내장되어 PR 리뷰 지원 제공
 
-### Verscell은 최초의 진정한 에이전트 기반 브라우저 자동화 솔루션으로 평가됨
+### Graphite의 튜토리얼 및 첫 사용 경험이 매우 직관적으로 안내됨
 
-- 영상 마무리에서 Verscell agent browser를 "실제로 처음으로 에이전트 주도형(agentic driven)의 브라우저 자동화 도구"라으며 극찬
-- 기존 도구들과 경험적으로 명확한 차이를 체감했다는 점도 함께 강조
+- 영상 제작자가 Graphite에 처음 가입할 때 데모 튜토리얼을 경험함
+- 튜토리얼은 첫 스택드 디프 생성부터 PR 발행, 계층 구조 관리까지 절차를 순차적으로 안내
+- Git 혹은 GitHub CLI 사용 경험이 있다면, Graphite 사용법이 익숙하게 느껴짐
 
-### 영상 전체에서 Playright MCP 서버와 Verscell agent browser의 비교가 중심을 이룸
+### 계층적으로 PR을 쌓고 이를 한 번에 메인 브랜치에 병합함으로써 워크플로우가 최적화됨
 
-- Playright MCP 서버의 장점과 한계, Verscell agent browser의 차별성을 반복적으로 비교
-- "훌륭한 도구"에서 "진정 혁신적인 솔루션"으로 넘어가는 지점에 Verscell agent browser가 있음을 자연스럽게 드러냄
-- 실무에서의 만족도를 중심에 두고 양쪽 도구를 평가하는 구조
+- 실제 영상 예시에서는 3개 연속 PR을 만든 다음, 각 PR이 전 단계 위에 쌓이는 구조를 시연함
+- 각 PR은 피처 브랜치에서 진행되며, 서로 머지된 뒤 마지막에 메인(main) 브랜치에 통합됨
+- Graphite 대시보드는 각 PR의 상태, 머지, 리뷰 등을 간편히 처리하게 디자인됨
+- "I can manage each pull request here. I can use the graphite agent to help me review this PR."
 
-### Playright MCP 서버의 사용성과 Verscell agent browser CLI의 혁신적 접근 방식이 시청 포인트임
+### 기존 Git 워크플로우와 유사하지만, 지능적으로 변경의 각 단계를 구조화함
 
-- Playright MCP 서버의 맥락(context) 개선, 검증 단계의 복잡성 등 실무적 디테일을 구체적으로 언급
-- Verscell agent browser의 접근법이 단순히 기술을 넘어 "에이전트가 웹사이트와 상호작용하는 방식"에 새로운 해답을 제시함을 강조
-- "스마트한 전략"과 "진정 최초"라는 핵심 키워드로 Verscell의 가치를 요약
+- 각 변경(diff)는 Git 브랜치 기반으로 동작해, 기존 Git 사용자가 쉽게 이해할 수 있음
+- 표준적인 PR과 브랜치 전략을 스택드 디프에 맞게 응용함
+- 실제 코드 저장소에서 작업 시, 각 단계를 분리해 관리하고 있으나, 메인 브랜치 병합은 전체 PR 완료 후 한 번에 처리
 
-### 영상에서 언급된 모든 도구의 명칭과 특징이 실무 개발자 관점에서 평가됨
+### AI(CLAUDE 등)를 통한 각 단계별 리뷰 결과가 대형 PR 리뷰보다 현저하게 뛰어남
 
-- Playright MCP, playright skill for cloud code, Chrome DevTools, Verscell agent browser, MCP 등 구체적 도구명 모두 언급됨
-- 각 도구 사용 경험과 장단점이 '실제로 써 본' 관점에서 서술되어 영상 내용의 신뢰도를 높임
+- 제작자는 Claude(Anthropic의 AI 코딩 어시스턴트)가 각 Stack Diff별로 PR을 리뷰하도록 셋업함
+- 동일한 양의 변경사항을 기존 "대형 PR 한 번 리뷰" 방식과 비교해본 결과, 소규모 PR별 개별 리뷰의 품질과 신속성이 비교할 수 없이 우수하다고 언급
+- "The results that you get from this compared to reviewing one massive pull request is just insane."라는 피드백 포함
 
-### 영상의 구조는 문제 → 대안 모색 → 혁신적 발견의 흐름으로 전개됨
+### 영상 내 구체 예시, 플랫폼 시연, 그리고 추가 학습 리소스가 순차적으로 안내됨
 
-- 기존 도구(Playright MCP) 중심의 문제 인식에서 시작
-- 다양한 대안(Cloud code, Chrome DevTools 등) 탐색 과정을 통해 "아쉬움" 강조
-- Verscell agent browser CLI의 혁신성 발견과 극찬으로 마무리, 메시지 명확
-
-### 결론적으로 Verscell agent browser CLI가 개발자 에이전트용 브라우저 자동화의 새로운 표준으로 제시됨
-
-- Playright MCP 서버가 여전히 훌륭하지만 Verscell agent browser의 혁신에 비해 한계를 지님을 솔직하게 언급
-- "진정한 의미의 에이전트 기반 브라우저 자동화"라는 찬사로 마무리되며, 실무 개발자들의 관심 촉구
+- 영상 말미에 Graphite 플랫폼 활용 전체 과정을 캡처하며, 구체적인 커맨드 입력 화면과 대시보드 장면이 함께 제시됨
+- 추가로, 영상 설명란에 Stack Diff 실제 적용법을 자세히 설명하는 추가 영상 링크가 제공됨
+- 본 영상은 Graphite와의 협업을 통해 기획 및 시연되었음을 명시함
