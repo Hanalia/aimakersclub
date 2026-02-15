@@ -1,7 +1,7 @@
 ---
 author: AI Makers Club
-pubDatetime: 2026-02-15T08:18:54.976Z
-title: "Build a Robust AI Driven Data Pipeline in Minutes (No Code)"
+pubDatetime: 2026-02-15T23:45:04.644Z
+title: "Build Claude Skills Into ANY AI Agent"
 slug: untitled
 featured: true
 draft: false
@@ -9,93 +9,85 @@ tags:
   - AI
   - YouTube 요약
   - 자동 업로드
-description: "영상에서는 비정형 기업 정보를 실시간으로 구조화 데이터로 변환하는 AI 기반 데이터 파이프라인 구축 과정을 다룸 IBM Watsonx Data Integration을 이용해 별도의"
+description: "Anthropic의 Claude 생태계(Claude Desktop, Claude Code 등)는 뛰어나지만 플랫폼에 제한받지 않고 다양한 AI 에이전트 및 워크플로우에 Claude"
 ---
 
 <div style="text-align: center;">
   <img src="https://img.youtube.com/vi/untitled/maxresdefault.jpg" alt="YouTube Thumbnail" style="width: 100%; max-width: 640px; height: auto; border-radius: 0.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" loading="lazy" />
 </div>
 
-**영상 링크:** [Build a Robust AI Driven Data Pipeline in Minutes (No Code)](https://www.youtube.com/shorts/PZgfePsI_eM)  
+**영상 링크:** [Build Claude Skills Into ANY AI Agent](https://www.youtube.com/shorts/CHVvoHcn3Z8)  
 **채널명:** Cole Medin
 
-## *몇 분 만에 구축하는 강력한 AI 기반 데이터 파이프라인 (코드 작성 불필요)* 핵심 요약
+## *Claude 스킬을 모든 AI 에이전트에 적용하는 방법* 핵심 요약
 
-- 영상에서는 비정형 기업 정보를 실시간으로 구조화 데이터로 변환하는 AI 기반 데이터 파이프라인 구축 과정을 다룸
-- IBM Watsonx Data Integration을 이용해 별도의 파이썬 코드나 서버 없이 수 분 만에 파이프라인을 완성할 수 있음을 강조
-- 해당 플랫폼은 실시간 데이터 스트리밍, 비정형 데이터 흐름 통합, 배치 처리, 데이터 복제 등 다양한 데이터 통합 기능을 지원
-- 데이터 출발지(Jira, REST 서비스 등), 데이터 변환(프로세서), 데이터 전송(타겟) 등 파이프라인 각 단계가 GUI 기반으로 쉬운 구성 가능
-- OpenAI 대시보드 로그를 통해 LLM이 실시간으로 어떻게 정보를 구조화하는지 확인 가능
-- 예시로 회사명, 산업군 등 핵심 정보를 추출하여 DB, API, RAG 파이프라인 등 원하는 목적지로 전송하도록 설정
-- 최종 데모에서 web hook.site를 활용해 파이프라인의 결과 데이터를 POST 방식으로 수신하는 과정 시연
-- 에디터에서 각 단계별 매개변수와 세부 옵션을 풍부하게 조정할 수 있고, 수천 건의 데이터를 초당 실시간으로 처리하는 대규모 파이프라인 운영이 가능한 점을 부각
-- Datastage, StreamSets, 복제 툴 등과의 연동을 통해 배치 및 실시간 처리, 데이터 통합 및 관리가 통합적으로 제공됨
-- Watsonx Data Integration은 AI 시스템 데이터 연결·변환·관리의 통합 레이어로써 확장성과 신뢰성을 갖춤을 강조
+- Anthropic의 Claude 생태계(Claude Desktop, Claude Code 등)는 뛰어나지만 플랫폼에 제한받지 않고 다양한 AI 에이전트 및 워크플로우에 Claude의 ‘스킬’을 적용하고 싶어하는 수요가 있음
+- 이를 위해 Enthropic 스킬 개념을 자체 AI 에이전트로 옮기는 방법을 소개
+- Claude 스킬을 에이전트에 통합하려면 system prompt와 도구(tool)를 활용해 구조화하면 됨
+- 주요 도구는 ‘load skill’ 툴로, skill.md 파일 경로를 입력 받아 실행하는 방식임
+- 에이전트가 필요 시 system prompt에 명시된 skill.md 경로를 인자로 전달하고, 도구 응답에 skill.md 내용이 포함됨
+- 각 도구를 호출할 때마다 반환된 skill.md 내용이 에이전트의 단기 메모리(short-term memory)에 추가되어 즉각적으로 역량을 확장
+- skill.md 내부에는 추가로 참조(reference) 파일, 프로그레시브 디스클로저(third layer progressive disclosure), 스크립트, 마크다운 문서 등을 연결해 확장 가능
+- 이 시스템은 단순하면서도 효율적이며, 스킬을 수십 개 이상 추가해도 에이전트는 안정적으로 작동함
+- 영상에서는 Pantic AI 에이전트의 코드와 데모도 시연 예정이라고 언급
 
 ---
 
 ## 세부 요약 - 주제별 정리
 
-### IBM Watsonx Data Integration으로 누구나 실시간 AI 데이터 파이프라인을 간편하게 구축할 수 있음
+### Anthropic 생태계의 강점은 뛰어나지만 플랫폼 종속은 한계로 작용함
 
-- 비정형 기업 정보를 실시간으로 LLM(대형 언어 모델)로 구조화 데이터로 자동 변환하는 과정을 소개
-- IBM Watsonx Data Integration 플랫폼을 통해 복잡한 코드나 서버 구축 없이 데이터 파이프라인을 쉽게 만들 수 있음을 시연
-- 파이프라인 전체 구축 시간은 단 몇 분에 불과함을 직접 경험한 사례로 언급
-- AI 파이프라인의 연속적 운용이 여러 활용처(특히 RAG 파이프라인)에서 매우 중요하다고 설명
+- 제작자는 Claude Desktop, Claude Code 등 Anthropic 생태계의 다양한 기능을 높이 평가함
+- 하지만 실제 사용 상황에서는 특정 플랫폼에만 의존하지 않고 자유롭게 AI 역량을 활용하고 싶은 욕구가 큼
+- 특히 자체 워크플로우 구축이나 다양한 AI 에이전트 개발 시, 스킬 활용의 유연성이 필요하다고 지적
 
-### IBM Watsonx Data Integration의 기능은 데이터 스트리밍을 넘어 다양한 데이터 통합까지 확장됨
+### 여러 종류의 AI 모델이나 로컬 AI에도 Claude 스킬 적용이 유용함을 강조함
 
-- IBM Watsonx Data Integration은 단순 데이터 스트리밍 툴이 아니라 통합 데이터 플랫폼임을 명시
-- Unstructured Data Flow Integration(비정형 데이터 흐름 통합) 기능 제공
-- Datastage와의 통합을 통해 일괄 배치 처리(Batch Flow)도 가능
-- 데이터 복제(Replication) 툴도 포함되어 있음
-- 시연에서는 실시간 데이터 스트림 처리(Real Time Data Streaming) 기능에 중점을 둠
+- 대형 언어모델(LLM) 간에도 Claude의 스킬을 이식해 쓰고 싶다는 수요가 있음
+- 로컬 AI, 혹은 자체 구축한 시스템에도 동일하게 Claude의 '스킬' 구조가 필요하다고 설명
+- 스킬을 자신만의 시스템에 통합하면 다양한 워크플로우에서 활용성이 두드러짐
 
-### GUI 기반 데이터 플로우 에디터로 데이터 소스, 변환, 타겟 경로를 손쉽게 설정할 수 있음
+### Enthropic의 ‘스킬’ 개념을 커스텀 AI 에이전트에 옮기는 방법을 소개함
 
-- 데이터 플로우 에디터(Flow Editor)에서 파이프라인 각 단계가 그래픽으로 구성됨
-- 소스(Source): Jira, REST 서비스 등 다양한 위치에서 데이터 실시간 수집 가능
-- 프로세서(Processers): 데이터 변환 단계, ELT 파이프라인 자체를 코드 없이 Drag & Drop으로 설계
-- 타겟(Target): 변환된 데이터를 전송할 최종 목적지(데이터베이스, REST API, RAG 등) 지정 가능
+- Enthropic이 구현한 스킬 개념의 핵심 원리를 이용해, 이를 자신만의 AI 에이전트에 적용 가능
+- 방법 요약: system prompt(시스템 프롬프트)와 툴(tool) 조합만으로 Claude와 유사한 스킬 구조를 재현할 수 있음
+- “Simple but powerful”라는 말로, 단순한 구현임을 거듭 강조
 
-### LLM이 실시간으로 비정형 데이터를 구조화 정보로 변환하는 과정을 투명하게 검증 가능함
+### 스킬로드 도구(load skill tool)는 skill.md 파일 경로만 인자로 활용함
 
-- OpenAI Dashboard의 로그 확인 과정을 통해, 파이프라인 내에서 LLM에 실시간 요청이 전송되는 모습 시연
-- 요청마다 원본(raw) 텍스트와 그로부터 추출되는 구조화(Structured) 출력 내용을 볼 수 있음
-- 예시로 추출되는 데이터는 회사명(company name), 산업군(company industry) 등 핵심 정보 중심
-- 이러한 추출 데이터는 하류 데이터베이스, RAG 파이프라인, API 엔드포인트 등 다양한 목적지로 전송 가능
+- 실제 구조의 핵심은 ‘load skill’이라는 도구 제작에 있음
+- 이 도구는 지정된 skill.md 파일 경로를 입력받아 그 내용을 반환
+- 에이전트는 system prompt를 통해 skill.md 경로를 전달받음
 
-### 실시간 파이프라인 동작 과정과 외부 수신 예시(웹훅)를 통해 실제 요청 흐름을 구체적으로 보여줌
+### 도구 호출 시 skill.md 내용이 바로 에이전트 컨텍스트에 포함되는 구조를 상세히 설명함
 
-- 데모에서는 webhook.site를 활용하여 파이프라인 결과 POST 요청을 실시간으로 수신
-- 여러 실시간 스트리밍 요청들이 webhook.site에 연속적으로 도달하는 모습 확인 가능
-- 각각의 요청 데이터에 대해 LLM이 추출한 세부 정보(회사명, 산업 등)가 포함되어 있음
+- 에이전트가 tool을 호출하면, 반환된 skill.md 파일의 모든 내용이 에이전트의 단기 메모리(short-term memory)에 쌓임
+- 즉, 도구로부터 오는 응답이 매번 에이전트의 컨텍스트로 들어가서, 적시에 필요한 정보와 명령을 즉각적으로 사용할 수 있음
 
-### IBM Watsonx Data Integration은 매개변수와 옵션이 풍부해 실무 생산 체계에 적합함
+### system prompt에 skill의 설명과 경로를 명시해 활용도를 높임
 
-- 에디터 내 각 단계별로 다양한 매개변수와 옵션을 제공, 세밀한 파이프라인 커스터마이징이 가능함
-- 전체 과정을 유연하게 조정하여 실제 프로덕션 환경에서 요구되는 신뢰성·자동화·유지보수 요건을 충족할 수 있음
-- 단순 노트북(Jupyter notebook) 수준 구성이 아니라, 수천 건 데이터의 연속 자동 처리를 자동화함
+- system prompt 내에 각 스킬의 설명(description)과, skill.md 경로가 함께 담김
+- 이 구조 덕분에 에이전트는 어떤 상황에 어떤 스킬을 써야 할지, 그리고 skill.md 경로를 어떻게 넘겨줘야 할지 알게 됨
+- 예시로, “system prompt has the description and the path to the skill”이라는 문장 인용
 
-### Watsonx Data Integration은 대규모 데이터 처리와 AI 시스템 확장에 특화된 통합 솔루션임
+### skill.md 내부에 레퍼런스, 프로그레시브 디스클로저, 스크립트 등을 추가해 확장성 보장
 
-- 실시간으로 매초 수천 건 데이터를 처리할 수 있는 스케일을 제공
-- 데이터 연결, 변환, 거버넌스(관리)를 모두 통합하는 유니파이드 데이터 레이어로 기능
-- AI 시스템과 데이터 파이프라인간 통합을 통해 완전한 자동화와 확장성 실현 가능
+- skill.md 파일에는 단순한 명령문 외에도, 관련 문서, 예시(reference files), 마크다운 형식의 스크립트 등을 자유롭게 첨부 가능
+- “third layer progressive disclosure” 등 더 깊이 있는 정보도 계층적으로 연결해서 제공 가능
+- 이를 통해 에이전트의 능력을 상황에 따라 점진적으로 확장할 수 있음
 
-### 다양한 데이터 흐름과 처리가 단일 플랫폼에서 가능하여 데이터 엔지니어링의 효율을 극대화함
+### 전체 구조는 매우 단순하면서 다양한 역량 확장에 적합한 구조임을 재차 강조함
 
-- 실시간 스트리밍(Streamsets), 일괄 처리(Datastage), 데이터 복제(Replication) 등 다양한 흐름을 하나의 플랫폼에서 설정할 수 있음
-- 모든 파이프라인 프로세스를 코드없이 손쉽게 설계 및 조정 가능
-- 데이터의 실시간성과 신뢰성을 모두 확보할 수 있는 구조임
+- 구현 방법이 “I told you it would be simple.”(정말 쉽다!) 라는 말로 반복적으로 강조됨
+- 복잡한 코딩 필요 없이 system prompt + load skill 도구 + 파일 구조만으로 구현
 
-### 데이터 흐름 설계에서 타겟 목적지 설정의 유연성이 매우 높음을 강조함
+### 수십 개 이상의 스킬 추가 시에도 에이전트가 효율적으로 작동함을 언급함
 
-- 데이터 처리 후 결과 전송지(destination)는 매우 자유롭게 설정 가능
-- 데이터베이스, RAG Pipeline, 다양한 API 엔드포인트 등 실무 목적에 맞춰 손쉽게 연동 가능함
-- webhook.site 같은 외부 서비스와도 직접 연결해 연동 시연
+- 라이브러리처럼 수십, 수백 개의 skill을 추가해도 system prompt에 기본적인 맥락만 담으므로 오버헤드가 적음
+- 이렇게 확장한 시스템도 여전히 잘 작동함
 
-### IBM과의 협업, 그리고 플랫폼 활용에 대한 안내가 영상 말미에 짧게 언급됨
+### Pantic AI 에이전트 구현 코드와 데모도 곧 시연할 것임을 언급
 
-- 영상은 IBM과 협업 프로젝트임을 간략하게 언급
-- 영상 하단 설명란에 IBM Watsonx Data Integration 관련 링크 제공 예정 안내
+- 실제 데모와 구현 코드를 소개할 계획임을 예고
+- 템플릿 안에 다수의 스킬이 적용된 Pantic AI 에이전트 사례도 있음
+- 이러한 방식으로 원하는만큼 다양한 스킬을 추가 적용할 수 있다고 설명함
