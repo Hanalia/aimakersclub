@@ -1,7 +1,7 @@
 ---
 author: AI Makers Club
-pubDatetime: 2026-02-15T23:45:04.644Z
-title: "Build Claude Skills Into ANY AI Agent"
+pubDatetime: 2026-02-15T23:45:32.156Z
+title: "The Simplest Way to Supercharge Your AI Agents (Skills)"
 slug: untitled
 featured: true
 draft: false
@@ -9,85 +9,89 @@ tags:
   - AI
   - YouTube 요약
   - 자동 업로드
-description: "Anthropic의 Claude 생태계(Claude Desktop, Claude Code 등)는 뛰어나지만 플랫폼에 제한받지 않고 다양한 AI 에이전트 및 워크플로우에 Claude"
+description: "Anthropic이 최근에 공개한 ‘Skills’ 기능은 AI 발전사에서 가장 중요한 혁신 중 하나로 평가됨 Skills의 강점은 복잡한 도구를 한 번에 모두 제공하지 않고, ‘점"
 ---
 
 <div style="text-align: center;">
   <img src="https://img.youtube.com/vi/untitled/maxresdefault.jpg" alt="YouTube Thumbnail" style="width: 100%; max-width: 640px; height: auto; border-radius: 0.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" loading="lazy" />
 </div>
 
-**영상 링크:** [Build Claude Skills Into ANY AI Agent](https://www.youtube.com/shorts/CHVvoHcn3Z8)  
+**영상 링크:** [The Simplest Way to Supercharge Your AI Agents (Skills)](https://www.youtube.com/shorts/4FuiPsiBnYg)  
 **채널명:** Cole Medin
 
-## *Claude 스킬을 모든 AI 에이전트에 적용하는 방법* 핵심 요약
+## *AI 에이전트의 기능을 극대화하는 가장 간단한 방법 (Skills)* 핵심 요약
 
-- Anthropic의 Claude 생태계(Claude Desktop, Claude Code 등)는 뛰어나지만 플랫폼에 제한받지 않고 다양한 AI 에이전트 및 워크플로우에 Claude의 ‘스킬’을 적용하고 싶어하는 수요가 있음
-- 이를 위해 Enthropic 스킬 개념을 자체 AI 에이전트로 옮기는 방법을 소개
-- Claude 스킬을 에이전트에 통합하려면 system prompt와 도구(tool)를 활용해 구조화하면 됨
-- 주요 도구는 ‘load skill’ 툴로, skill.md 파일 경로를 입력 받아 실행하는 방식임
-- 에이전트가 필요 시 system prompt에 명시된 skill.md 경로를 인자로 전달하고, 도구 응답에 skill.md 내용이 포함됨
-- 각 도구를 호출할 때마다 반환된 skill.md 내용이 에이전트의 단기 메모리(short-term memory)에 추가되어 즉각적으로 역량을 확장
-- skill.md 내부에는 추가로 참조(reference) 파일, 프로그레시브 디스클로저(third layer progressive disclosure), 스크립트, 마크다운 문서 등을 연결해 확장 가능
-- 이 시스템은 단순하면서도 효율적이며, 스킬을 수십 개 이상 추가해도 에이전트는 안정적으로 작동함
-- 영상에서는 Pantic AI 에이전트의 코드와 데모도 시연 예정이라고 언급
+- Anthropic이 최근에 공개한 ‘Skills’ 기능은 AI 발전사에서 가장 중요한 혁신 중 하나로 평가됨
+- Skills의 강점은 복잡한 도구를 한 번에 모두 제공하지 않고, ‘점진적 공개(progressive disclosure)’ 구조를 채택한 단순함에 있음
+- AI 에이전트는 너무 많은 정보(도구, 대화 기록, 시스템 프롬프트 등)를 한 번에 입력받으면 ‘컨텍스트 윈도우’가 과부하되어 효율적으로 작동하지 못함
+- 기존 MCP 서버 방식은 필요하지 않은 도구까지 모두 한 번에 제공하여, 에이전트의 과부하 문제를 야기함
+- Skills는 에이전트가 ‘실제로 필요할 때’만 각 기능(도구)의 구체적인 정보를 순차적으로 받아들이도록 설계됨
+- 시스템 프롬프트에는 해당 기능에 대한 ‘간단한 설명’만 포함되어, 예를 들어 PDF 처리 기능이 있음을 안내하는 방식으로 작동
+- 사용자가 PDF 처리 요청을 하면, 에이전트는 Skill.md 파일을 읽으며 해당 기능의 구체적 사용법 및 추가 정보를 로드함
+- Skill.md는 해당 기능 구현의 ‘핵심 지침’이 담긴 문서이며, 추가적으로 관련 세부 문서를 계층적으로 불러올 수 있음 (3단계 계층화)
+- ‘점진적 공개’ 구조를 통해, 에이전트는 작업에 꼭 필요한 맥락만 순차적으로 받아 과부하를 효과적으로 예방함
+- Skills의 활용은 에이전트의 역량 최적화와 효율적인 정보 처리를 동시에 실현함
 
 ---
 
 ## 세부 요약 - 주제별 정리
 
-### Anthropic 생태계의 강점은 뛰어나지만 플랫폼 종속은 한계로 작용함
+### Anthropic의 Skills 공개는 최근 AI 발전에서 가장 중요한 혁신으로 꼽힘
 
-- 제작자는 Claude Desktop, Claude Code 등 Anthropic 생태계의 다양한 기능을 높이 평가함
-- 하지만 실제 사용 상황에서는 특정 플랫폼에만 의존하지 않고 자유롭게 AI 역량을 활용하고 싶은 욕구가 큼
-- 특히 자체 워크플로우 구축이나 다양한 AI 에이전트 개발 시, 스킬 활용의 유연성이 필요하다고 지적
+- 최근 Anthropic이 ‘Skills’를 세상에 공개하면서 AI 분야 주요 발전으로 주목받음
+- 영상 제작자는 Skills를 “최근 AI에서 가장 중요한 진보” 중 하나로 평가
+- Skills의 핵심은 단순하고 직관적인 설계에 있음
 
-### 여러 종류의 AI 모델이나 로컬 AI에도 Claude 스킬 적용이 유용함을 강조함
+### Skills의 단순함이 AI 에이전트 효율성 극대화를 가능하게 함
 
-- 대형 언어모델(LLM) 간에도 Claude의 스킬을 이식해 쓰고 싶다는 수요가 있음
-- 로컬 AI, 혹은 자체 구축한 시스템에도 동일하게 Claude의 '스킬' 구조가 필요하다고 설명
-- 스킬을 자신만의 시스템에 통합하면 다양한 워크플로우에서 활용성이 두드러짐
+- Anthropic의 모토는 “더 단순할수록 더 낫다(The simpler the better)”임
+- 복잡한 도구 세팅 없이, 기능 추가 및 확장성이 매우 용이함
+- 단순함 덕분에 에이전트가 과부하 없이 강력한 성능을 발휘할 수 있음
 
-### Enthropic의 ‘스킬’ 개념을 커스텀 AI 에이전트에 옮기는 방법을 소개함
+### 기존 도구 제공 방식(MCP 서버 등)은 에이전트에 과도한 부담을 줌
 
-- Enthropic이 구현한 스킬 개념의 핵심 원리를 이용해, 이를 자신만의 AI 에이전트에 적용 가능
-- 방법 요약: system prompt(시스템 프롬프트)와 툴(tool) 조합만으로 Claude와 유사한 스킬 구조를 재현할 수 있음
-- “Simple but powerful”라는 말로, 단순한 구현임을 거듭 강조
+- MCP 서버와 같은 기존 방식은 필요한 도구뿐만 아니라 모든 도구 정보를 한꺼번에 에이전트에게 입력함
+- 이런 설계는 에이전트의 컨텍스트 윈도우(context window)를 금방 채우게 되어 효율성을 떨어뜨림
+- 결과적으로, 실제 대화나 작업에 필요 없는 정보가 한꺼번에 로드됨으로써 혼란과 자원 낭비가 발생
 
-### 스킬로드 도구(load skill tool)는 skill.md 파일 경로만 인자로 활용함
+### Skills는 ‘점진적 공개’ 전략을 통해 과부하와 맥락 누락을 동시에 해결함
 
-- 실제 구조의 핵심은 ‘load skill’이라는 도구 제작에 있음
-- 이 도구는 지정된 skill.md 파일 경로를 입력받아 그 내용을 반환
-- 에이전트는 system prompt를 통해 skill.md 경로를 전달받음
+- Skills의 혁신은 ‘progressive disclosure(점진적 공개)’라는 개념에 근거함
+- AI 에이전트에 모든 기능 설명을 한 번에 주는 대신, 필요할 때마다 해당 정보를 점차적으로 로드함
+- 작업이 진행됨에 따라 단계적으로 관련 맥락을 추가하며, 불필요한 정보 유입을 철저히 차단함
 
-### 도구 호출 시 skill.md 내용이 바로 에이전트 컨텍스트에 포함되는 구조를 상세히 설명함
+### 시스템 프롬프트에는 각 기능의 간단한 설명만 노출되어 시작됨
 
-- 에이전트가 tool을 호출하면, 반환된 skill.md 파일의 모든 내용이 에이전트의 단기 메모리(short-term memory)에 쌓임
-- 즉, 도구로부터 오는 응답이 매번 에이전트의 컨텍스트로 들어가서, 적시에 필요한 정보와 명령을 즉각적으로 사용할 수 있음
+- 초기에 에이전트가 받는 정보는 오직 해당 기능(예: PDF 처리)에 대한 간단한 ‘기능 요약’임
+- “이런 기능이 있으니 필요하면 사용할 수 있다”는 형태로 안내
 
-### system prompt에 skill의 설명과 경로를 명시해 활용도를 높임
+### 실제 작업 요청 시 Skill.md 문서를 읽으며 기능 세부 지침을 습득함
 
-- system prompt 내에 각 스킬의 설명(description)과, skill.md 경로가 함께 담김
-- 이 구조 덕분에 에이전트는 어떤 상황에 어떤 스킬을 써야 할지, 그리고 skill.md 경로를 어떻게 넘겨줘야 할지 알게 됨
-- 예시로, “system prompt has the description and the path to the skill”이라는 문장 인용
+- 사용자가 PDF 처리 등 특정 기능 수행을 요청할 경우, 에이전트가 구체 지침이 담긴 Skill.md 파일을 즉시 참조
+- Skill.md는 해당 기능의 주 사용법, 제약, 동작방식 등을 상세히 기술함
+- Skill.md는 모든 Skills의 핵심 동작 문서(매뉴얼) 역할을 맡음
 
-### skill.md 내부에 레퍼런스, 프로그레시브 디스클로저, 스크립트 등을 추가해 확장성 보장
+### Skills.md 외에도 추가 세부 문서가 필요에 따라 계층적으로 불러와짐
 
-- skill.md 파일에는 단순한 명령문 외에도, 관련 문서, 예시(reference files), 마크다운 형식의 스크립트 등을 자유롭게 첨부 가능
-- “third layer progressive disclosure” 등 더 깊이 있는 정보도 계층적으로 연결해서 제공 가능
-- 이를 통해 에이전트의 능력을 상황에 따라 점진적으로 확장할 수 있음
+- Skill.md가 2번째 단계 정보라면, 추가적으로 참고하는 세부 문서는 3번째 단계로 불러와짐
+- 기능에 대해 더 깊은 세부 내용이 필요할 때마다, 관련 문서를 순차적으로 로드해 맥락을 늘려감
+- 각 단계는 ‘점진적 맥락 확대’를 통해 과부하 없이 필요한 정보만 제공함
 
-### 전체 구조는 매우 단순하면서 다양한 역량 확장에 적합한 구조임을 재차 강조함
+### Skills의 3단계 계층 구조가 에이전트의 맥락 관리 효율성을 획기적으로 향상시킴
 
-- 구현 방법이 “I told you it would be simple.”(정말 쉽다!) 라는 말로 반복적으로 강조됨
-- 복잡한 코딩 필요 없이 system prompt + load skill 도구 + 파일 구조만으로 구현
+- 1단계: 시스템 프롬프트에 단순 설명(설명서 개요)만 포함
+- 2단계: 요청에 따라 skill.md(주요 매뉴얼) 불러오기
+- 3단계: skill.md가 참조하는 추가 설명서, 세부 예시, 세부 매뉴얼 등 필요한 정보 점진적 제공
+- 이 구조 덕분에 에이전트는 최소한의 정보에서 시작해 필요에 따라 확장하며 작업을 효과적으로 처리함
 
-### 수십 개 이상의 스킬 추가 시에도 에이전트가 효율적으로 작동함을 언급함
+### Skills 활용은 에이전트의 성능을 극대화하며 사용자 맞춤형 대응을 돕는다
 
-- 라이브러리처럼 수십, 수백 개의 skill을 추가해도 system prompt에 기본적인 맥락만 담으므로 오버헤드가 적음
-- 이렇게 확장한 시스템도 여전히 잘 작동함
+- 점진적 맥락 노출 방식은 작업 효율성과 정보 활용 극대화 모두를 달성
+- 과도한 정보 제공 없이, 실제 사용자 요청에 최적화된 기능 대응이 가능
+- Anthropic Skills를 활용한 커스텀 기능 구현도 점진적 구조 내에서 유연하게 설계할 수 있음
 
-### Pantic AI 에이전트 구현 코드와 데모도 곧 시연할 것임을 언급
+### 영상 전반은 Skills의 기본 작동 원리와 기존 대비 핵심적 이점을 구체 사례와 함께 설명함
 
-- 실제 데모와 구현 코드를 소개할 계획임을 예고
-- 템플릿 안에 다수의 스킬이 적용된 Pantic AI 에이전트 사례도 있음
-- 이러한 방식으로 원하는만큼 다양한 스킬을 추가 적용할 수 있다고 설명함
+- 예시로 ‘PDF 처리 기능’ 스킬을 들어, 실제 작동 단계별 맥락 변화를 상세히 해설
+- 각 단계에 어떤 정보가 언제 어떤 방식으로 에이전트에 제공되는지 구체적으로 설명
+- Skills의 차별화된 구조가 향후 에이전트 설계에 미치는 영향을 중점적으로 서술
