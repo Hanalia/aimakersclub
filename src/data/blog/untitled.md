@@ -1,7 +1,7 @@
 ---
 author: AI Makers Club
-pubDatetime: 2026-02-25T23:46:14.925Z
-title: "Build Claude Skills Into ANY AI Agent"
+pubDatetime: 2026-02-26T08:19:37.555Z
+title: "This Free Tool Makes Claude Code 10x Better"
 slug: untitled
 featured: true
 draft: false
@@ -9,89 +9,82 @@ tags:
   - AI
   - YouTube 요약
   - 자동 업로드
-description: "영상은 Anthropic의 Claude 플랫폼에서 사용되는 \"Skill\" 개념을 다른 AI 에이전트 및 워크플로우에 직접 적용하는 방법을 다룸 사용자는 Claude Desktop·"
+description: "영상 제목은 “이 무료 툴로 Claude 코드가 10배 더 좋아진다”로, Claude 코드 도구의 한계와 이를 보완하는 무료 툴 ‘Kinugi’(기누기)에 대해 소개함 제작자는 C"
 ---
 
 <div style="text-align: center;">
   <img src="https://img.youtube.com/vi/untitled/maxresdefault.jpg" alt="YouTube Thumbnail" style="width: 100%; max-width: 640px; height: auto; border-radius: 0.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" loading="lazy" />
 </div>
 
-**영상 링크:** [Build Claude Skills Into ANY AI Agent](https://www.youtube.com/shorts/CHVvoHcn3Z8)  
+**영상 링크:** [This Free Tool Makes Claude Code 10x Better](https://www.youtube.com/shorts/FDYhPXYDS_o)  
 **채널명:** Cole Medin
 
-## *Claude의 Skill을 모든 AI 에이전트에 적용하는 방법* 핵심 요약
+## *이 무료 툴로 Claude 코드가 10배 더 좋아진다* 핵심 요약
 
-- 영상은 Anthropic의 Claude 플랫폼에서 사용되는 "Skill" 개념을 다른 AI 에이전트 및 워크플로우에 직접 적용하는 방법을 다룸
-- 사용자는 Claude Desktop·Claude Code 등 기존 플랫폼에만 의존하지 않고, 다양한 AI 모델과 로컬 AI에도 Skill을 통합할 필요성을 강조함
-- Skill 적용의 기본 원리는 Claude가 사용하는 Skill 구조(시스템 프롬프트와 도구 구성)를 자신만의 에이전트에 간단하게 맵핑하는 것임
-- 핵심 도구는 'load skill' 도구이며, 이는 skill.md 파일 경로를 받아 해당 내용을 도구 응답으로 반환함
-- 에이전트가 도구를 호출하면 skill.md의 정보가 에이전트의 단기 메모리(문맥)에 자동 포함되어, 여러 skill을 유연하게 탑재 가능
-- 시스템 프롬프트에는 skill의 설명과 skill.md의 경로가 포함되어, 에이전트가 언제 skill을 활용해야 할지 결정할 수 있도록 함
-- skill.md는 추가적으로 서드 파티 레퍼런스 파일, 스크립트, 마크다운 등 외부 리소스에 대한 참조를 통해 기능을 확장 가능
-- 이러한 방식은 수십 가지 이상의 skill을 활용하더라도 에이전트의 성능 저하 없이 확장 가능한 구조임을 강조함
-- 영상 후반에는 Pantic AI agent의 코드 데모 및 여러 skill을 포함한 템플릿 소개가 예고됨
-- 전체적으로 Claude의 skill 개념을 범용화하여, 모든 AI 에이전트와 쉽게 연동할 수 있는 방법론을 간결하게 전달함
+- 영상 제목은 “이 무료 툴로 Claude 코드가 10배 더 좋아진다”로, Claude 코드 도구의 한계와 이를 보완하는 무료 툴 ‘Kinugi’(기누기)에 대해 소개함
+- 제작자는 Claude 코드(Cloud Code)의 강력함과 개발 전반에 광범위하게 사용 중임을 밝힘
+- Claude 코드의 최대 단점으로, 여러 인스턴스를 병렬로 실행할 때 각 코드의 출력을 일일이 점검하고 리뷰하는 과정이 비효율적임을 지적
+- Kinugi(기누기)는 Cloud Code를 대체하지 않고 그 위에 작동하는 ‘에이전틱 개발 환경(agentic development environment)’임을 강조
+- 이 툴은 한 화면에서 모든 병렬 세션을 시각화하고, 각 코드 변경사항을 총괄적으로 리뷰할 수 있게 해줌
+- 개발자는 ‘풀 리퀘스트’와 유사한 인터페이스로 클라우드 코드 로그와 개별 파일을 일일이 확인하지 않고 리뷰가 가능해졌다고 밝힘
+- AI가 생성한 코드에 대해 보안 점검 등 여러 종류의 코드 리뷰 레이어를 중첩해 적용할 수 있는 점이 특징적임
+- Kinugi는 Sonar 팀이 개발했으며, 현재 MacOS 한정 및 실험적 상태로, 무료로 제공되고 있음
+- 영상 제작자는 Sonar 측의 테스트 제안을 받아 실제 업무에 적용해보고 매우 만족했다고 전함
+- 영상 하단에 Kinugi 다운로드 링크가 제공됨
 
 ---
 
 ## 세부 요약 - 주제별 정리
 
-### Anthropic Claude의 Skill 개념을 자신의 에이전트나 워크플로우에 적용하는 필요성이 커짐
+### Claude 코드의 강력함과 일상적 활용에 대해 제작자가 소개함
 
-- Claude Desktop과 Claude Code 등 기존의 Anthropic Claude 생태계는 강력하지만, 사용자들이 반드시 이 플랫폼에 제한될 필요는 없음
-- 다수의 이용자는 자신만의 워크플로우에 AI agent를 직접 구축하거나, 코드 수정 및 맞춤화된 스킬 적용을 선호함
-- 다양한 대형 언어모델(LLM) 또는 로컬 AI와 연동할 필요도 존재
-- 자신만의 시스템에 Claude의 Skill 개념을 도입하면, 더 효과적이고 확장성 있는 에이전트 구축이 가능
+- 제작자는 Claude 코드(Cloud Code)를 “매우 강력하다”고 평가하며, 현재 자신이 모든 개발 활동에 Claude 코드를 활용 중임을 언급
+- Claude 코드는 작업 속도를 대폭 향상시키고, 다양한 개발 작업에 폭넓게 적용 가능함
+- 빠른 코드 생성과 다수의 변경 작업을 동시에 처리할 수 있어 생산성이 높아짐을 강조
 
-### Claude의 Skill 구조를 자신의 에이전트 시스템 프롬프트와 도구에 매핑하여 구현 가능함
+### Claude 코드의 가장 큰 문제점은 AI가 생성한 코드 리뷰의 번거로움임
 
-- Claude의 Skill은 시스템 프롬프트와 도구(tool)로 구현되어 있음
-- 사용자는 동일한 구조를 자신이 사용하는 에이전트에 단순하게 매핑할 수 있음
-- 시스템 프롬프트와 skill 파일 경로를 활용하여, 에이전트에게 명확한 활용 시점과 parameter 제공 방식 안내 가능
+- Claude 코드로 대량의 변경 작업이 빠르게 수행되지만, 모든 AI 출력(결과물) 리뷰가 매우 번거로운 과정임을 지적
+- 특히, 여러 개의 Claude Code 인스턴스를 병렬로 실행하는 환경에서는 이 문제가 더 커짐
+- 여전히 사람이 코드 리뷰를 해야 하며, 각 인스턴스별로 로그와 파일을 개별적으로 확인하는 건 비효율적임
 
-### Skill 적용의 핵심은 'load skill' 도구와 skill.md 파일의 활용에 있음
+### Kinugi는 Claude 코드를 대체하지 않고 그 위에 추가되는 도구임
 
-- load skill 도구는 skill.md 파일의 경로(path)를 입력받아 해당 파일의 내용을 반환함
-- 에이전트는 system prompt에 명시된 경로와 설명을 토대로 필요할 때 skill을 호출함
-- skill.md 파일의 반환 내용은 에이전트의 도구 호출의 결과로 처리됨
+- Kinugi(기누기)는 Cloud Code를 완전히 대체하는 것이 아니라, 그 위에 시각적과 실용적 터치를 더하는 ‘상위 레이어’임을 강조
+- 기존의 Claude Code 워크플로를 유지하면서, Kinugi를 덧붙여 사용할 수 있음을 설명
+- Kinugi는 ‘에이전틱 개발 환경(agentic development environment)’로 정의됨
 
-### Skill의 불러오기(loading)는 에이전트의 단기 문맥(Short-term Memory) 내 정보 확장으로 자연스럽게 연결됨
+### Kinugi를 사용하면 병렬 실행 중인 모든 Claude 코드 세션을 한눈에 볼 수 있음
 
-- load skill 도구를 호출할 때마다, skill.md의 내용이 에이전트의 짧은 메모리에 포함되어 즉각적으로 활용 가능해짐
-- 도구를 통한 skill 정보의 반환은 에이전트가 추가 작업을 수행하는 데 필요한 모든 context를 제공
+- Kinugi는 모든 Claude Code 에이전트와 그들이 병렬로 실행 중인 세션을 한 번에 시각적으로 제어할 수 있도록 함
+- 각 인스턴스별 현재 상태(리뷰 필요/실행 중 등)를 한 화면에서 확인 가능
+- AI가 제안한 ‘플랜(Plan of attack)’을 즉시 검토하고, 필요시 실시간으로 코멘트를 남겨 AI가 그에 대응하도록 할 수 있음
 
-### System prompt에는 skill의 설명과 경로가 포함되어 있어, 에이전트가 능동적으로 활용할 수 있는 구조임
+### 코드 구현 이후 리뷰 프로세스가 Pull Request와 유사하게 개선됨
 
-- system prompt에 각 skill에 대한 설명과 path(파일 경로)가 포함됨
-- 이를 통해 에이전트는 어떤 상황에서 스킬을 활용해야 하는지, 어떤 parameter(path)를 참조해야 하는지를 명확히 이해함
-- 사용자는 이 방식으로 복수의 skill을 등록할 수 있음
+- Kinugi 덕분에 클라우드 코드 로그를 일일이 뒤지지 않아도 됨
+- 구현이 완료되어 리뷰가 다시 사용자에게 넘어오면, 풀리퀘스트(Pull request) 형식으로 한 눈에 파악이 가능
+- 각 파일을 개별적으로 확인하는 것이 아니라 전체 변경사항을 효율적으로 검토할 수 있음
 
-### skill.md 파일 내에 외부 참조 및 확장 기능이 포함되어 기능성을 크게 높임
+### 다양한 코드 리뷰 방식을 AI 생성 코드에 적용 가능하며, 보안 리뷰 기능도 제공됨
 
-- skill.md 내부에는 추가적으로 참조 파일(reference file), 3단계 progressive disclosure, 관련 스크립트(markdown script) 등을 포함할 수 있음
-- 이런 외부 정보 참조를 통해 Skill의 능력을 한층 깊이 확장할 수 있음
-- 다양한 기술적 문서, 코드, 스크립트와의 자연스러운 연계 가능
+- Kinugi는 AI가 생성한 코드에 대하여 보안 점검(Security review) 등 여러 종류의 코드 리뷰 레이어를 적용할 수 있음
+- 이러한 기능은 Kinugi를 개발한 Sonar 팀의 특성을 반영한 것으로, 보안에 특화된 추가 점검 절차가 마련됨
+- 개발자는 “이 기능이 너무 마음에 든다”고 언급
 
-### Skill 탑재 구조는 단순하지만, 수십 개 Skill도 충분히 확장 가능함을 강조함
+### Kinugi는 현재 MacOS에서만 작동하며 실험적이지만 무료로 배포 중임
 
-- 단일 skill에 한정되지 않고, 수십 가지 skill을 동일한 구조로 에이전트에 무리 없이 탑재 가능
-- 각각의 skill이 front context만 일부 차지할 뿐 전체 문맥에는 부담이 적음
-- 여러 기능(예: 파일 처리, 요약, 분석 등) 간의 충돌 없이 운용 가능
+- Sonar는 Kinugi가 MacOS 전용이며, ‘매우 실험적’인 단계임을 투명하게 안내함
+- 이 때문에 현재 무료로 사용이 가능함
+- 그러나 이미 충분히 강력한 기능을 제공하고 있다고 평함
 
-### Pantic AI agent 코드와 다양한 skill 템플릿 예시가 영상 데모를 통해 소개됨
+### Sonar 측의 공식 제안 및 영상 제작자의 실사용 후기를 공유함
 
-- 영상 후반에는 Pantic AI agent의 구체적 코드 샘플이 시연될 예정임을 언급
-- 미리 구성된 skill template은 곧바로 다양한 task에 활용 가능
-- 시청자에게 코드를 공유할 것임을 시사
+- Sonar 팀이 직접 영상 제작자에게 연락해 Kinugi를 사용해 보길 권유함
+- 제작자는 실제로 적용해본 후, 솔직하게 “매우 멋진 툴”이라는 감상을 밝힘
+- 시청자에게 Kinugi를 꼭 사용해볼 것을 권함
 
-### Anthropic Claude의 Skill 시스템이 범용화되어 모든 에이전트에서 강력한 기능 확장이 가능함을 실증함
+### 영상 설명란에 Kinugi 다운로드 링크가 포함됨
 
-- Claude의 skill 개념은 특정 플랫폼에 국한되지 않고, 모든 AI agent에 쉽게 적용될 수 있음
-- 간단한 도구 설계와 문맥 연결만으로 고도화된 기능 연동이 이루어짐
-- 영상 전반에 걸쳐 Claude skill의 범용적 이식성과 그 효과를 간결하게 설명
-
-### Skill 시스템 구축의 구현과정 및 확장성에 대한 마무리
-
-- Skill 시스템 구현 방법이 단순하며, 초심자도 쉽게 적용 가능함을 재확인
-- 단계별 진행 과정과 확장 단계에서 참조 리소스 활용 방법을 요약
-- 전체적으로 Claude의 Skill 시스템을 모든 AI 개발자와 사용자에게 열어주는 가이드로 영상이 구성되어 있음
+- Kinugi의 공식 다운로드 및 정보 링크가 영상 설명란에 제공됨
+- 더 자세한 정보나 다운로드를 원하는 시청자는 해당 링크를 통해 접근 가능함
