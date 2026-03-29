@@ -1,7 +1,7 @@
 ---
 author: AI Makers Club
-pubDatetime: 2026-03-29T08:18:55.475Z
-title: "Postman Went Git-native and it Changes Everything for Building APIs"
+pubDatetime: 2026-03-29T23:45:12.036Z
+title: "My Claude Code Now Fixes My GitHub Issues Without Touching My Machine (Free Tool!)"
 slug: untitled
 featured: true
 draft: false
@@ -9,91 +9,91 @@ tags:
   - AI
   - YouTube 요약
   - 자동 업로드
-description: "API 작업은 기존까지 여러 도구와 분리된 환경에서 진행되어 비효율과 번거로움이 컸음을 지적함 개발 시 API 엔드포인트, 컬렉션, 테스트 등을 각기 다른 곳에서 생성‧관리해야 했"
+description: "이 영상에서는 사용자가 한 줄의 코드도 작성하지 않고, AI 코드 에이전트가 원격에서 자동으로 깃허브 이슈를 해결하는 과정을 시연함 Coder 플랫폼에서 제공하는 오픈소스 무료 툴"
 ---
 
 <div style="text-align: center;">
   <img src="https://img.youtube.com/vi/untitled/maxresdefault.jpg" alt="YouTube Thumbnail" style="width: 100%; max-width: 640px; height: auto; border-radius: 0.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" loading="lazy" />
 </div>
 
-**영상 링크:** [Postman Went Git-native and it Changes Everything for Building APIs](https://www.youtube.com/shorts/LkA6Qbt9LTM)  
+**영상 링크:** [My Claude Code Now Fixes My GitHub Issues Without Touching My Machine (Free Tool!)](https://www.youtube.com/shorts/NKWqXYykQ1o)  
 **채널명:** Cole Medin
 
-## *포스트맨의 Git 네이티브 업데이트로 API 개발 워크플로우가 혁신적으로 변화함* 핵심 요약
+## *내 깃허브 이슈를 내 컴퓨터 터치 없이 고치는 Claude 코드 - 무료 툴!* 핵심 요약
 
-- API 작업은 기존까지 여러 도구와 분리된 환경에서 진행되어 비효율과 번거로움이 컸음을 지적함
-- 개발 시 API 엔드포인트, 컬렉션, 테스트 등을 각기 다른 곳에서 생성‧관리해야 했음
-- 이런 분산된 워크플로우는 스펙, 컬렉션, 코드가 서로 연동되지 않고 버전 관리도 제각각이었음
-- 포스트맨(Postman)은 최근 대규모 업데이트를 통해 모든 API 리소스를 코드베이스 내 YAML 파일로 통합할 수 있게 함
-- 이제 Postman 컬렉션, 스펙, 목(mock), 테스트 등을 로컬 코드베이스에서 직접 yaml로 관리 가능함
-- Postman 데스크톱 앱과 클라우드 간 양방향 동기화가 지원되어 변경사항이 자동으로 반영됨
-- git diff를 이용해 코드처럼 API 사양, 테스트의 변경 이력을 추적하고 버전 관리 가능
-- 모든 리소스가 파일로 존재해 git 커밋 단위로 검토 및 협업이 가능함
-- Postman의 AI 에이전트 모드로 자연어로 API 작업을 지시할 수 있으며, 코드베이스 분석‧사양 및 테스트 자동 생성이 지원됨
-- 다양한 AI 모델(Claude, GPT, 셀프호스팅)과 MCP 서버, GitHub, Sentry, Linear 등과의 연계가 가능함
-- 로컬 환경과 CI 파이프라인(프리커밋 훅, GitHub Actions 등)에서도 동일한 테스트·모델을 운영할 수 있음
-- 영상자는 포스트맨 업데이트를 "AI 네이티브 API 플랫폼"으로 진화했다고 평가하며, 실 사용 예시 저장소와 링크를 소개함
+- 이 영상에서는 사용자가 한 줄의 코드도 작성하지 않고, AI 코드 에이전트가 원격에서 자동으로 깃허브 이슈를 해결하는 과정을 시연함
+- Coder 플랫폼에서 제공하는 오픈소스 무료 툴 ‘Workspaces’를 활용하여 클라우드에 AI 코딩 에이전트 인프라를 직접 구축·운영함
+- 사용자는 깃허브 이슈에 ‘coder’ 태그만 붙이면 원격 환경에서 해당 이슈 처리가 자동으로 시작됨
+- Workspaces를 통해 여러 코딩 에이전트 세션을 동시에 병렬로 관리할 수 있어, 여러 깃허브 이슈를 한 번에 처리 가능
+- 모든 작업은 사용자 컴퓨터가 아닌 서버(VPS)에 설치된 Workspaces 인프라에서 진행되어 로컬 리소스를 전혀 소모하지 않음
+- 각 깃허브 이슈 작업은 개별적으로 격리된 환경에서 실행되어 안전성과 확장성이 높음
+- 이슈 진행 상황은 깃허브 이슈에 자동으로 작업 추적 링크로 코멘트가 남겨지며, 작업이 끝나면 자동으로 PR(Pull Request)이 생성됨
+- Workspaces는 AI 코딩 에이전트를 위한 오케스트레이션 인프라를 제공할 뿐, 자체적으로 코딩 에이전트는 아니며, 원격에서 대규모 세션 운용을 가능하게 함
+- 무료로 누구나 사용해볼 수 있으며, 영상 설명란에 해당 툴 링크가 안내됨
+- 병렬처리, 팀 단위 인프라 공유, 자동화 등의 장점을 통해 개발 생산성과 협업 효율이 크게 증가함을 보여줌
 
 ---
 
 ## 세부 요약 - 주제별 정리
 
-### API 개발과 테스트는 기존까지 도구 간 분리로 인해 비효율적이고 번거로웠음
+### 사용자는 코딩을 한 줄도 작성하지 않고 이슈를 자동 처리할 수 있음
 
-- API를 개발할 때, 엔드포인트 생성과 관리는 주로 IDE(통합개발환경)나 코드 작성 도구에서 이루어짐
-- 컬렉션(collections)과 테스트(test)는 또 다른 전문 툴(예: Postman 등)에서 따로 만들어야 했음
-- 이에 따라 사양 문서(specs), 테스트, 코드 파일이 각각 다른 위치·플랫폼에서 관리되어 연계가 어려움
-- CI(지속적 통합)에 연동시키는 과정도 별도로 처리해야 해서 복잡성이 추가됨
-- 버전 관리도 각 요소별로 따로 이루어져, 일관성과 추적성이 떨어졌음
+- 영상의 도입부에서 “I didn't write a single line of this poll request. A coding agent did in its own computer.”라고 직접 언급
+- 사용자는 직접 소스코드를 건드리지 않고, 별도의 행동 없이 AI 에이전트가 독립적으로 이슈를 해결함
+- 실제 코딩 작업은 전부 원격 에이전트 환경에서 수행됨
 
-### 포스트맨이 대규모 업데이트로 핵심적인 문제를 한 번에 해결함
+### 깃허브 이슈에 태그만 추가하면 자동으로 AI가 작업 시작
 
-- Postman은 약 10여 년 이상 API 툴로서 널리 사용되어 옴(영상자의 장기 이용 경험 언급)
-- 이번에는 "AI 네이티브 API 플랫폼"이라는 슬로건 아래 중대한 기능 업그레이드가 단행됨
-- 가장 큰 변화는 Postman이 "Git-native"가 되어, 코드 및 리소스들이 일관적으로 버전 관리되도록 지원
+- 이슈에 ‘coder’ 태그를 추가하기만 하면 자동으로 해당 이슈를 다룰 AI 세션이 새로 생성됨
+- 태그 추가만으로 자동화된 워크플로우가 트리거되어, 사용자는 추가 조작 없이 AI의 작업을 지켜볼 수 있음
 
-### 모든 API 관련 리소스를 YAML 파일로 로컬 코드베이스에 통합관리할 수 있음
+### Coder의 무료 오픈소스 툴 ‘Workspaces’로 클라우드 인프라를 손쉽게 구축
 
-- 컬렉션, 스펙, 목(mock), 테스트 등 Postman의 모든 리소스를 코드베이스 내 단순 YAML 파일로 저장해 관리 가능
-- 이러한 yaml 파일들은 유지관리와 변경 추적이 쉬우며, 별도의 복잡한 설정이 불필요
-- 로컬 환경에서 Postman 데스크톱 앱으로 직접 불러와 작업이 가능함
+- 영상에서 “a free and open-source tool called Workspaces by the platform Coder”라 명시
+- Workspaces는 오픈소스 소프트웨어로 무료 제공됨
+- 사용자는 VPS(가상 사설 서버)에 직접 설치하여 자가 호스팅함
+- Workspaces는 인공지능 코딩 에이전트의 실행을 위한 인프라·오케스트레이션 레이어 역할을 함
 
-### 로컬 ↔ 클라우드 간 양방향 동기화로 변경사항 관리가 매우 간편해짐
+### Workspaces는 AI 코딩 에이전트 오케스트레이션 인프라임을 명확히 구분해야 함
 
-- Postman 앱에서 로컬 코드베이스와 클라우드 계정 간에 양방향(sync)이 자동으로 진행됨
-- 예시로, 엔드포인트 테스트에 변경을 가한 뒤 에디터로 전환하여 git diff를 실행함
-- git diff 결과로 사양/테스트의 변경 사항을 한눈에 파악할 수 있음을 시연
+- “workspaces is the infrastructure for our coding agents. So it's not a coding agent itself.”
+- Workspaces는 AI 코딩 에이전트가 운용·배포·병렬 처리될 수 있도록 지원하는 관리 도구임
+- 실제로 코딩을 수행하는 것은 Claude 등 AI 코딩 에이전트이며, Workspaces는 이를 다수, 원격에서, 독립적으로 관리
 
-### API 사양 및 테스트도 코드와 동일하게 버전 관리되어 협업과 추적성이 향상됨
+### 사용자는 VPS에 Workspaces를 직접 배포하여 원격 코드 처리가 가능함
 
-- git 기반의 버전 관리를 활용해, API 사양, 컬렉션, 테스트 등 모든 변경 사항을 코드와 마찬가지로 추적 및 검토 가능
-- git 커밋 단위로 리뷰 및 기록이 남아, 협업 시 투명성과 효율이 크게 증대됨
+- 예시로 사용자는 자신의 VPS에 클라우드 기반 Workspaces 인스턴스를 배포함
+- 개인 로컬 컴퓨터에서 아무것도 돌릴 필요 없이 모든 작업이 클라우드 상에서 이루어짐
+- 사용자는 깃허브 이슈를 웹 인터페이스에서 간단히 관리
 
-### 모든 리소스가 파일로 통합됨으로써 API 생애주기 전체에 걸친 자동화와 일관성이 실현됨
+### 태그를 통해 이슈가 AI로 전달되고, 자동으로 작업 세션이 생성됨
 
-- 파일 기반 구조 덕분에 Postman의 에이전트 모드가 API 개발의 전 단계를 유기적으로 연결함
-- 영상자는 "모든 것이 이제 디스크의 파일이므로 전체 라이프사이클의 조율이 가능하다"고 언급함
+- 깃허브 이슈에 coder 태그 추가 → Workspaces가 해당 이벤트를 인식하고 새로운 작업(task) 할당
+- “All I have to do to trigger coder to handle this... is I simply have to add the coder tag.”
+- UI에서 실시간으로 Task 리스트에 새로운 작업이 추가되고, 프로세스가 바로 시작
 
-### AI 에이전트 모드로 자연어 지시만으로 API 컬렉션 및 테스트 자동화가 가능함
+### 진행 상황은 UI와 Issue 코멘트로 실시간 추적할 수 있음
 
-- 사용자는 단순히 영어로 원하는 API 작업을 기술하면 됨(예: Flask 앱용 컬렉션 생성 요청)
-- Postman이 코드베이스를 스캔해 엔드포인트(라우트) 식별, API 사양 생성, 테스트 코드 및 목(mock) 셋업을 자동화함
-- 생성된 모든 결과물이 동기화되어, 일관적인 관리를 할 수 있음
+- “It even puts a comment in the GitHub issue with the exact link to track the work as it happens.”
+- 깃허브 이슈에는 진행 중인 작업에 대한 추적 링크가 자동 코멘트로 남겨짐
+- UI 내 Task 진행상황을 실시간으로 확인 가능
 
-### git 커밋 리뷰, 다양한 AI모델 연동, 외부 툴 컨텍스트 통합 등 고급 기능을 제공함
+### 클라우드 기반 환경에서 Claude 등 AI 코드가 실제로 작업하며, 병렬 처리가 가능함
 
-- 생성 또는 변경된 내용이 git 커밋으로 남아 팀원들이 검토하고 협업할 수 있음
-- AI 모델 선택 가능(Claude, GPT, 자체 호스팅 모델 등)
-- MCP(Multi Channel Presence) 서버 지원
-- GitHub, Sentry, Linear 등 기존 팀에서 사용하는 여러 개발 도구와 연동하여 컨텍스트 활용 가능
+- “Cloud code is running.”
+- AI 코디가 깃허브 이슈에 요청된 작업을 원격 세션에서 처리
+- 다수의 이슈를 동시에, 격리된(workspaces 기반) 세션에서 병렬적으로 처리 가능
+- “...dozens of issues at the exact same time, all running in parallel in my workspaces infrastructure.”
 
-### 로컬과 CI 환경에서 동일한 테스트와 워크플로우를 적용하여, 재작성 없이 자동화가 가능함
+### 처리 완료 후 자동으로 Pull Request가 생성되어 검토와 병합이 즉시 가능함
 
-- 로컬에서 개발한 컬렉션, 테스트 등이 CI(지속적 통합) 파이프라인에서도 동일하게 적용됨
-- 프리-커밋 후크(pre-commit hooks), GitHub Actions 등 자동화 플로우와 완전히 통합
-- 환경별로 별도 스크립트나 테스트를 재작성할 필요가 없음
+- AI 코딩 작업이 마무리되면, 완성된 Pull Request가 깃허브에 자동으로 제출됨
+- 사용자는 퀄리티 확인 후 Merge만 하면 됨
+- “this is our final pull request ready for us to review and merge.”
 
-### 영상자는 실 사용을 통한 강한 추천과 예제 저장소‧링크를 제공함
+### Workspaces는 팀 단위 협업, 확장성, 무료성 등 실용적 장점을 갖춤
 
-- 영상자는 최근 포스트맨의 변화에 높은 만족감을 여러 번 언급함(“분명히 한 단계 더 업그레이드됨” 등)
-- 본인이 직접 활용한 예시 GitHub 저장소와 Postman 링크를 설명란에 안내함
+- 인프라 환경 전체를 팀원과 공유 가능하여 팀 기반 대규모 협업이 가능
+- 각 이슈별 작업 환경이 격리되어 안정성↑, 다수 동시 작업 가능→효율성↑
+- 무료로 사용 가능, 영상 설명글에 공식 링크 안내
+- 영상 제작자는 “wonderful tool, free to try. I'd highly recommend giving it a shot.”라고 언급
