@@ -1,7 +1,7 @@
 ---
 author: AI Makers Club
-pubDatetime: 2026-07-05T08:19:58.895Z
-title: "My AI Memory Now Follows Me Across Every Tool!"
+pubDatetime: 2026-07-05T08:20:17.929Z
+title: "The New Kimi K2.7 Model is VERY Impressive"
 slug: untitled
 featured: true
 draft: false
@@ -9,94 +9,72 @@ tags:
   - AI
   - YouTube 요약
   - 자동 업로드
-description: "영상 제목은 “모든 AI 도구에서 나를 따라다니는 나만의 AI 메모리!”로 해석됨 제작자는 기존에 Claude Code 기반의 ‘세컨드 브레인’(두 번째 뇌)를 구축하여, 개인 프"
+description: "\"Moonshot\"이 최신 Kimi K 2.7 코딩 AI 모델의 코드를 오픈소스로 공개했으며, 예기치 못하게 큰 관심을 받고 있음 이번 Kimi K 2.7은 Kimi 시리즈 중 가"
 ---
 
 <div style="text-align: center;">
   <img src="https://img.youtube.com/vi/untitled/maxresdefault.jpg" alt="YouTube Thumbnail" style="width: 100%; max-width: 640px; height: auto; border-radius: 0.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" loading="lazy" />
 </div>
 
-**영상 링크:** [My AI Memory Now Follows Me Across Every Tool!](https://www.youtube.com/shorts/JETG-4MmihY)  
+**영상 링크:** [The New Kimi K2.7 Model is VERY Impressive](https://www.youtube.com/shorts/fYrPKhHouxs)  
 **채널명:** Cole Medin
 
-## **모든 AI 도구에서 나만의 AI 메모리를 자유롭게 이용할 수 있게 해주는 Walrus 솔루션** 핵심 요약
+## *새로운 Kimi K 2.7 모델은 정말 인상적이다* 핵심 요약
 
-- 영상 제목은 “모든 AI 도구에서 나를 따라다니는 나만의 AI 메모리!”로 해석됨
-- 제작자는 기존에 Claude Code 기반의 ‘세컨드 브레인’(두 번째 뇌)를 구축하여, 개인 프로젝트 및 자신에 대한 정보 기억에 높은 생산성을 확보함
-- 하지만 Codex, Pi 등 다양한 AI 도구의 활용이 늘면서, 각 도구별 강점을 살리고 싶지만 기억 시스템이 Claude Code에만 한정되어 불편함을 느낌
-- 이 문제를 해결하기 위해 여러 솔루션을 찾던 중, AI 메모리 탈중앙화 시스템인 “Walrus and Memory”를 발견함
-- Walrus는 도구에 종속되지 않은 외부 메모리 시스템으로, 메모리가 암호화되어 사용자 본인이 소유 및 통제할 수 있음
-- Walrus 설치는 매우 간단하며, 홈페이지에서 프롬프트 하나만 복사해 AI 도우미에 입력하면 무료로 시작 가능
-- SDK를 활용하면 다양한 앱에도 쉽게 메모리 시스템을 통합할 수 있음
-- Walrus 사용 과정을 예시로 보여주며, Claude Code와 Pi 등 서로 다른 AI에서 동일한 메모리를 즉시 검색·활용 가능한 것을 실증함
-- 메모리 저장, 키워드 추출, 대용량 텍스트 분석, 검색 등 주요 기능을 실제 예제와 함께 소개
-- 사용자는 접근 권한, 대리 키 부여 등 다양한 통제 옵션을 통해 개인정보 및 업무 데이터를 안전하게 관리할 수 있음
-- Walrus는 AI 메모리의 “레이어”로 각종 AI 툴을 넘나들며 생산성을 극대화할 수 있도록 지원함
-- 링크 또는 안내를 통해 누구나 쉽고 빠르게 도입할 수 있음을 강조
-
----
+- "Moonshot"이 최신 Kimi K 2.7 코딩 AI 모델의 코드를 오픈소스로 공개했으며, 예기치 못하게 큰 관심을 받고 있음
+- 이번 Kimi K 2.7은 Kimi 시리즈 중 가장 강력한 코딩 성능을 지녔다고 소개됨
+- 모델의 가중치(Weights)가 공개되어 누구나 Kimi CLI와 Kimi Code를 통해 바로 사용할 수 있음
+- 전작 Kimi K 2.6에 비해 각종 벤치마크에서 대폭 성능 향상: Kimi code bench에서 21% 향상, program bench에서 11% 향상, MLS bench light에서 31% 향상
+- 동일 작업에서도 추론 토큰이 30% 줄어 ‘과도한 사고’ 없이 더 신속한 결과 생성
+- 곧 6배 빠른 속도의 모드도 제공될 예정임이 예고됨
+- “GPT·Claude 같은 폐쇄형 모델 대신 이 모델로 교체할 것인가?”라는 질문을 시청자에게 던짐
+- 댓글을 통해 시청자들이 오픈모델/폐쇄모델 선호를 나누어 공유하도록 유도
 
 ## 세부 요약 - 주제별 정리
 
-### Claude Code 기반의 개인화 메모리 시스템 덕분에 업무 효율이 크게 높아졌음을 설명함
+### Moonshot이 예고 없이 선보인 Kimi K 2.7 모델은 커뮤니티에 큰 반향을 불러일으킴
 
-- Claude Code와 함께 구축한 ‘세컨드 브레인’(두 번째 뇌)은 제작자가 자신과 프로젝트 정보 등 모든 데이터를 기억하는 데 매우 효과적임
-- 이 시스템 내의 메모리를 통해, 본인의 사업 및 다루는 프로젝트와 관련된 모든 내용을 AI가 파악함
-- 이러한 메모리 덕분에 일과 삶에서 높은 생산성을 경험해왔음
-- 그러나 Claude Code만 활용하는 데에 한계가 있음을 인지함
+- "Honestly, this one snuck up on everyone."이라는 언급을 통해 대중과 커뮤니티 모두에게 예상치 못한 깜짝 출시였음을 강조
+- 영상의 시작에서 Moonshot이 최신 코딩 AI 모델 ‘Kimi K 2.7’ 코드를 오픈소스로 공개했다고 밝힘
+- 이번 공개는 업계 내에서도 신속하고 충격적인 사건으로 받아들여짐
 
-### 다양한 AI 도구(Codex, Pi 등)의 장점을 살리기 위해 멀티플랫폼 메모리 공유의 필요성을 지적함
+### Kimi K 2.7은 시리즈 중 최강의 코딩 성능을 자랑함
 
-- 최근 Claude Code 외에 Codex와 Pi 같은 다른 AI 도구도 자주 사용하고 있음
-- 각 AI 도구별로 강점이 달라, 작업별로 최적의 도구를 선택하고 있음
-- 그러나 기존의 메모리 시스템이 Claude Code 안에만 붙어, 도구를 바꿀 때마다 기억정보가 연동되지 않는 불편함이 존재함
-- “메모리 락인” 현상으로, 효율적이고 유연한 작업이 어려웠음
+- Kimi K 2.7은 ‘their strongest coding model yet’이라고 직접 언급
+- Moonshot이 기존 Kimi 시리즈에 비해 뛰어나게 업그레이드된 것으로 평가
+- AI 코딩 모델 시장에서 Kimi K 2.7의 입지가 한층 강화됐음을 시사
 
-### 메모리 연동의 한계를 극복하려 다양한 솔루션을 찾는 과정을 공유함
+### 모델의 오픈소스 공개와 사용 방법이 간편하게 안내됨
 
-- 오랜 기간 개인화된 AI 메모리 시스템을 여러 도구에서 공유할 수 있는 ‘해결책’을 찾으려 노력함
-- Claude Code에만 한정된 기존 시스템의 문제점을 명확히 인식하고, 고민을 지속함
+- “Open weights and you can grab it today through Kimi CLI and Kimi code.” 문구에서 모델 가중치가 오픈되어 있음을 알림
+- 누구나 Kimi CLI(명령행 인터페이스)와 Kimi Code를 통해 모델을 즉시 사용할 수 있다고 안내
+- 즉각적으로 개발자와 사용자들이 접근 가능함을 강조
 
-### Walrus and Memory라는 도구가 모든 요구조건을 충족한다고 밝힘
+### 전작 Kimi K 2.6과의 성능 비교 수치가 상세히 제시됨
 
-- 최근에 찾은 “Walrus and Memory”라는 툴이 원하는 조건에 완벽히 부합됨을 강조
-- Walrus는 모든 AI 도구와 분리되어 동작하는 외부 메모리 시스템임
-- “기억”들이 특정 회사나 인프라에 저장되지 않고, 완전히 사용자의 소유 및 관리 하에 존재
-- 메모리 데이터는 분산 저장되고 암호화 처리되어 보안과 개인 정보 보호가 강화됨
+- Kimi code bench에서 21% 향상, program bench에서 11% 향상
+- MLS bench light에서 무려 31%의 성능 향상 수치 공개
+- 벤치별 정확한 퍼센트 수치를 제시하여 객관적인 성능 차이를 강조
 
-### Walrus 설치 및 시작 방법이 매우 간단함을 직접 시연함
+### 추론 토큰 수 절감으로 더 효율적인 결과를 제공함
 
-- 사용을 시작하는 방법은 매우 직관적임
-- Walrus 홈페이지에 안내된 프롬프트를 단 한 번 복사해 AI 코드 어시스턴트에 붙여 넣으면, 즉시 세팅 가능
-- 추가로, Walrus의 SDK를 활용하면 어떤 앱에도 메모리 시스템을 쉽게 통합할 수 있음
-- MCP 서버 연결 절차와 확인 방법을 상세히 설명함
+- “It gets there with 30% fewer reasoning tokens”라는 언급
+- 동일한 작업을 30% 적은 추론 토큰으로 처리해, ‘덜 복잡하게 더 빠르게’ 결과가 나옴을 어필
+- 이는 “less overthinking, more shipping”이란 표현으로 요약됨
 
-### 실제로 “기억”을 저장, 추출, 검색하는 과정을 실시간으로 데모함
+### 6배 빠른 속도를 지원하는 모드가 곧 추가될 예정임
 
-- Claude Code 등에서 대량 텍스트를 붙여넣은 뒤, “use Walrus to remember this”라고 지시함
-- MCP 서버가 호출되어 텍스트에서 20가지의 핵심 정보를 추출, 암호화하여 개인 ‘기억’에 저장함
-- 저장 후, Claude Code 세션에서 “tech stack for Dark Factory”를 Walrus 메모리에서 검색하자, 즉시 정확한 답변이 나옴
-- 저장된 정보가 Claude Code뿐 아니라, 다른 AI 도구로도 재사용됨
+- “A six-time speed mode is coming soon, too.” 라는 문구에서 성능 속도 향상 예고
+- 모델의 효율성과 실용성이 더욱 제고될 것으로 기대하게 함
 
-### 동일한 Walrus 메모리를 Pi 등 여러 AI 도구에서 즉시 검색할 수 있음을 실증함
+### 기존 폐쇄형 AI 모델(GPT·Claude)과의 교체 가능성을 시청자에게 직접 질문함
 
-- Pi 같은 타 AI 코딩 에이전트에도 MCP 서버를 연결하면 별도 셋업 없이 동일한 메모리 사용 가능
-- 같은 질문을 Pi에 입력하자, 정보가 완전히 공유되어 Claude와 동일한 답변이 제공됨
-- 답변의 세부 표현에만 약간 차이가 있으나, 근거 정보와 품질은 유지됨
+- “Would you actually swap Claude or GPT for an open model like this?” 문장으로 질문을 던짐
+- Claude(Anthropic), GPT(OpenAI) 등 대표 폐쇄형 코드 생성 AI와 비교하는 화두를 제시
+- 오픈모델과 폐쇄모델 간 실용성·효율성 선택 고민을 유도
 
-### Walrus 메모리의 암호화 및 액세스 제어 기능이 보안과 협업에 유리함
+### 시청자가 댓글로 오픈/폐쇄형 모델 선호를 공유하도록 독려함
 
-- Walrus 메모리에 저장된 데이터는 모두 암호화되어, 사용자가 완전히 통제 및 소유함
-- 접근 제어, 시스템 또는 타인에게 ‘대리 키(delegate key)’ 발급 등 다양한 권한 부여가 가능함
-- 업무별, 개인별, 도구별로 세분화된 통제가 가능해져 민감한 정보의 실질적인 관리가 가능함
-
-### Walrus를 AI 메모리의 범용 “레이어”로 활용해 생산성을 크게 높일 수 있음을 강조함
-
-- 모든 AI 툴에서 동일한 기억정보를 호출, 재사용할 수 있어 불필요한 리셋이나 정보를 재정리할 필요가 없음
-- 도구 간 자유로운 이동과 협업 시에도 기억 손실이 없음
-- AI 생산성 향상을 위한 메모리 통합 솔루션으로 적극 추천함
-
-### 누구나 무료로 쉽게 Walrus를 시작할 수 있음을 덧붙이며 마무리함
-
-- Walrus 홈페이지에서 안내되는 프롬프트 하나로 즉시 무료로 체험 및 설치 가능함을 재차 강조함
-- 설치 및 연동 속도가 매우 빨라, 다양한 AI 도구를 활용하는 사람들에게 적합하다고 설명하며 영상을 마무리함
+- 영상 마지막에서 “Open or closed, drop your pick below.”라고 직접 요청
+- 시청자들이 본인의 선택과 생각을 의견으로 남기도록 적극 유도
+- 커뮤니티 내 토론 및 정보 공유를 강조하는 흐름으로 마무리
