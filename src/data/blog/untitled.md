@@ -1,7 +1,7 @@
 ---
 author: AI Makers Club
-pubDatetime: 2026-07-13T08:20:11.809Z
-title: "Anthropic Just Released Claude Sonnet 5 and it's VERY IMPRESSIVE!"
+pubDatetime: 2026-07-13T08:20:47.812Z
+title: "My AI Memory Now Follows Me Across Every Tool!"
 slug: untitled
 featured: true
 draft: false
@@ -9,90 +9,93 @@ tags:
   - AI
   - YouTube 요약
   - 자동 업로드
-description: "Anthropic이 최신 중간 등급 모델인 Claude Sonnet 5를 공식적으로 출시함 Sonnet 5는 SweBench Verified 코딩 테스트에서 85.2점을 기록해 O"
+description: "영상은 기존에 Claude Code 중심의 개인화 메모리 시스템이 다양한 AI 툴 간 이동에 불편함을 초래했던 문제를 설명함 Cole Medin은 Claude Code, Codex"
 ---
 
 <div style="text-align: center;">
   <img src="https://img.youtube.com/vi/untitled/maxresdefault.jpg" alt="YouTube Thumbnail" style="width: 100%; max-width: 640px; height: auto; border-radius: 0.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" loading="lazy" />
 </div>
 
-**영상 링크:** [Anthropic Just Released Claude Sonnet 5 and it's VERY IMPRESSIVE!](https://www.youtube.com/shorts/VRkkJejseCo)  
+**영상 링크:** [My AI Memory Now Follows Me Across Every Tool!](https://www.youtube.com/shorts/JETG-4MmihY)  
 **채널명:** Cole Medin
 
-## *Anthropic는 Claude Sonnet 5를 출시했고, 매우 인상적인 성능을 보여줌* 핵심 요약
+## *나의 AI 기억은 이제 모든 툴에서 따라온다!* 핵심 요약
 
-- Anthropic이 최신 중간 등급 모델인 Claude Sonnet 5를 공식적으로 출시함
-- Sonnet 5는 SweBench Verified 코딩 테스트에서 85.2점을 기록해 Opus 4.8(Anthropic 최고 성능 모델)에 근접한 점수를 획득함
-- Sonnet 5의 가격은 Opus 4.8에 비해 훨씬 저렴하여, 성능 대비 가격 경쟁력이 큼
-- 타이틀은 “속도”가 아니라 “중간 등급 모델(sonnet)의 대폭 향상된 코드 능력”에 초점이 맞춰져 있음
-- Sonnet 5는 이전 버전보다 에이전트형 기능(능동적 코드 실행 및 복잡한 작업 수행)이 크게 향상됨
-- Sonnet 4.6 대비 SweBench 점수 85, Terminal Bench 67→80, Browse Comp 76→86 등 전반적으로 큰 성능 도약
-- Frontier Code 점수가 15→38(2배 이상 상승)로, Sonnet 역사상 가장 큰 코딩 능력 증가 폭 기록
-- 모델 업그레이드는 model ID만 Sonnet 4.6에서 5로 변경하면 되어, 별도의 코드 수정 필요 없음
-- Sonnet 5는 무료/프로/맥스/팀/엔터프라이즈/클로드 코드/플랫폼 등 모든 구독 모델에서 제공됨
-- 2024년 8월 31일까지 입력 100만 토큰당 $2, 출력 100만 토큰당 $10의 저렴한 가격 정책 적용
+- 영상은 기존에 Claude Code 중심의 개인화 메모리 시스템이 다양한 AI 툴 간 이동에 불편함을 초래했던 문제를 설명함
+- Cole Medin은 Claude Code, Codex, Pi 등 여러 AI 코딩 어시스턴트를 상황에 따라 병행 사용하고 있음
+- 기존 메모리 시스템은 특정 툴(Claude Code)에 종속되어 있어, 한 툴에서 쌓인 개인∙업무 데이터를 다른 툴에서 활용하기 어려웠음
+- 이를 해결하기 위해 ‘Walrus and Memory’라는 분산(탈중앙화) 암호화 메모리 솔루션을 도입함
+- Walrus는 별도의 가입이나 복잡한 설정 없이 한 줄 프롬프트로 즉시 설치 가능하며, 링크를 통해 시작 가능
+- 설치된 Walrus는 MCP 서버와 연동되어 개별 AI 툴(Codex, Pi 등) 어디서나 동일한 개인화 메모리 접근을 가능하게 함
+- 대량의 텍스트에서 자동으로 핵심 정보를 추출해 암호화∙저장, 이후 도구를 달리해도 자유롭게 검색 및 사용 가능
+- 암호화 저장 방식으로 데이터 소유권과 접근 권한을 본인이 직접 관리하고, 대리 키 발급도 지원함
+- Walrus는 SDK 제공으로 다양한 앱과 손쉽게 연동 가능, 간단하고 빠른 세팅을 장점으로 강조함
+- 영상은 실제 작업 예시(텍스트 기반 팩트 20개 추출, 두 AI 플랫폼에서 동일 정보 즉시 활용)로 실효성을 보여줌
 
 ---
 
 ## 세부 요약 - 주제별 정리
 
-### Sonnet 5는 중간 등급임에도 Opus 4.8에 근접한 SweBench 코딩 점수를 달성함
+### AI 코딩 어시스턴트들의 병행 사용이 기존 메모리 시스템의 한계를 드러냄
 
-- Sonnet 5는 Anthropic의 중간 등급 언어모델임에도 SweBench Verified 코딩 벤치마크에서 85.2점을 기록함
-- Opus 4.8이 내는 최고 점수(언급치 않음)에 “거의 근접(nearly touches)”하는 수준임
-- “fraction of the price(가격의 일부)”로 Opus의 성능에 버금가는 결과를 달성
-- 속도가 아닌 “성능 대비 가격”이 Sonnet 5의 포인트임
+- Cole Medin은 Claude Code를 중심으로 ‘Second Brain(두 번째 뇌)’을 운영하며 자신과 프로젝트 관련 모든 데이터를 AI 메모리로 관리함
+- 하지만 최근에는 Codex, Pi 등 다양한 장점의 AI 코딩 툴을 함께 활용하게 됨
+- 각 도구의 특성에 따라 작업별로 최적화된 AI를 선택해 사용하고 있음(특정 작업은 Pi, 다른 작업은 Codex 등)
+- 기존 메모리 시스템은 Claude Code 기반으로 제작되어, 타 툴에서는 해당 메모리 접근이 불가함
+- 이로 인해 방대한 개인∙업무 데이터가 하나의 툴에 갇히는 ‘록인(lock-in)’ 현상이 심각해짐
 
-### 에이전트형 AI로서 Sonnet 5의 자동화/실행 능력이 대폭 강화됨
+### 탈중앙∙암호화 메모리 플랫폼 Walrus and Memory가 문제를 해결함
 
-- Sonnet 5는 “가장 agentic(능동적)” Sonnet 시리즈임
-- 사용자가 코드 저장소(repo)와 목표(goal)를 지정하면 Sonnet 5가 자체적으로 플랜을 짜고, 터미널에서 자동 명령 실행 및 다단계 작업을 완수
-- 이전 Sonnet은 중간에서 작업을 멈췄으나, 5는 끝까지 여러 단계 문제를 해결함
-- 실제 사례로 터미널에서 복잡한 명령 실행 및 작업 흐름 완결능력이 개선됨
+- 다양한 AI 툴 간 ‘기억’을 공유할 솔루션을 오랫동안 찾던 중 ‘Walrus and Memory’ 플랫폼을 발견
+- Walrus는 특정 AI 툴에 종속되지 않고 외부(탈중앙화)에서 메모리와 데이터를 관리하는 시스템임
+- 모든 기억(데이터)은 암호화(encrypted)되어 저장되며, 사용자가 직접 소유 및 통제함
+- 기업 서버∙인프라에 귀속되지 않고 개인 소유의 분산 저장 방식을 채택
 
-### 4.6 대비 주요 벤치마크에서 Sonnet 5의 성능이 대폭 상승함
+### Walrus의 설치 및 기본 세팅은 한 줄 프롬프트로 즉시 가능함
 
-- SweBench Verified: Sonnet 4.6 대비 Sonnet 5에서 85점(4.6의 점수는 미언급)
-- Terminal Bench: 67점(4.6) → 80점(5)로 상승
-- Browse Comp: 76점(4.6) → 86점(5)으로 향상
-- 대부분의 측정항목에서 대폭적인 향상폭 기록
+- 시작법이 아주 간단함: Walrus 홈페이지에서 제공한 한 줄 프롬프트만 복사해 AI 어시스턴트에 입력하면 됨
+- 영상 설명란(link)에서 해당 프롬프트를 바로 얻을 수 있음
+- 설정 시 별도의 회원가입이나 복잡한 인증 없이 바로 사용을 시작할 수 있음
+- 실행 즉시 MCP 서버가 연동되어 화면에 연결 상태가 표시됨(MCP server connected 확인 가능)
 
-### Frontier Code 평가에서 Sonnet 5는 전 버전 대비 2배 넘는 점수 상승을 보임
+### Walrus로 대용량 텍스트에서 주요 정보를 추출해 AI 기억으로 만드는 과정을 보여줌
 
-- Frontier Code 벤치마크에서 Sonnet 5는 38점을 찍음(이전 Sonnet은 15점)
-- 이는 단일 버전 업그레이드에서 “가장 큰 코딩 능력 점프”로 설명됨
-- 해당 지표에서 실제로 2배 이상 능력 향상
+- 각 AI 툴 내에서 ‘Walrus를 이용해 기억해’라는 프롬프트만 주면 됨
+- 예시로, Second Brain에서 수집한 방대한 텍스트를 복사해 입력
+- Walrus는 MCP 서버를 호출, 입력된 대량 데이터에서 핵심 정보를 분리해 암호화 저장
+- 실제 데모에서 ‘20가지 팩트’를 자동 추출해 사용자 메모리로 즉시 저장하는 모습을 보여줌
 
-### Opus 4.8이 일부 벤치마크에서는 여전히 앞서지만 Sonnet 5가 거의 따라잡음
+### 여러 AI 툴에서 동일한 개인화 메모리에 즉시 접근이 가능해짐
 
-- Opus 4.8이 여전히 “아주 약간” 더 높은 성능을 내는 벤치마크 결과도 존재
-- Sonnet 5가 Opus 4.8에 “가까워졌으나, 아직 앞서진 못함”
-- 이 점이 헤드라인이 아니라는 점을 강조 (“거기에 집착할 필요 없음”)
+- Claude Code에서 Walrus 연동 메모리로 ‘Dark Factory의 기술 스택을 알려줘’라는 요청을 보냄
+- Walrus 서버가 호출되어 정확한 기술 스택 정보를 반환(이 정보는 앞서 입력한 대량 텍스트에서 자동 추출됨)
+- 이후 Pi 등 다른 AI 코딩 툴에서도 동일 서버 연동만으로 같은 질문 가능
+- MCP 서버 연결 외 추가 설정 없이 즉시 같은 정보에 접근, 완전 일관된 답변 획득
 
-### Sonnet 5로의 모델 전환은 기존 코드 수정을 거의 요구하지 않음
+### Walrus의 보안성 및 접근 제어 기능이 뛰어남
 
-- 기존 Sonnet 4.6에서 Sonnet 5로 마이그레이션할 때 코드상의 유일한 변화는 model ID 변경뿐임
-- 설계 구조 및 작업 흐름에 추가 수정 요구 없음
-- 이로 인해 Sonnet 5 도입 장벽이 매우 낮음
+- 모든 기억 데이터는 암호화되어 본인 소유로 관리됨
+- 각기 다른 시스템, 사람별로 사용 권한(Delegate key) 발급이 가능함
+- 다양한 접근 통제 옵션(접근 범위 설정, 공유 방안 등)을 유연하게 제공
 
-### 새로운 Sonnet 5 경험은 모든 Anthropic 서비스 플랜에서 동일하게 제공됨
+### SDK 제공으로 다양한 앱∙도구와의 연동이 쉽게 가능함
 
-- Sonnet 5의 성능은 free, pro, max, team, enterprise, Claude Code, 자체 플랫폼 등 모든 에디션에 제공
-- 특정 요금제나 배포 환경에 국한하지 않음
-- “Near Opus 수준의 코딩”을 다양한 사용자 계층이 누릴 수 있게 됨
+- 기본 설치 외에도 개발용 SDK를 제공해 직접 만든 앱, 다양한 AI 툴과 손쉽게 통합 가능
+- 확장성과 유연성이 뛰어난 구조임을 강조
 
-### 8월 31일까지 한시적으로 파격적인 토큰 가격 정책이 적용됨
+### Walrus 메모리 시스템은 자유롭고 신속한 작업 환경을 지원함
 
-- 2024년 8월 31일까지 Sonnet 5 사용 시 입력 100만 토큰당 $2, 출력 100만 토큰당 $10의 가격 정책 적용
-- 중간 등급 Sonnet 가격에 Opus에 가까운 성능 제공이 “트위스트” 포인트임
-- 가격 경쟁력이 대폭 강화되어 사용자 접근성 확대
+- 어떤 AI 코딩 어시스턴트를 쓰더라도 동일한 기억층(memorization layer)을 일관적으로 쓸 수 있음
+- 설치-세팅 과정이 빠르고, 초기 비용과 진입 장벽이 낮음
+- 데모에서 빠른 세팅 완료 및 실효적 정보 추출-활용 예시로 구현의 용이성을 재확인
 
-### Sonnet 5의 도입이 코드 에이전트 구축 방식에 실질적인 변화를 가져올 것으로 언급됨
+### 영상은 실제 사용 예시와 구체적 워크플로우로 Walrus의 장점을 실증함
 
-- 영상 제작자가 운영하는 “Dynamis” 커뮤니티에서 hands-on 에이전트 빌딩 워크숍이 주기적으로 이루어짐을 언급
-- 새롭게 향상된 agentic 모델의 활용법을 논의할 기반이 마련됨
+- 텍스트 다량 분석, 정보 자동 추출 및 AI 툴간 자유로운 활용 일련 과정이 실제로 시연됨
+- 같은 질문을 Claude Code, Pi 등 여러 환경에서 반복하며 일관된 정보 접근 결과를 확인
+- 각 툴에서의 응답은 미세한 차이가 있으나(Claude가 좀 더 장황, Pi가 약간 더 간단한 답변) 추출한 핵심 정보는 동일
 
-### 영상 마지막에서는 Sonnet 5가 진정한 세대 교체인지 또는 저렴한 Opus 대체품인지 시청자 의견을 묻고 마무리함
+### 요약 링크 및 무료 시작 안내, 추가 권장 언급 없이 마무리함
 
-- 영상 마지막에서 “Sonnet 5가 진정한 세대 교체인지, 아니면 그저 더 저렴한 Opus인지”에 시청자의 판단을 요청
-- 이용자들의 피드백 및 체험담 공유를 독려하며 영상을 마무리함
+- 영상 마지막에 설치 및 시작용 링크(설명란 제공)와 프롬프트 안내
+- 누구나 무료로 빠르게 설치해 경험해 볼 수 있음을 강조하며 영상이 종료됨
