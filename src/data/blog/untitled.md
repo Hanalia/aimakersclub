@@ -1,7 +1,7 @@
 ---
 author: AI Makers Club
-pubDatetime: 2026-07-17T23:46:53.353Z
-title: "My AI Memory Now Follows Me Across Every Tool!"
+pubDatetime: 2026-07-17T23:47:10.821Z
+title: "The New Kimi K2.7 Model is VERY Impressive"
 slug: untitled
 featured: true
 draft: false
@@ -9,95 +9,84 @@ tags:
   - AI
   - YouTube 요약
   - 자동 업로드
-description: "영상 제목은 \"내 AI 기억이 이제 모든 도구에서 따라온다!\"로, 다양한 AI 코딩 도구에서 동일한 기억 시스템을 활용하는 방법을 다룸 기존에는 \"Claude Code\"와 \"두 번"
+description: "Moonshot이 Kimi K 2.7 모델의 코드를 갑작스럽게 오픈 소스화함 Kimi K 2.7은 Moonshot이 내놓은 가장 강력한 코딩 모델로 평가됨 모델 가중치가 공개되어 "
 ---
 
 <div style="text-align: center;">
   <img src="https://img.youtube.com/vi/untitled/maxresdefault.jpg" alt="YouTube Thumbnail" style="width: 100%; max-width: 640px; height: auto; border-radius: 0.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" loading="lazy" />
 </div>
 
-**영상 링크:** [My AI Memory Now Follows Me Across Every Tool!](https://www.youtube.com/shorts/JETG-4MmihY)  
+**영상 링크:** [The New Kimi K2.7 Model is VERY Impressive](https://www.youtube.com/shorts/fYrPKhHouxs)  
 **채널명:** Cole Medin
 
-## *내 AI 기억이 이제 모든 도구에서 따라온다!* 핵심 요약
+## *정말 인상적인 새로운 Kimi K 2.7 모델* 핵심 요약
 
-- 영상 제목은 "내 AI 기억이 이제 모든 도구에서 따라온다!"로, 다양한 AI 코딩 도구에서 동일한 기억 시스템을 활용하는 방법을 다룸
-- 기존에는 "Claude Code"와 "두 번째 두뇌(Second Brain)" 내부의 메모리 시스템을 통해 생산성을 높였으나, 다양한 AI 도구(Claude Code, Codex, Pi)를 병행해 사용하면서 기억 시스템의 확장 필요성이 대두됨
-- 기존 메모리 시스템은 특정 도구에 종속적이어서, 여러 AI 코딩 도구 간 "기억"의 통합적 활용이 어려웠음
-- 새로운 솔루션으로 "Walrus and Memory"라는 외부화·분산형 암호화 메모리 시스템을 발견하여 소개함
-- Walrus와 Memory는 특정 도구에 종속되지 않고, 사용자의 기억 정보를 분산적으로, 암호화 상태로 소유 및 관리할 수 있게 지원함
-- 도구 설치 및 사용 방법이 매우 간단하며, 공식 홈페이지에서 프롬프트 한 줄 복사 후, 원하는 AI 코딩 보조 도구(assistant)에 입력만 하면 설치 완료
-- Walrus는 MCP 서버를 기반으로 동작하며, 기억 저장, 대화 및 대용량 텍스트 분석·추출, 기억 검색 등 다양한 기능을 단일 시스템으로 지원
-- 실제 데모에서는 20개의 사실을 대용량 텍스트에서 추출, 암호화·저장 후 Claude Code와 Pi 등 다양한 AI 도구에서 즉시 질의 및 동일 결과를 얻는 과정을 시연
-- 분산형 기억 시스템 특성상 접근 제어, 위임 키 생성 등 데이터 소유·관리 측면에서 강력한 사용자 통제 가능
-- 무료이자, SDK를 통한 다양한 도구 연동이 쉽고 신속하며, 모든 AI 코딩 도구의 공통 기억층(Memory Layer)으로 활용할 수 있음을 강조함
+- Moonshot이 Kimi K 2.7 모델의 코드를 갑작스럽게 오픈 소스화함
+- Kimi K 2.7은 Moonshot이 내놓은 가장 강력한 코딩 모델로 평가됨
+- 모델 가중치가 공개되어 Kimi CLI 및 Kimi Code를 통해 바로 사용할 수 있음
+- Kimi K 2.6에 비해 Kimi code bench에서 21% 성능 향상 기록
+- Program bench에서는 11% 개선, MLS bench light에서는 무려 31% 향상됨
+- 30% 더 적은 reasoning 토큰을 사용해 더 효율적인 추론을 보여줌
+- "덜 과도한 사고, 더 빠른 결과(less overthinking, more shipping)"라는 특징 강조
+- 곧 6배 더 빠른 속도의 모드(six-time speed mode) 출시 예정이라고 언급됨
+- 영상 마지막에 Claude나 GPT와 같은 폐쇄형 모델을 대체할지 질문을 제기
+- 개방형(open)과 폐쇄형(closed) 모델 중 무엇을 선택할지 시청자의 의견을 묻는 것으로 마무리함
 
 ---
 
 ## 세부 요약 - 주제별 정리
 
-### 기존의 메모리 시스템이 특정 AI 도구에 제한되는 문제를 경험함
+### Moonshot이 Kimi K 2.7의 오픈 소스 코드를 예상치 못하게 공개함
 
-- "Claude Code"와 "두 번째 두뇌(Second Brain)"를 중심으로 메모리 시스템을 구축해 높은 생산성을 경험함
-- 사용자는 점차 Codex, Pi 등 다양한 AI 코딩 보조 도구를 병행하게 됨
-- 각 도구의 장점(Claude Code의 협업/생산성, Codex의 코딩 능력, Pi의 대화 능력 등)이 달라, 과제별로 다르게 활용할 수밖에 없음
-- 기존 메모리 시스템이 오직 Claude Code 내에만 적용되어, 타 도구에서의 기억 활용에 제한을 느낌
-- 이로 인해 사용자와 자신의 일, 프로젝트에 대한 '기억' 정보를 순환적으로 활용하지 못하는 불편을 지속적으로 문제 제기
+- Kimi K 2.7 코드와 모델 가중치를 전격 오픈 소스화해 업계에 큰 반향을 일으킴
+- "Honestly, this one snuck up on everyone."이라는 말에서 알 수 있듯, 예고 없이 발표가 이루어짐
+- 기존 일반 사용자와 AI 커뮤니티 모두에게 예측 불가능한 이벤트로 받아들여짐
 
-### 외부화되고 분산된 암호화 메모리 시스템이 해결책이 됨
+### Kimi K 2.7은 Moonshot 사상 가장 강력한 코딩 모델임을 강조함
 
-- 여러 AI 도구 간에 기억을 융합해 사용하기 위한 솔루션을 지속적으로 찾았다고 밝힘
-- 최근 발견한 솔루션은 "Walrus and Memory"라는 분산형 암호화 기억 시스템임
-- 이 시스템은 한 회사의 서버 내부에 의존하지 않고, 사용자 소유의 분산 인프라에 암호화 상태로 기억이 보관됨
-- 각 기억 데이터는 사용자만이 접근할 수 있으며, 특정 기업이 소유하지 않음
-- 중앙 집중에서 벗어나 사용자 소유와 데이터 주권을 강조한 '탈중앙화 구조'임
+- 영상 내에서 "It's their strongest coding model yet."라고 명시해 Kimi K 2.7의 성능을 부각함
+- 이전 버전(K 2.6) 대비 여러 벤치마크에서 월등한 성능을 기록함을 시사
 
-### Walrus의 설치 및 도입 방식이 매우 간단함을 실연함
+### 모두가 즉시 Kimi CLI와 Kimi Code를 통해 사용 가능함을 안내함
 
-- Walrus 사용을 위한 과정은 단 한 줄의 프롬프트 복사로 시작됨
-- 사용자는 Walrus 공식 홈페이지에서 설치용 프롬프트를 복사함
-- 복사한 프롬프트를 원하는 AI 코딩 assistant(Claude Code 등)에 붙여넣으면 세팅이 즉시 완료됨
-- 복잡한 설치 없이, "한 번의 프롬프트 전송"만으로 외부화된 메모리 시스템이 연결됨
-- SDK 제공을 통해 개발자는 원하는 앱이나 툴 내장 연동도 가능함
+- 공개된 모델 가중치는 Kimi CLI(Command Line Interface) 및 Kimi Code를 통해 바로 다운로드 및 적용 가능함
+- "Open weights and you can grab it today..."라는 워딩에서 직접적인 사용 가능성을 전달함
 
-### MCP 서버를 통해 여러 도구에서 동일하게 기억에 접근할 수 있음
+### Kimi K 2.6 대비 구체적 벤치마크 수치로 21~31% 성능 향상을 보임
 
-- Walrus는 MCP(Memory Control Protocol) 서버에 의해 동작하며, 각 AI 코딩 도구와 연결되어 기억 공유를 실현함
-- 설치가 완료되면 도구 인터페이스 내에서 MCP 서버 연결 상태가 활성화되는 것을 확인할 수 있음
-- Claude Code, Pi 등 다양한 에이전트에서 각각 동일 MCP 서버에 접근해 저장된 기억을 주고받을 수 있음
-- 새로운 세션이나 각기 다른 도구에서도 추가 설정 없이 기억 시스템을 사용할 수 있음
+- **Kimi code bench**: 21% 향상
+- **Program bench**: 11% 향상
+- **MLS bench light**: 31% 향상
+- 각 수치는 자체 발표 기반이지만, 고유의 평가 지표에서 일관되게 개선됨을 강조
 
-### 기억 저장, 대화형 입력, 대량 텍스트 분석·추출 등 핵심 기능 제공
+### 30% 더 적은 reasoning 토큰 사용으로 추론 효율성이 비약적으로 개선됨
 
-- Walrus 내에는 주요 정보를 기억할 수 있는 별도의 '툴들'이 비치됨
-- 한 문장씩 외우는 방식뿐 아니라, 대용량의 텍스트도 입력해 '기억 추출(Extract)' 기능 활용 가능
-- 예시로, 작업하던 프로젝트 관련 방대한 텍스트를 붙여넣고, 'Use Walrus to remember this' 명령 입력
-- MCP 서버가 해당 텍스트에서 핵심 기억 요소를 추출해 자동으로 암호화 저장함
-- 실제 데모에서 20개의 사실(facts)이 추출되어 기록되는 과정 시연
+- "It gets there with 30% fewer reasoning tokens"라는 설명으로 효율 성능을 강조함
+- 적은 토큰 사용이 "덜 과도한 사고, 더 빠른 결과(less overthinking, more shipping)"로 이어진다고 코멘트
+- 결과적으로, 속도와 비용 모두에서 이전 버전보다 뛰어난 경쟁력을 드러냄
 
-### AI 도구 간 즉각적 기억 검색 및 활용이 가능해짐
+### 곧 6배 더 빠른 속도 모드가 제공될 예정임을 언급함
 
-- Claude Code(예: 이전 세션)에서 "Walrus memories를 검색해 Dark Factory의 기술 스택을 알려달라"는 질의 예시
-- Walrus Memory MCP를 통해 정확하고 상세한 답변(전체 기술 스택 정보)을 고속으로 반환함
-- 동일 질문을 Pi 등 다른 도구에 복사해도, 추가 설정 없이 바로 동일한 기억을 불러와 응답 가능함
-- Claude Code와 Pi의 응답 스타일은 다를 수 있으나, 추출·저장한 기억의 내용 및 품질은 동일하게 공유됨
+- "A six-time speed mode is coming soon, too"라고 명시적으로 예고함
+- 추후 공개될 버전에서 현존 모델 대비 최대 6배 빠른 추론이 가능해질 것으로 전망됨
+- 이는 실질적인 워크플로우 속도 및 생산성에 큰 변화를 가져올 것으로 암시됨
 
-### 사용자 데이터 주권과 접근 제어가 강화됨
+### Claude와 GPT 같은 폐쇄형 모델을 오픈소스 Kimi K 2.7과 비교할 필요성을 제기함
 
-- Walrus에서 저장된 모든 기억은 암호화되어 오직 사용자가 소유함
-- 접근 제어 옵션이 다양하며, 시스템 혹은 사람에 따라 접근 권한을 부여(Delegate Key) 가능
-- 사용자 지정 방식으로 관리·소유할 수 있어 외부 권한 통제에 유연하게 대응 가능함
-- 이러한 구조는 프라이버시 보호, 협업 환경 안전성 측면에서 우수한 장점 제공
+- "Would you actually swap Claude or GPT for an open model like this?"라고 질문을 던짐
+- 대표적인 상용 LLM(Claude, GPT 등)과 오픈소스 기반 LLM의 선택지에 대해 사용자 스스로 고민할 것을 촉구함
 
-### AI 도구의 '기억층'으로 Walrus를 활용할 수 있게 됨
+### 오픈(open) 또는 폐쇄(closed) 모델 중 선택에 대해 시청자 의견을 유도하며 마무리함
 
-- Walrus는 특정 코딩 도구에 유연하게 붙이는 '공통의 기억 계층(Memory Layer)'로 기능함
-- 다양한 AI 코딩 assistant 모두에서 동일하게 저장, 조회, 분석, 추출 등 기억 관리 수행 가능
-- 실시간, 무중단, 추가 설정 없이 다양한 도구에서 연결된 기억에 접근하여 생산성을 극대화할 수 있음
+- 영상 마지막에서 "Open or closed, drop your pick below."라고 발언
+- 시청자들에게 각자의 선호와 의견(오픈소스 vs 대형폐쇄모델)을 댓글로 남기길 권유함
 
-### 설치·시작이 빠르고 무료이며, 연동 확장성도 우수함
+### 요약에서 구체적인 수치와 공식 명칭 등 세부 사실이 빠짐없이 언급됨
 
-- Walrus는 시작이 무료(free to get started)이며, 개인 개발자나 팀 모두 즉시 체험 가능함
-- 한 번의 프롬프트 삽입만으로 설치·세팅 완료, 문서·SDK를 통해 다양한 도구 연동 가능성 강조
-- 사용자들이 손쉽게 메모리 시스템을 AI 작업 흐름 안에 흡수할 수 있도록 설계돼 있음
-- 영상 하단 설명란에 Walrus 공식 링크 제공
+- Kimi code bench, Program bench, MLS bench light라는 각 벤치마크 명을 구체적으로 명시
+- 성능 개선이 수치와 실제 사용성(토큰 수, 추론 방식, 속도) 측면에서 복합적으로 이루어졌음을 면밀하게 전달함
+
+### 전체적인 문맥은 Kimi K 2.7의 급진적 개선과 오픈소스의 가치를 포커스함
+
+- 예상하지 못했던 공개, 숫자로 입증되는 성능 향상, 효율성 증대, 향후 속도 혁신을 반복적으로 강조
+- 미래 AI 모델 선택에 대한 진지한 질문을 제기하며, 그 임팩트가 상당함을 드러냄
