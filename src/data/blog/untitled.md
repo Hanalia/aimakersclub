@@ -1,6 +1,6 @@
 ---
 author: AI Makers Club
-pubDatetime: 2026-08-02T08:18:15.631Z
+pubDatetime: 2026-08-03T08:18:04.750Z
 title: "The Complete Local AI System with A Single NPM Install!"
 slug: untitled
 featured: true
