@@ -1,7 +1,7 @@
 ---
 author: AI Makers Club
-pubDatetime: 2026-08-31T23:44:58.924Z
-title: "The Hidden Flaw of EVERY Coding Agent Now Has a Solution"
+pubDatetime: 2026-08-31T23:45:01.954Z
+title: "Rime Finally Made Voice Agents Good Enough"
 slug: untitled
 featured: true
 draft: false
@@ -16,7 +16,7 @@ description: "Error: Exception: Request failed for https://api.openai.com return
   <img src="https://img.youtube.com/vi/untitled/maxresdefault.jpg" alt="YouTube Thumbnail" style="width: 100%; max-width: 640px; height: auto; border-radius: 0.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" loading="lazy" />
 </div>
 
-**영상 링크:** [The Hidden Flaw of EVERY Coding Agent Now Has a Solution](https://www.youtube.com/shorts/t-EsObfyxzo)  
+**영상 링크:** [Rime Finally Made Voice Agents Good Enough](https://www.youtube.com/shorts/hKR1JZ2uvuQ)  
 **채널명:** Cole Medin
 
 Error: Exception: Request failed for https://api.openai.com returned code 429. Truncated server response: {
