@@ -1,7 +1,7 @@
 ---
 author: AI Makers Club
-pubDatetime: 2026-09-06T08:18:27.785Z
-title: "Rime Finally Made Voice Agents Good Enough"
+pubDatetime: 2026-09-08T23:44:49.660Z
+title: "The Safest Way I've Found to Let AI Coding Agents Run Real Infrastructure"
 slug: untitled
 featured: true
 draft: false
@@ -16,7 +16,7 @@ description: "Error: Exception: Request failed for https://api.openai.com return
   <img src="https://img.youtube.com/vi/untitled/maxresdefault.jpg" alt="YouTube Thumbnail" style="width: 100%; max-width: 640px; height: auto; border-radius: 0.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" loading="lazy" />
 </div>
 
-**영상 링크:** [Rime Finally Made Voice Agents Good Enough](https://www.youtube.com/shorts/hKR1JZ2uvuQ)  
+**영상 링크:** [The Safest Way I've Found to Let AI Coding Agents Run Real Infrastructure](https://www.youtube.com/shorts/PxQ_UJXDE1g)  
 **채널명:** Cole Medin
 
 Error: Exception: Request failed for https://api.openai.com returned code 429. Truncated server response: {
