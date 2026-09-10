@@ -1,7 +1,7 @@
 ---
 author: AI Makers Club
-pubDatetime: 2026-09-09T23:44:46.970Z
-title: "The exact tools used to port a massive codebase in days #programming #typescript #dev"
+pubDatetime: 2026-09-10T23:45:10.178Z
+title: "The Safest Way I've Found to Let AI Coding Agents Run Real Infrastructure"
 slug: untitled
 featured: true
 draft: false
@@ -16,8 +16,8 @@ description: "Error: Exception: Request failed for https://api.openai.com return
   <img src="https://img.youtube.com/vi/untitled/maxresdefault.jpg" alt="YouTube Thumbnail" style="width: 100%; max-width: 640px; height: auto; border-radius: 0.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" loading="lazy" />
 </div>
 
-**영상 링크:** [The exact tools used to port a massive codebase in days #programming #typescript #dev](https://www.youtube.com/shorts/AJhjm4_UJIk)  
-**채널명:** AI Engineer
+**영상 링크:** [The Safest Way I've Found to Let AI Coding Agents Run Real Infrastructure](https://www.youtube.com/shorts/PxQ_UJXDE1g)  
+**채널명:** Cole Medin
 
 Error: Exception: Request failed for https://api.openai.com returned code 429. Truncated server response: {
     "error": {
