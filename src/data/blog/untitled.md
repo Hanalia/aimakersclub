@@ -1,6 +1,6 @@
 ---
 author: AI Makers Club
-pubDatetime: 2026-09-12T23:44:53.786Z
+pubDatetime: 2026-09-13T08:18:01.767Z
 title: "The exact tools used to port a massive codebase in days #programming #typescript #dev"
 slug: untitled
 featured: true
