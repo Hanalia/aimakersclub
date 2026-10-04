@@ -1,7 +1,7 @@
 ---
 author: AI Makers Club
-pubDatetime: 2026-10-04T08:18:37.019Z
-title: "Your Coding Agent Wastes SO MANY Tokens Just Finding Code - Here's the Fix"
+pubDatetime: 2026-10-04T08:18:41.282Z
+title: "Bring Your MCP Server to Amazon's $190K Hackathon!"
 slug: untitled
 featured: true
 draft: false
@@ -16,7 +16,7 @@ description: "Error: Exception: Request failed for https://api.openai.com return
   <img src="https://img.youtube.com/vi/untitled/maxresdefault.jpg" alt="YouTube Thumbnail" style="width: 100%; max-width: 640px; height: auto; border-radius: 0.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" loading="lazy" />
 </div>
 
-**영상 링크:** [Your Coding Agent Wastes SO MANY Tokens Just Finding Code - Here's the Fix](https://www.youtube.com/shorts/oFPUUFLZJHQ)  
+**영상 링크:** [Bring Your MCP Server to Amazon's $190K Hackathon!](https://www.youtube.com/shorts/i2TQy33mYhE)  
 **채널명:** Cole Medin
 
 Error: Exception: Request failed for https://api.openai.com returned code 429. Truncated server response: {
