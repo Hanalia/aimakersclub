@@ -1,7 +1,7 @@
 ---
 author: AI Makers Club
-pubDatetime: 2026-10-08T08:19:33.425Z
-title: "Bring Your MCP Server to Amazon's $190K Hackathon!"
+pubDatetime: 2026-10-12T08:19:49.849Z
+title: "Your Coding Agent Wastes SO MANY Tokens Just Finding Code - Here's the Fix"
 slug: untitled
 featured: true
 draft: false
@@ -9,16 +9,92 @@ tags:
   - AI
   - YouTube 요약
   - 자동 업로드
-description: "Error: Exception: Request failed for https://api.openai.com returned code 429. Truncated server resp"
+description: "영상은 코딩 에이전트가 실제로 많은 비용과 토큰을 코드 수정이 아닌 \"수정할 코드 파악\" 과정에서 낭비한다는 점을 강조함 에이전트가 변경해야 할 코드를 찾기 위해 전체 코드베이스를"
 ---
 
 <div style="text-align: center;">
   <img src="https://img.youtube.com/vi/untitled/maxresdefault.jpg" alt="YouTube Thumbnail" style="width: 100%; max-width: 640px; height: auto; border-radius: 0.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" loading="lazy" />
 </div>
 
-**영상 링크:** [Bring Your MCP Server to Amazon's $190K Hackathon!](https://www.youtube.com/shorts/i2TQy33mYhE)  
+**영상 링크:** [Your Coding Agent Wastes SO MANY Tokens Just Finding Code - Here's the Fix](https://www.youtube.com/shorts/oFPUUFLZJHQ)  
 **채널명:** Cole Medin
 
-Error: Exception: Request failed for https://api.openai.com returned code 429. Truncated server response: {
-    "error": {
-        "message": "You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/o... (use muteHttpExceptions option to examine full response)
+## *코딩 에이전트가 코드를 찾느라 낭비하는 토큰 문제와 Sonar Vortex의 효율적인 해결법* 핵심 요약
+
+- 영상은 코딩 에이전트가 실제로 많은 비용과 토큰을 코드 수정이 아닌 "수정할 코드 파악" 과정에서 낭비한다는 점을 강조함
+- 에이전트가 변경해야 할 코드를 찾기 위해 전체 코드베이스를 수색하고 읽는 과정에서 대량의 토큰이 소모됨
+- 파일 검색 자체는 저렴하지만, 모든 관련 파일을 읽고 검토하는 데 매우 많은 컨텍스트와 리소스가 듦
+- 검색이 완벽하지 않아, 이름이나 구조가 검색과 일치하지 않으면 필요한 코드를 놓치기도 함
+- 코딩 에이전트의 핵심 질문은 “어떤 코드가 원하는 변경에 관련되는가?”이지만, 이를 직접적이고 정확하게 알 수 없음
+- 이 문제의 해결책으로 Sonar Vortex라는 도구를 소개하며, Sonar Vortex는 코드베이스 내 관련 코드의 빠르고 직접적인 식별을 지원함
+- Sonar Vortex는 클래스 구현, 함수 호출 등 구조적 관계를 즉각 그래프로 분석하여, 필요한 파일·라인을 신속하게 찾아줌
+- 실제 테스트 결과, 기존 방식에서는 8만 토큰이 소요된 작업도 Sonar Vortex 도입 시 최대 34%까지 토큰 절감을 확인함
+- Sonar Vortex는 Java, C#, JavaScript, TypeScript, Python, Rust에서 지원되며, 수시로 코드 변화에 맞춰 실시간 반영됨
+- Sonar Vortex를 활용하면 더욱 효율적이고 일관된 AI 기반 코드 수정 및 리팩터링이 가능함
+
+---
+
+## 세부 요약 - 주제별 정리
+
+### 코딩 에이전트는 실제로 코드 작성보다 코드 위치를 파악하는 데 더 많은 토큰을 소모함
+
+- 대부분의 코딩 에이전트 사용 비용은 새로운 코드를 작성하는 데 쓰이지 않음
+- 실질적으로는 기존 코드베이스에서 “수정이 필요한” 코드를 찾는 과정에 토큰 및 리소스의 대부분을 소비함
+- 코드 변경 요청이 간단하지 않은 경우, 관련 코드를 찾는 과정이 더욱 복잡하고 방대해짐
+- 에이전트는 수정 전 전체 코드베이스 내 다양한 파일들을 찾아 읽고, 해당 파일이 진짜로 관련 있는지 분석함
+
+### 파일 검색보다 파일 읽기와 해석 과정이 대량의 컨텍스트를 소모함
+
+- 파일 검색(Find 과정) 자체는 빠르고 저렴
+- 그러나 검색 이후 결과물(파일, 라인 등)을 전부 읽어들이고 분석하는 데 엄청난 토큰이 들게 됨
+- 코드베이스가 커질수록, 이 과정에 필요한 토큰·비용·시간이 기하급수적으로 증가
+- 코드 변경 전에 이미 과도한 리소스가 낭비됨
+
+### 검색의 한계로 인해 에이전트는 관련 코드를 모두 찾지 못할 위험이 있음
+
+- 검색은 항상 “추측”을 기반으로 이뤄짐
+- 만약 수정 대상 코드가 기존 네이밍 규칙(예: 변수명, 함수명 등)과 다르면, 에이전트는 이를 아예 인지하지 못할 수 있음
+- 결과적으로 의도한 모든 변경 사항이 적용되지 않을 수 있고, 작업의 완성도나 신뢰도에도 영향을 미침
+
+### 코딩 에이전트의 핵심 질문은 “어떤 코드가 이 변경에 연관되는가?”이지만 직접 답하지 못함
+
+- 에이전트가 본질적으로 답해야 할 가장 중요한 질문은 “어떤 코드가 사용자 요청에 맞는 부분인가?”임
+- 현존하는 에이전트는 대부분 이 질문에 직관적으로 혹은 효율적으로 답하지 못함
+- 검색 방식의 한계와 토큰 낭비 문제는 이 질문에 대한 직접 답변을 방해함
+
+### Sonar Vortex는 코드베이스 내 관계 탐색을 바로 해결할 수 있는 도구임
+
+- Sonar Vortex는 Sonar 플랫폼의 최신 도구로, 코드베이스 내 관계를 직접적·구조적으로 탐색 가능
+- 어떤 클래스가 특정 인터페이스를 구현하는지, 함수 호출/반환 구조가 무엇인지 등 구체적으로 식별함
+- 실시간으로 소스 코드 내 “어디서 무엇이 호출/구현/연결”되는지 파일과 라인까지 정확히 찾아냄
+
+### Sonar Vortex는 검색이 아닌 직접 질의 방식으로 토큰 효율을 극대화함
+
+- Sonar Vortex를 통해 코딩 에이전트는 검색(Search)이 아닌 “질의(Query)”방식으로 목적하는 코드를 조회할 수 있음
+- 이를 통해 반복적인 전체 파일 탐색·읽기 과정이 대폭 축소됨
+- 코드베이스 내부 그래프(구조/의존성 등)는 로컬에서 밀리초 단위로 생성 및 최신화됨
+- 별도의 컴파일러, Language Server가 필요하지 않고, 즉각적인 피드백이 가능
+
+### Sonar Vortex 도입 전후 토큰 소비량 차이는 매우 우수하게 검증됨
+
+- 영상에서 동일한 코드 변경 요청 실험을 두 차례 진행
+- 전통적 검색–읽기 방식에서는 단일 작업에만 약 80,000 토큰이 소진됨
+- Sonar Vortex 활용 시 동일 작업 및 추가 프롬프트(문맥 보강)에도 불구하고 소비 토큰이 훨씬 낮았음
+- Sonar에서 자체적으로 6개 리팩토링 과제, 10회 반복 테스트를 진행: 토큰 절약률이 6~34%에 달함
+
+### Sonar Vortex는 다양한 주요 언어 및 환경에서 실시간 적용 가능함
+
+- Sonar Vortex는 Java, C#, JavaScript, TypeScript, Python, Rust 언어를 지원
+- SonarQube Cloud 환경 및 Sonar Agent Essentials Add-on과 호환
+- 코드베이스 변경 사항이 발생하면 약 1밀리초 내로 엔진에서 즉시 반영되어 품질 저하나 딜레이가 없음
+
+### Sonar Vortex 활용 시 실제 개발 및 AI 에이전트 통합에서 생산성이 크게 향상됨
+
+- 효율적 질의, 빠른 컨텍스트 파악, 토큰 최적화 등을 통해 개발 효율이 매우 증가함
+- 코드가 컴파일되지 않은 상태(대다수 에이전트 과정과 유사)에서도 매끄럽게 작동함
+- 반복적 코딩 에이전트 작업 시에도 일관성과 신뢰성을 유지할 수 있게 됨
+
+### Sonar Vortex의 상세 사용 정보와 결과 확인을 위한 추가 자료가 안내됨
+
+- Sonar와의 영상 협찬 사실이 명시됨
+- Sonar Vortex 공식 링크가 영상 설명란에 제공됨
